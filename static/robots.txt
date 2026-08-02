@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://storymaps-free.app
+
+# Sitemaps
+Sitemap: https://storymaps-free.app/sitemap.xml

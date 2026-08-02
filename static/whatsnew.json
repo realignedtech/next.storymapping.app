@@ -1,0 +1,58 @@
+{
+  "freevspro": {
+    "title1": "Features",
+    "features1": [
+      "Multiple story maps per project",
+      "Use any Jira Issue & Link Type",
+      "Add top level goals & activities",
+      "Map issues to custom field values",
+      "Customize the card layout",
+      "Multi-project release support",
+      "Epic and swimlane statistics"
+    ],
+    "title2": "Other benefits",
+    "features2": [
+      "Priority support",
+      "High availability setup",
+      "Data Center certified"
+    ]
+  },
+  "news": [
+    {
+    "month": "August 2024",
+    "title": "Global maps & settings",
+    "content": [
+      {
+        "type": "text",
+        "content": "A new version of Advanced Story Maps has arrived with support for global maps and overhauled settings, which let you adjust your preferences without leaving the user story map"
+      }
+    ]   
+    },
+    {
+    "month": "July 2023",
+    "title": "Dark Theme comes to the free version",
+    "content": [
+      {
+        "type": "text",
+        "content": "The free version now also supports Jiras dark theme!"
+      }
+    ]
+  }, {
+    "month": "June 2023",
+    "title": "Pro Version: Dark Theme Support",
+    "content": [
+      {
+        "type": "text",
+        "content": "The Pro version now supports the new dark color mode in Jira Cloud"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The cloud migration import has been rolled out and is currently in beta",
+          "Fixed a bug that affected activities on static maps",
+          "Improved load times in various places"
+        ]
+      }
+    ]
+  } ]
+}
