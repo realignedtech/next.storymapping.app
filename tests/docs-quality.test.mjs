@@ -27,8 +27,22 @@ test('task-oriented docs pages contain substantive guidance', () => {
 		'src/routes/docs/tutorials/working-with-the-map/+page.md',
 		'src/routes/docs/tutorials/planning-sprints-and-releases/+page.md',
 		'src/routes/docs/pro/+page.md',
-		'src/routes/docs/pro/features/+page.md'
+		'src/routes/docs/pro/features/+page.md',
+		'src/routes/docs/pro/migration/+page.md'
 	]) assert.ok(words(path) >= 120, `${path} has only ${words(path)} words`);
+});
+
+test('Data Center migration guide states the assistant constraints', () => {
+	const guide = body('src/routes/docs/pro/migration/+page.md');
+	for (const phrase of [
+		'does not move Jira projects',
+		'same project keys',
+		'same issue keys',
+		'global issue types',
+		'same names',
+		'can replace properties',
+		'Cloud Migration'
+	]) assert.ok(guide.includes(phrase), `migration guide is missing: ${phrase}`);
 });
 
 test('docs content does not duplicate the layout h1', () => {

@@ -14,6 +14,7 @@ export const titles = {
   "pro-setup": "Getting Started",
   "map-types": "Map Types",
   "admin-guide": "Admin Guide",
+  "migration": "Data Center to Cloud Migration",
   "export": "Export Features",
   "board": "Board Management",
   "settings": "Settings",
@@ -75,6 +76,7 @@ const ProNav = [
     ]
   },
   { link: "/pro/admin-guide", title: titles["admin-guide"] },
+  { link: "/pro/migration", title: titles["migration"] },
   { link: "/whatsnew", title: titles["whatsnew"] },
   {
     link: "/support", title: titles["support"], children: [
@@ -94,6 +96,7 @@ const Nav = [
       { link: "/pro/setup", title: titles["pro-setup"] },
       { link: "/pro/features/map-types", title: titles["map-types"] },
       { link: "/pro/admin-guide", title: titles["admin-guide"] },
+      { link: "/pro/migration", title: titles["migration"] },
       { link: "/pro/features/export", title: titles["export"] },
       { link: "/pro/features/board", title: titles["board"] },
       { link: "/pro/features/settings", title: titles["settings"] },
