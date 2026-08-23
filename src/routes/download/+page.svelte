@@ -67,7 +67,7 @@
 		>
 			<div class="flex flex-col justify-center gap-3 sm:flex-row">
 				<a href="#editions" class="realigned-primary-button">Choose your edition</a>
-				<a href="/docs" class="realigned-secondary-button">Read the documentation</a>
+				<a href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page="/download" data-umami-event-placement="download_hero" class="realigned-secondary-button">Read the documentation</a>
 			</div>
 		</PageHero>
 

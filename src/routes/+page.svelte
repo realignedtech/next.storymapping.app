@@ -52,13 +52,13 @@
 				</p>
 
 				<div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-					<a href="/showcase/basic/" class="realigned-primary-button text-base">
+					<a href="/showcase/basic" class="realigned-primary-button text-base">
 						See Story Maps in action
 						<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12h14m-6-6 6 6-6 6" />
 						</svg>
 					</a>
-					<a href={APP_LINK} target="_blank" rel="noreferrer" class="realigned-secondary-button text-base">
+					<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-intent="free_install" data-umami-event-source-page="/" data-umami-event-placement="homepage_hero" class="realigned-secondary-button text-base">
 						View on Atlassian Marketplace
 					</a>
 				</div>
@@ -98,13 +98,13 @@
 							<h3 class="text-2xl font-semibold text-white">Story Maps for Jira</h3>
 						</div>
 					</div>
-					<p class="mt-7 leading-relaxed text-[var(--text-secondary)]">The core story mapping experience, rebuilt on Forge for planning across multiple maps, sprints, and releases.</p>
+					<p class="mt-7 leading-relaxed text-[var(--text-secondary)]">The core story mapping experience, rebuilt on Forge for visual planning in a Jira Software project.</p>
 					<ul class="mt-7 grid gap-3 text-sm text-white/80 sm:grid-cols-2">
-						<li><span>✓</span> Multiple maps</li><li><span>✓</span> Sprint swimlanes</li>
-						<li><span>✓</span> Release swimlanes</li><li><span>✓</span> Dependency view</li>
-						<li><span>✓</span> Custom hierarchy</li><li><span>✓</span> Dynamic or static maps</li>
+						<li><span>✓</span> One map per project</li><li><span>✓</span> Sprint swimlanes</li>
+						<li><span>✓</span> Release swimlanes</li><li><span>✓</span> Epics and Jira issues</li>
+						<li><span>✓</span> Jira stays the source of truth</li><li><span>✓</span> Runs inside Jira</li>
 					</ul>
-					<a href="/showcase/basic/" class="realigned-primary-button mt-9 w-fit">Explore Story Maps</a>
+					<a href="/showcase/basic" class="realigned-primary-button mt-9 w-fit">Explore Story Maps</a>
 				</article>
 
 				<article class="edition-card realigned-card flex flex-col rounded-2xl p-8 md:p-10">
@@ -121,7 +121,7 @@
 						<li><span>✓</span> Iteration planning</li><li><span>✓</span> Goal connections</li>
 						<li><span>✓</span> PNG export</li><li><span>✓</span> Admin configuration</li>
 					</ul>
-					<a href="/showcase/advanced/" class="realigned-secondary-button mt-9 w-fit">Explore Advanced Story Maps</a>
+					<a href="/showcase/advanced" class="realigned-secondary-button mt-9 w-fit">Explore Advanced Story Maps</a>
 				</article>
 			</div>
 		</div>
@@ -154,8 +154,8 @@
 			<h2 id="final-cta-title" class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">See the whole journey. Plan the next valuable slice.</h2>
 			<p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/80">Bring your backlog into a view that helps the team decide what belongs in the next release and what can wait.</p>
 			<div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-				<a href="/showcase/basic/" class="realigned-primary-button">See Story Maps in action</a>
-				<a href="/docs/" class="realigned-secondary-button">Read the documentation</a>
+				<a href="/showcase/basic" class="realigned-primary-button">See Story Maps in action</a>
+				<a href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page="/" data-umami-event-placement="homepage_footer" class="realigned-secondary-button">Read the documentation</a>
 			</div>
 		</div>
 	</section>

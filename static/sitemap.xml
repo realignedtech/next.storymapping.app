@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://storymaps-free.app/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/docs/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/docs/support/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/docs/support/eula/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/docs/support/freetopro/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/docs/support/privacy/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/docs/support/troubleshooting/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/bug-bounty-program/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/bug-fix-policy/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/privacy-policy/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/security-and-privacy-faq/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/security-policy/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/security-scanning/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://storymaps-free.app/trust/self-assessment-questionaire/</loc><lastmod>2025-07-25T11:20:12.539Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>https://storymapping.app</loc></url>
+	<url><loc>https://storymapping.app/articles/creating-a-portfolio-map-with-advanced-storymaps</loc></url>
+	<url><loc>https://storymapping.app/articles/get-started-with-user-story-mapping</loc></url>
+	<url><loc>https://storymapping.app/articles/how-to-do-cross-project-releases-in-jira</loc></url>
+	<url><loc>https://storymapping.app/articles/how-to-use-custom-fields-on-cards-effectively</loc></url>
+	<url><loc>https://storymapping.app/articles/story-maps-for-jira</loc></url>
+	<url><loc>https://storymapping.app/articles/story-maps-for-jira-is-all-new</loc></url>
+	<url><loc>https://storymapping.app/blog</loc></url>
+	<url><loc>https://storymapping.app/docs</loc></url>
+	<url><loc>https://storymapping.app/docs/best-practices</loc></url>
+	<url><loc>https://storymapping.app/docs/best-practices/storyvsjourneymap</loc></url>
+	<url><loc>https://storymapping.app/docs/getting-started</loc></url>
+	<url><loc>https://storymapping.app/docs/pro</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/admin-guide</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/features</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/features/board</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/features/export</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/features/map-types</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/features/settings</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/overview</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/setup</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/tutorials</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/tutorials/custom-field-swimlanes</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/tutorials/multi-project-releases</loc></url>
+	<url><loc>https://storymapping.app/docs/support</loc></url>
+	<url><loc>https://storymapping.app/docs/support/eula</loc></url>
+	<url><loc>https://storymapping.app/docs/support/freetopro</loc></url>
+	<url><loc>https://storymapping.app/docs/support/privacy</loc></url>
+	<url><loc>https://storymapping.app/docs/support/troubleshooting</loc></url>
+	<url><loc>https://storymapping.app/docs/tutorials</loc></url>
+	<url><loc>https://storymapping.app/docs/tutorials/planning-sprints-and-releases</loc></url>
+	<url><loc>https://storymapping.app/docs/tutorials/working-with-the-map</loc></url>
+	<url><loc>https://storymapping.app/docs/whatsnew</loc></url>
+	<url><loc>https://storymapping.app/download</loc></url>
+	<url><loc>https://storymapping.app/showcase/advanced</loc></url>
+	<url><loc>https://storymapping.app/showcase/basic</loc></url>
+	<url><loc>https://storymapping.app/trust</loc></url>
+	<url><loc>https://storymapping.app/trust/bug-bounty-program</loc></url>
+	<url><loc>https://storymapping.app/trust/bug-fix-policy</loc></url>
+	<url><loc>https://storymapping.app/trust/privacy-policy</loc></url>
+	<url><loc>https://storymapping.app/trust/security-and-privacy-faq</loc></url>
+	<url><loc>https://storymapping.app/trust/security-policy</loc></url>
+	<url><loc>https://storymapping.app/trust/security-scanning</loc></url>
+	<url><loc>https://storymapping.app/trust/self-assessment-questionaire</loc></url>
+	<url><loc>https://storymapping.app/upgrade</loc></url>
 </urlset>

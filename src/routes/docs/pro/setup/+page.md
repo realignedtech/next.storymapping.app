@@ -3,8 +3,6 @@ title: "Getting started with Advanced Story Maps for Jira"
 description: "Setting up the app and adding your first story map"
 ---
 
-# Getting started with Advanced Story Maps for Jira
-
 After installation, the app will be available in all projects.
 See the [Administrators Guide](/docs/pro/admin-guide) on how to enable the app on specific projects.
 The app will first redirect you to the [overview screen](/docs/pro/overview) of a project, where you can add and manage story maps. 

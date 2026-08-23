@@ -95,7 +95,6 @@
 		line-height: 1.8;
 	}
 
-	:global(.docs-content > h1:first-child) { display: none; }
 	:global(.docs-content h1),
 	:global(.docs-content h2),
 	:global(.docs-content h3),

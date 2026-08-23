@@ -1,7 +1,12 @@
 <script>
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	
 	let { title, description } = $props();
+	const siteOrigin = 'https://storymapping.app';
+	let canonicalPath = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
+	let canonicalUrl = $derived(`${siteOrigin}${canonicalPath}`);
+	let shareImageUrl = `${siteOrigin}/realignedOG.png`;
 	
 	onMount(() => {
 		if (title) {
@@ -34,6 +39,10 @@
 		<meta name="twitter:description" content={description} />
 	{/if}
 	
+	<link rel="canonical" href={canonicalUrl} />
 	<meta property="og:type" content="website" />
+	<meta property="og:url" content={canonicalUrl} />
+	<meta property="og:image" content={shareImageUrl} />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content={shareImageUrl} />
 </svelte:head>

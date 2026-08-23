@@ -3,8 +3,6 @@ title: "Overview"
 description: "Advanced Story Maps for Jira overview screens allows managing multiple maps inside a single project"
 ---
 
-# Overview
-
 You can manage multiple maps inside a single project. You will be presented with the overview screen when opening the app for the first time or if the project does not contain any story maps.
 
 You will find a list of all available story maps here, and you will be able to create a new one.

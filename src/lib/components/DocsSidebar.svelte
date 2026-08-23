@@ -1,4 +1,6 @@
 <script>
+	import { page } from '$app/stores';
+
 	let {
 		navigation = [],
 		currentRoute = '/',
@@ -8,6 +10,7 @@
 	} = $props();
 
 	let query = $state('');
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let filteredNavigation = $derived.by(() => {
 		const term = query.trim().toLowerCase();
 		if (!term) return navigation;
@@ -49,7 +52,7 @@
 	<nav aria-label="Documentation pages" class="mt-5 space-y-1">
 		{#each filteredNavigation as item}
 			<div>
-				<a href="/docs{item.link}" onclick={onnavigate} class:active={currentRoute === item.link} class="nav-row">
+				<a href="/docs{item.link}" onclick={onnavigate} class:active={currentRoute === item.link} class="nav-row" data-umami-event="docs_journey" data-umami-event-destination="/docs{item.link === '/' ? '' : item.link}" data-umami-event-source-page={sourcePage} data-umami-event-placement="docs_sidebar">
 					<span>{item.title}</span>
 					{#if item.children}
 						<svg class:rotate-90={active === item.link || query} class="h-3.5 w-3.5 flex-none transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -64,6 +67,10 @@
 							<a
 								href={childHref(item, child)}
 								onclick={onnavigate}
+								data-umami-event="docs_journey"
+								data-umami-event-destination={childHref(item, child)}
+								data-umami-event-source-page={sourcePage}
+								data-umami-event-placement="docs_sidebar"
 								class:active={currentRoute === `${item.link}${child.link}`}
 								class="child-row"
 							>{child.title}</a>

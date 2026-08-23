@@ -1,7 +1,6 @@
 <script>
 	import Header from './Header.svelte';
-	import Nav from './Nav.svelte';
-	import Footer from './Footer.svelte';
+	import { page } from '$app/stores';
 
 	let { 
 		meta = {}, 
@@ -21,13 +20,12 @@
 		showImage = null;
 	}
 
-	const APP_LINK = "https://marketplace.atlassian.com/1224357";
+	const APP_LINK = "https://marketplace.atlassian.com/apps/1224357";
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 </script>
 
 <div class="flex flex-col min-h-screen">
 <Header title={meta.title || "Blog"} description={meta.description || "Story Maps Blog"} />
-
-<Nav h1={true} marketplaceLink={marketplaceLink} demoLink={demoLink} title={title} highlight="Blog" />
 
 <!-- Modal for images -->
 {#if showImage}
@@ -90,7 +88,7 @@
 							<p class="text-gray-600 mb-4">
 								Ready to get started with user story mapping? Install our app from the Atlassian Marketplace and start mapping your user journeys today.
 							</p>
-							<a href={APP_LINK} target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+							<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-intent="free_install" data-umami-event-source-page={sourcePage} data-umami-event-placement="article_footer" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
 								</svg>
@@ -104,7 +102,6 @@
 	</article>
 </main>
 
-<Footer />
 </div>
 
 <style>

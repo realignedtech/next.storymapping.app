@@ -1,5 +1,8 @@
 export const titles = {
   "intro": "Introduction",
+  "getting-started": "Getting Started",
+  "working-with-the-map": "Working With the Map",
+  "planning-sprints-and-releases": "Plan Sprints and Releases",
   "freetopro": "Upgrading to Pro",
   "troubleshooting": "Common Issues & Questions",
   "privacy": "Privacy Information",
@@ -30,6 +33,13 @@ export const StoryMapTitles = titles;
 // Basic Story Maps Navigation
 const BasicNav = [
   { link: "/", title: titles["intro"] },
+  { link: "/getting-started", title: titles["getting-started"] },
+  {
+    link: "/tutorials", title: titles["tutorials"], children: [
+      { link: "/working-with-the-map", title: titles["working-with-the-map"] },
+      { link: "/planning-sprints-and-releases", title: titles["planning-sprints-and-releases"] },
+    ]
+  },
   {
     link: "/best-practices", title: titles["best-practices"], children: [
       { link: "/storyvsjourneymap", title: titles["storyvsjourneymap"] },

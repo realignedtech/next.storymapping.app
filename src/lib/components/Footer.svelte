@@ -1,6 +1,9 @@
 <script>
+	import { page } from '$app/stores';
+
 	let { wide = false } = $props();
 	const year = new Date().getFullYear();
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 </script>
 
 <footer class="w-full border-t border-[var(--footer-border)] bg-gradient-to-b from-transparent to-black/40 text-white backdrop-blur-sm">
@@ -28,7 +31,7 @@
 						<a class="transition-colors hover:text-white" href="/showcase/advanced">Advanced Story Maps</a>
 					</li>
 					<li>
-						<a class="transition-colors hover:text-white" href="/download/">Compare editions</a>
+						<a class="transition-colors hover:text-white" href="/download" data-umami-event="download_click" data-umami-event-destination="/download" data-umami-event-source-page={sourcePage} data-umami-event-placement="footer">Compare editions</a>
 					</li>
 				</ul>
 			</div>
@@ -36,13 +39,13 @@
 				<h2 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Resources</h2>
 				<ul class="space-y-3 text-sm text-[var(--text-secondary)]">
 					<li>
-						<a class="transition-colors hover:text-white" href="/docs/">Documentation</a>
+						<a class="transition-colors hover:text-white" href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page={sourcePage} data-umami-event-placement="footer">Documentation</a>
 					</li>
 					<li>
-						<a class="transition-colors hover:text-white" href="/docs/best-practices">Best Practices</a>
+						<a class="transition-colors hover:text-white" href="/docs/best-practices" data-umami-event="docs_journey" data-umami-event-destination="/docs/best-practices" data-umami-event-source-page={sourcePage} data-umami-event-placement="footer">Best Practices</a>
 					</li>
 					<li>
-						<a class="transition-colors hover:text-white" href="/docs/support">Support</a>
+						<a class="transition-colors hover:text-white" href="/docs/support" data-umami-event="docs_journey" data-umami-event-destination="/docs/support" data-umami-event-source-page={sourcePage} data-umami-event-placement="footer">Support</a>
 					</li>
 				</ul>
 			</div>
@@ -53,10 +56,10 @@
 						<a class="transition-colors hover:text-white" href="/trust">Trust Center</a>
 					</li>
 					<li>
-						<a class="transition-colors hover:text-white" href="/docs/support/privacy">Privacy Policy</a>
+						<a class="transition-colors hover:text-white" href="/docs/support/privacy" data-umami-event="docs_journey" data-umami-event-destination="/docs/support/privacy" data-umami-event-source-page={sourcePage} data-umami-event-placement="footer">Privacy Policy</a>
 					</li>
 					<li>
-						<a class="transition-colors hover:text-white" href="/docs/support/eula">Terms &amp; Conditions</a>
+						<a class="transition-colors hover:text-white" href="/docs/support/eula" data-umami-event="docs_journey" data-umami-event-destination="/docs/support/eula" data-umami-event-source-page={sourcePage} data-umami-event-placement="footer">Terms &amp; Conditions</a>
 					</li>
 				</ul>
 			</div>

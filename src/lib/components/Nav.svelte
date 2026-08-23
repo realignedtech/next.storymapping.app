@@ -1,5 +1,8 @@
 <script>
+	import { page } from '$app/stores';
+
 	let { title = "Story Maps", marketplaceLink = "", demoLink = "", h1 = false, disableDemo = false, highlight = "", wide = false } = $props();
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let open = $state(false);
 	let showAppsPopover = $state(false);
 	let buttonElement = $state(null);
@@ -89,12 +92,12 @@
 					</a>
 				</li>
 				<li>
-					<a class="inline-block py-2 text-base font-medium no-underline transition-colors duration-200 {highlight === 'Documentation' ? 'text-white' : 'text-white/80 hover:text-white'}" href="/docs/">
+					<a class="inline-block py-2 text-base font-medium no-underline transition-colors duration-200 {highlight === 'Documentation' ? 'text-white' : 'text-white/80 hover:text-white'}" href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop">
 						Documentation
 					</a>
 				</li>
 				<li>
-					<a class="inline-block py-2 text-base font-medium no-underline transition-colors duration-200 {highlight === 'Download' ? 'text-white' : 'text-white/80 hover:text-white'}" href="/download/">
+					<a class="inline-block py-2 text-base font-medium no-underline transition-colors duration-200 {highlight === 'Download' ? 'text-white' : 'text-white/80 hover:text-white'}" href="/download" data-umami-event="download_click" data-umami-event-destination="/download" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop">
 						Compare editions
 					</a>
 				</li>
@@ -112,7 +115,7 @@
 					</button>
 				</li>
 				<li>
-					<a href={marketplaceLink || '/download/'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} class="realigned-primary-button !rounded-lg !px-5 !py-2.5 text-base">
+					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'free_install' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop" class="realigned-primary-button !rounded-lg !px-5 !py-2.5 text-base">
 						Try free
 					</a>
 				</li>
@@ -124,10 +127,10 @@
 			<div id="mobile-navigation" class="border-t border-white/10 py-4 lg:hidden">
 				<div class="flex flex-col gap-1">
 					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Showcase' ? 'text-white' : 'text-white/80'}" href="/showcase/basic" onclick={() => (open = false)}>Showcase</a>
-					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Documentation' ? 'text-white' : 'text-white/80'}" href="/docs/" onclick={() => (open = false)}>Documentation</a>
-					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Download' ? 'text-white' : 'text-white/80'}" href="/download/" onclick={() => (open = false)}>Compare editions</a>
+					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Documentation' ? 'text-white' : 'text-white/80'}" href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Documentation</a>
+					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Download' ? 'text-white' : 'text-white/80'}" href="/download" data-umami-event="download_click" data-umami-event-destination="/download" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Compare editions</a>
 					<a class="rounded-lg px-2 py-2 text-base font-medium text-white/80" href="https://realigned.io?utm_source=storymapping_site" rel="noreferrer">All Realigned apps</a>
-					<a href={marketplaceLink || '/download/'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} class="realigned-primary-button mt-3 self-start !rounded-lg !px-5 !py-2.5 text-base">
+					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'free_install' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" class="realigned-primary-button mt-3 self-start !rounded-lg !px-5 !py-2.5 text-base">
 						Try free
 					</a>
 				</div>

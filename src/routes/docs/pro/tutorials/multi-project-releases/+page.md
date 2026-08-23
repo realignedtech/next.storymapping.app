@@ -3,8 +3,6 @@ title: 'Multi-Project Releases Tutorial'
 description: 'Learn how to coordinate releases across multiple Jira projects using Advanced Story Maps'
 ---
 
-# Multi-Project Releases Tutorial
-
 Managing releases that span multiple Jira projects can be challenging, but Advanced Story Maps makes it straightforward by allowing you to visualize and coordinate work across project boundaries in a single story map.
 
 ## Step 1: Create Your Multi-Project Map

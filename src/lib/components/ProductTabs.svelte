@@ -1,5 +1,8 @@
 <script>
+	import { page } from '$app/stores';
+
 	let { tabs = [], active = '', backHref = '', backLabel = '', wide = false } = $props();
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 </script>
 
 <div class="sticky top-20 z-40 border-b border-white/10 bg-[#0c3468]/95 backdrop-blur-md">
@@ -7,7 +10,7 @@
 		<div class="flex min-w-max items-center justify-between gap-8">
 			<nav aria-label="Product sections" class="flex space-x-1">
 				{#each tabs as tab}
-					<a href={tab.href} class="flex items-center gap-2 border-b-2 px-4 py-3 text-sm font-medium transition-colors {active === tab.id ? 'border-sky-300 text-white' : 'border-transparent text-white/55 hover:border-white/20 hover:text-white'}">
+					<a href={tab.href} data-umami-event="docs_journey" data-umami-event-destination={tab.href} data-umami-event-source-page={sourcePage} data-umami-event-placement="product_tabs" class="flex items-center gap-2 border-b-2 px-4 py-3 text-sm font-medium transition-colors {active === tab.id ? 'border-sky-300 text-white' : 'border-transparent text-white/55 hover:border-white/20 hover:text-white'}">
 						{#if tab.icon}<img src={tab.icon} alt="" class="h-4 w-4" />{/if}
 						{tab.label}
 						{#if tab.badge}<span class="rounded-full border border-sky-300/20 bg-sky-300/10 px-2 py-0.5 text-xs text-sky-100">{tab.badge}</span>{/if}

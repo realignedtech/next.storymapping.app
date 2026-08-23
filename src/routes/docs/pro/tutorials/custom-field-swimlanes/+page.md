@@ -3,8 +3,6 @@ title: "Custom Field Swimlanes"
 description: "How to set up custom field swim-lanes for your user story map"
 ---
 
-# Custom Field Swimlanes
-
 The user story map is a great tool for organizing and visualizing all of your team's user stories.
 However, if you have releases or sprints across project set up in a custom field, it can get a bit complicated.
 

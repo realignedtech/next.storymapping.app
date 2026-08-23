@@ -1,57 +1,34 @@
 ---
 title: 'Advanced Features'
-description: 'Overview of advanced features available in Advanced Story Maps'
+description: 'Verified capabilities available in Advanced Story Maps for Jira.'
 ---
 
-# Advanced Features
-
-Advanced Story Maps provides powerful features to enhance your story mapping experience beyond the basic functionality. These features are designed for teams that need sophisticated project management, reporting, and integration capabilities.
+Advanced Story Maps adds flexible structure and planning controls to the core Story Maps experience. The app works with Jira issues, boards, links, and fields; it does not create a separate project record.
 
 ## Feature Categories
 
-### Map Management
-- **[Map Types](/docs/pro/features/map-types)** - Dynamic and static map configurations for different use cases
-- **Multiple Maps per Project** - Create unlimited story maps within a single Jira project
-- **Cross-Project Visualization** - View and manage work across multiple Jira projects
+### Maps and hierarchy
 
-### Data Integration
-- **[Board Management](/docs/pro/features/board)** - Advanced Jira board integration and synchronization
-- **Custom Field Support** - Display and organize by any Jira custom field
-- **Real-time Sync** - Live updates from your Jira boards and projects
+- **[Map Types](/docs/pro/features/map-types):** choose a dynamic map sourced from a Jira board or a manually curated static map.
+- **Multiple maps:** maintain several planning views in one Jira project.
+- **Flexible hierarchy:** configure the issue types and links used for the backbone and optional top-level activities.
+- **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it.
 
-### Export and Sharing
-- **[Export Features](/docs/pro/features/export)** - Professional PDF, CSV, and image exports
-- **Stakeholder Sharing** - Share maps with external stakeholders
-- **Automated Reporting** - Schedule regular exports and reports
+### Planning views
 
-### Customization
-- **[Settings](/docs/pro/features/settings)** - Comprehensive configuration options
-- **Custom Swimlanes** - Organize work by any field or criteria
-- **Visual Customization** - Tailor the appearance to your team's needs
+- **Sprint and release swimlanes:** assign work to the Jira sprint or version that owns it.
+- **Free-form swimlanes:** use planning labels such as “Near term” without changing a Jira release.
+- **Custom-field swimlanes:** organize and update supported custom-field values from the map.
+- **Board quick filters:** focus a dynamic map using filters from its connected Jira board.
 
-## Getting Started
+### Display and output
 
-If you're new to Advanced Story Maps, we recommend starting with:
+- **Configurable cards:** choose which supported Jira fields appear on issue cards.
+- **Statistics:** inspect progress and story-point totals where the underlying Jira configuration provides them.
+- **[PNG export](/docs/pro/features/export):** save a visual snapshot of the current map.
 
-1. **[Overview](/docs/pro/overview)** - Understand the basic concepts and interface
-2. **[Getting Started](/docs/pro/setup)** - Set up your first advanced story map
-3. **[Map Types](/docs/pro/features/map-types)** - Choose the right map type for your needs
-4. **[Board Management](/docs/pro/features/board)** - Connect and configure your Jira boards
+## Configure a map
 
-## Administration
+Use [Board Configuration](/docs/pro/features/board) to control which Jira board supplies a dynamic map, its sprints, releases, issues, and quick filters. Use [Settings](/docs/pro/features/settings) for the hierarchy, display, and swimlane options available to that map.
 
-For administrators deploying Advanced Story Maps across an organization:
-
-- **[Admin Guide](/docs/pro/admin-guide)** - Complete administrator documentation
-- **[Settings](/docs/pro/features/settings)** - Configure organizational defaults
-- **License Management** - Manage user access and permissions
-
-## Support and Resources
-
-- **[Tutorials](/docs/tutorials)** - Step-by-step guides for common workflows
-- **[Support](/docs/support)** - Get help with issues and questions
-- **[What's New](/docs/whatsnew)** - Latest features and updates
-
----
-
-Choose a feature from the navigation menu to learn more about specific capabilities.
+Project administrators can use the [Admin Guide](/docs/pro/admin-guide) to control where the app is available. A user's Jira permissions continue to determine which issues and boards they can see or change.

@@ -1,15 +1,20 @@
 ---
 title: 'Tutorials'
-description: 'Tutorials on how to configure Advanced Story Maps for Jira'
+description: 'Task-focused guides for using Story Maps for Jira.'
 ---
 
-# Tutorials
+Use these guides after you have opened the app in a Jira Software project.
 
-Here you'll find step-by-step tutorials on how to configure and use advanced features in Story Maps for Jira.
+## Core workflows
 
-Please find all relevant tutorials on the left-hand side navigation.
+- [Working With the Map](/docs/tutorials/working-with-the-map) explains the backbone, detail issues, filters, and a practical team routine.
+- [Plan Sprints and Releases](/docs/tutorials/planning-sprints-and-releases) shows how swimlanes update Jira planning fields.
 
-## Available Tutorials
+If you have not created a map yet, begin with [Getting Started](/docs/getting-started).
 
-- **Custom Field Swimlanes** - Learn how to set up and use custom field swimlanes for better organization
-- **Multi-Project Releases** - Configure releases that span across multiple Jira projects
+## Advanced workflows
+
+Advanced Story Maps adds planning patterns for more complex Jira configurations:
+
+- [Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes)
+- [Multi-Project Releases](/docs/pro/tutorials/multi-project-releases)

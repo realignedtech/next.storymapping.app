@@ -47,17 +47,17 @@
                     </a>
                 </li>
                 <li class="mr-2">
-                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Documentation' ? 'text-sky-500 font-bold' : 'text-black'}" href="/docs/">
+                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Documentation' ? 'text-sky-500 font-bold' : 'text-black'}" href="/docs">
                         Documentation
                     </a>
                 </li>
                 <li class="mr-2">
-                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Blog' ? 'text-sky-500 font-bold' : 'text-black'}" href="/blog/">
+                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Blog' ? 'text-sky-500 font-bold' : 'text-black'}" href="/blog">
                         Blog
                     </a>
                 </li>
                 <li class="mr-4">
-                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Upgrade' ? 'text-sky-500 font-bold' : 'text-black'}" href="/upgrade/">
+                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Upgrade' ? 'text-sky-500 font-bold' : 'text-black'}" href="/upgrade">
                         Upgrade
                     </a>
                 </li>

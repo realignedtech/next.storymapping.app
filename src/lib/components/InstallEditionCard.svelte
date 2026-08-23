@@ -1,4 +1,6 @@
 <script>
+	import { page } from '$app/stores';
+
 	let {
 		name,
 		eyebrow,
@@ -12,6 +14,10 @@
 		detailsLabel,
 		featured = false
 	} = $props();
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
+	let listingId = $derived(marketplaceLink?.match(/\/(\d+)(?:[/?]|$)/)?.[1] || '');
+	let product = $derived(listingId === '1224417' ? 'advanced_story_maps' : 'story_maps');
+	let intent = $derived(listingId === '1224417' ? 'trial' : 'free_install');
 </script>
 
 <article class:featured class="edition-card">
@@ -41,6 +47,12 @@
 			href={marketplaceLink}
 			target="_blank"
 			rel="noreferrer"
+			data-umami-event="marketplace_click"
+			data-umami-event-product={product}
+			data-umami-event-listing-id={listingId}
+			data-umami-event-intent={intent}
+			data-umami-event-source-page={sourcePage}
+			data-umami-event-placement="edition_card"
 			class="{featured ? 'realigned-primary-button' : 'realigned-secondary-button'} flex-1 text-center"
 		>{marketplaceLabel}</a>
 		<a href={detailsHref} class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-sky-200 transition hover:text-white">

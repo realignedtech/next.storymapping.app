@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://storymaps-free.app
+Host: https://storymapping.app
 
 # Sitemaps
-Sitemap: https://storymaps-free.app/sitemap.xml
+Sitemap: https://storymapping.app/sitemap.xml

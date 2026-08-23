@@ -3,7 +3,9 @@ title: Release Notes
 description: New features in the latest releases
 ---
 
-<sub>June 2023</sub>
+This page is an archive of release notes published from September 2021 through June 2023. It does not yet describe the current Forge rebuild. For current release status, use the Atlassian Marketplace listing or contact [support@realigned.io](mailto:support@realigned.io).
+
+## June 2023
 
 ### Pro Version: Dark Theme Support
 
