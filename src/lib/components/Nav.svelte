@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { realignedApps } from '$lib/apps.js';
 
 	let { title = "Story Maps", marketplaceLink = "", demoLink = "", h1 = false, disableDemo = false, highlight = "", wide = false } = $props();
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
@@ -7,27 +8,6 @@
 	let showAppsPopover = $state(false);
 	let buttonElement = $state(null);
 	let popoverPosition = $state({ top: 0, right: 0 });
-
-	const apps = [
-		{
-			name: "Advanced Story Maps for Jira",
-			icon: "/smProIcon.svg",
-			url: "https://storymapping.app",
-			description: "User story mapping for Jira"
-		},
-		{
-			name: "Personas for Jira",
-			icon: "/smFreeIcon.svg",
-			url: "https://betterpersonas.app",
-			description: "Create user personas in Jira"
-		},
-		{
-			name: "Denkplan Portfolio Maps for Jira",
-			icon: "/smFreeIcon.svg",
-			url: "https://portfoliomapping.app",
-			description: "Portfolio mapping for Jira"
-		}
-	];
 
 	function toggleAppsPopover() {
 		if (!showAppsPopover && buttonElement) {
@@ -67,7 +47,7 @@
 		<!-- Mobile navigation toggle -->
 		<button
 			type="button"
-			class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 lg:hidden"
+			class="inline-flex h-10 w-10 items-center justify-center rounded-md text-white transition-colors hover:bg-white/10 lg:hidden"
 			aria-label={open ? "Close navigation" : "Open navigation"}
 			aria-expanded={open}
 			aria-controls="mobile-navigation"
@@ -105,6 +85,9 @@
 					<button
 						bind:this={buttonElement}
 						class="inline-flex items-center gap-1 border-none bg-transparent py-2 text-base font-medium text-white/80 transition-colors duration-200 hover:text-white"
+						aria-controls="apps-popover"
+						aria-expanded={showAppsPopover}
+						aria-haspopup="true"
 						onclick={toggleAppsPopover}
 						onblur={() => setTimeout(closePopover, 150)}>
 						All Apps
@@ -115,7 +98,7 @@
 					</button>
 				</li>
 				<li>
-					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'free_install' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop" class="realigned-primary-button !rounded-lg !px-5 !py-2.5 text-base">
+					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'free_install' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop" class="realigned-primary-button !rounded-md !px-5 !py-2.5 text-base">
 						Try free
 					</a>
 				</li>
@@ -126,11 +109,11 @@
 		{#if open}
 			<div id="mobile-navigation" class="border-t border-white/10 py-4 lg:hidden">
 				<div class="flex flex-col gap-1">
-					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Showcase' ? 'text-white' : 'text-white/80'}" href="/showcase/basic" onclick={() => (open = false)}>Showcase</a>
-					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Documentation' ? 'text-white' : 'text-white/80'}" href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Documentation</a>
-					<a class="rounded-lg px-2 py-2 text-base font-medium {highlight === 'Download' ? 'text-white' : 'text-white/80'}" href="/download" data-umami-event="download_click" data-umami-event-destination="/download" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Compare editions</a>
-					<a class="rounded-lg px-2 py-2 text-base font-medium text-white/80" href="https://realigned.io?utm_source=storymapping_site" rel="noreferrer">All Realigned apps</a>
-					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'free_install' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" class="realigned-primary-button mt-3 self-start !rounded-lg !px-5 !py-2.5 text-base">
+					<a class="rounded-md px-2 py-2 text-base font-medium {highlight === 'Showcase' ? 'text-white' : 'text-white/80'}" href="/showcase/basic" onclick={() => (open = false)}>Showcase</a>
+					<a class="rounded-md px-2 py-2 text-base font-medium {highlight === 'Documentation' ? 'text-white' : 'text-white/80'}" href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Documentation</a>
+					<a class="rounded-md px-2 py-2 text-base font-medium {highlight === 'Download' ? 'text-white' : 'text-white/80'}" href="/download" data-umami-event="download_click" data-umami-event-destination="/download" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Compare editions</a>
+					<a class="rounded-md px-2 py-2 text-base font-medium text-white/80" href="https://realigned.io?utm_source=storymapping_site" rel="noreferrer">All Realigned apps</a>
+					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'free_install' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" class="realigned-primary-button mt-3 self-start !rounded-md !px-5 !py-2.5 text-base">
 						Try free
 					</a>
 				</div>
@@ -143,25 +126,27 @@
 {#if showAppsPopover}
 	<button type="button" aria-label="Close apps menu" class="fixed inset-0 z-[9998] cursor-default" onclick={closePopover}></button>
 
-	<div class="fixed z-[9999] w-80 overflow-hidden rounded-xl border border-white/15 bg-[#103d73] shadow-2xl shadow-slate-950/35"
-		 style="top: {popoverPosition.top}px; right: {popoverPosition.right}px;">
+	<div id="apps-popover"
+		 class="fixed z-[9999] w-[calc(100vw-2rem)] max-w-[42rem] overflow-y-auto rounded-md border border-white/15 bg-[#103d73] shadow-2xl shadow-slate-950/35"
+		 style="top: {popoverPosition.top}px; right: {Math.max(16, popoverPosition.right)}px; max-height: calc(100vh - {popoverPosition.top + 16}px);">
 		<div class="p-4">
 			<h3 class="mb-3 text-lg font-semibold text-white">Our Apps</h3>
-			<div class="space-y-3">
-				{#each apps as app}
+			<div class="grid gap-1 sm:grid-cols-2">
+				{#each realignedApps as app}
 					<a href={app.url}
-					   class="group flex items-center gap-3 rounded-lg p-3 no-underline transition-colors duration-200 hover:bg-white/[0.06]"
+					   class="group flex min-w-0 items-center gap-3 rounded-md p-3 no-underline transition-colors duration-200 hover:bg-white/[0.06] focus-visible:bg-white/[0.06]"
+					   target="_blank"
 					   rel="noreferrer">
 						<div class="w-10 h-10 flex-shrink-0">
-							<img src={app.icon} alt="{app.name} icon" class="w-full h-full object-contain" />
+							<img src={app.icon} alt="" aria-hidden="true" class="w-full h-full rounded-[0.6rem] object-contain" />
 						</div>
-						<div class="flex-1">
+						<div class="min-w-0 flex-1">
 							<h4 class="font-semibold text-white transition-colors duration-200 group-hover:text-sky-200">
 								{app.name}
 							</h4>
-							<p class="text-sm text-[var(--text-secondary)]">{app.description}</p>
+							<p class="text-sm leading-5 text-[var(--text-secondary)]">{app.description}</p>
 						</div>
-						<svg class="h-5 w-5 text-[var(--text-muted)] transition-colors duration-200 group-hover:text-sky-200"
+						<svg aria-hidden="true" class="h-5 w-5 flex-shrink-0 text-[var(--text-muted)] transition-colors duration-200 group-hover:text-sky-200"
 							 fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
 						</svg>
@@ -171,6 +156,7 @@
 			<div class="mt-4 border-t border-white/10 pt-3">
 				<a href="https://realigned.io?utm_source=storymapping_site"
 				   class="flex items-center justify-center gap-2 text-sm font-medium text-sky-200 no-underline transition-colors duration-200 hover:text-white"
+				   target="_blank"
 				   rel="noreferrer">
 					View all on Realigned.io
 					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

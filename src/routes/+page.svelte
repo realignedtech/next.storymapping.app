@@ -89,8 +89,8 @@
 			</div>
 
 			<div class="mt-14 grid gap-5 lg:grid-cols-2">
-				<article class="edition-card featured realigned-card relative flex flex-col overflow-hidden rounded-2xl p-8 md:p-10">
-					<div class="absolute right-0 top-0 rounded-bl-xl bg-gradient-to-r from-orange-500 to-amber-500 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white">Coming soon</div>
+				<article class="edition-card featured realigned-card relative flex flex-col overflow-hidden rounded-lg p-8 md:p-10">
+					<div class="absolute right-0 top-0 rounded-bl-md bg-gradient-to-r from-orange-500 to-amber-500 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white">Coming soon</div>
 					<div class="flex items-center gap-4">
 						<div class="flex h-14 w-14 items-center justify-center"><img src="/smFreeIcon.svg" alt="" class="h-12 w-12" /></div>
 						<div>
@@ -107,7 +107,7 @@
 					<a href="/showcase/basic" class="realigned-primary-button mt-9 w-fit">Explore Story Maps</a>
 				</article>
 
-				<article class="edition-card realigned-card flex flex-col rounded-2xl p-8 md:p-10">
+				<article class="edition-card realigned-card flex flex-col rounded-lg p-8 md:p-10">
 					<div class="flex items-center gap-4">
 						<div class="flex h-14 w-14 items-center justify-center"><img src="/smProIcon.svg" alt="" class="h-12 w-12" /></div>
 						<div>
@@ -135,7 +135,7 @@
 			</div>
 			<div class="grid gap-5 md:grid-cols-3">
 				{#each outcomes as outcome}
-					<article class="realigned-card overflow-hidden rounded-2xl p-7">
+					<article class="realigned-card overflow-hidden rounded-lg p-7">
 						<div class="relative -mx-7 -mt-7 mb-7 h-44 overflow-hidden">
 							<img src={outcome.image} alt={outcome.imageAlt} loading="lazy" width="900" height="600" class="h-full w-full object-cover saturate-[0.8]" />
 							<div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_28%,rgba(12,52,104,0.52)_100%)]"></div>

@@ -479,7 +479,7 @@
 		min-width: 0;
 		overflow: hidden;
 		border: 1px solid rgba(255, 255, 255, 0.18);
-		border-radius: 0.9rem;
+		border-radius: 0.5rem;
 		background: var(--jira-surface);
 		box-shadow: 0 30px 80px rgba(2, 15, 39, 0.36);
 		color: var(--jira-text);
