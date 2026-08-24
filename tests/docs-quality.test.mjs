@@ -28,8 +28,23 @@ test('task-oriented docs pages contain substantive guidance', () => {
 		'src/routes/docs/tutorials/planning-sprints-and-releases/+page.md',
 		'src/routes/docs/pro/+page.md',
 		'src/routes/docs/pro/features/+page.md',
-		'src/routes/docs/pro/migration/+page.md'
+		'src/routes/docs/pro/migration/+page.md',
+		'src/routes/docs/pro/cloud-migration/+page.md'
 	]) assert.ok(words(path) >= 120, `${path} has only ${words(path)} words`);
+});
+
+test('Cloud migration guide states the implemented assistant constraints', () => {
+	const guide = body('src/routes/docs/pro/cloud-migration/+page.md');
+	for (const phrase of [
+		'does not migrate Jira projects',
+		'Matching project keys',
+		'global issue types',
+		'the same names',
+		'the same issue keys',
+		'does not translate board or filter IDs',
+		'partial failures are not rolled back',
+		'merges the existing map list'
+	]) assert.ok(guide.includes(phrase), `Cloud migration guide is missing: ${phrase}`);
 });
 
 test('Data Center migration guide states the assistant constraints', () => {
