@@ -116,6 +116,12 @@
 	:global(.docs-content strong) { color: #f1f7ff; font-weight: 600; }
 	:global(.docs-content a) { color: #7dd3fc; font-weight: 550; text-decoration: underline; text-decoration-color: rgba(125, 211, 252, 0.35); text-underline-offset: 3px; }
 	:global(.docs-content a:hover) { color: #bae6fd; text-decoration-color: currentColor; }
+	:global(.docs-content h2 a),
+	:global(.docs-content h3 a),
+	:global(.docs-content h4 a) { color: inherit; font-weight: inherit; text-decoration: none; }
+	:global(.docs-content h2 a:hover),
+	:global(.docs-content h3 a:hover),
+	:global(.docs-content h4 a:hover) { color: inherit; text-decoration: none; }
 	:global(.docs-content ul),
 	:global(.docs-content ol) { margin: 1rem 0; padding-left: 1.5rem; }
 	:global(.docs-content li) { margin: 0.35rem 0; padding-left: 0.2rem; }
