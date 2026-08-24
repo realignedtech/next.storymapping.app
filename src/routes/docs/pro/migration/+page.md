@@ -56,4 +56,4 @@ Open each migrated project and confirm that:
 
 Review the **App** and **Privacy** settings because site-wide settings are not included in the migration.
 
-Keep the Data Center site unchanged until users have accepted the Cloud result. If a project is skipped or a map is incorrect, record the warning and [contact support](/docs/support?edition=pro).
+Keep the Data Center site unchanged until users have accepted the Cloud result. If a project is skipped or a map is incorrect, record the warning and [contact support](/docs/pro/support).

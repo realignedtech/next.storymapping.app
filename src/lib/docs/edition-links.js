@@ -2,28 +2,22 @@ const coreToPro = new Map([
   ["/docs", "/docs/pro"],
   ["/docs/getting-started", "/docs/pro/setup"],
   ["/docs/tutorials", "/docs/pro/tutorials"],
+  ["/docs/support", "/docs/pro/support"],
+  ["/docs/support/troubleshooting", "/docs/pro/support/troubleshooting"],
+  ["/docs/support/privacy", "/docs/pro/support/privacy"],
+  ["/docs/support/eula", "/docs/pro/support/eula"],
+  ["/docs/whatsnew", "/docs/pro/whatsnew"],
 ]);
 
 const proToCore = new Map(
   [...coreToPro].map(([core, pro]) => [pro, core])
 );
 
-function isSharedPage(pathname) {
-  return pathname === "/docs/support" || pathname.startsWith("/docs/support/");
-}
-
 export function docsEditionLinks(pathname) {
-  if (isSharedPage(pathname)) {
-    return {
-      core: pathname,
-      pro: `${pathname}?edition=pro`,
-    };
-  }
-
   const core = proToCore.get(pathname)
-    || (pathname.startsWith("/docs/pro") || pathname === "/docs/whatsnew" ? "/docs" : pathname);
+    || (pathname.startsWith("/docs/pro") ? "/docs" : pathname);
   const pro = coreToPro.get(pathname)
-    || (pathname.startsWith("/docs/pro") || pathname === "/docs/whatsnew" ? pathname : "/docs/pro");
+    || (pathname.startsWith("/docs/pro") ? pathname : "/docs/pro");
 
   return { core, pro };
 }

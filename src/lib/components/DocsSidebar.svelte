@@ -26,12 +26,7 @@
 	});
 
 	function childHref(item, child) {
-		return withEdition(`/docs${item.link}${child.link}`);
-	}
-
-	function withEdition(href) {
-		if (isPro && href.startsWith('/docs/support')) return `${href}?edition=pro`;
-		return href;
+		return `/docs${item.link}${child.link}`;
 	}
 </script>
 
@@ -57,7 +52,7 @@
 	<nav aria-label="Documentation pages" class="mt-5 space-y-1">
 		{#each filteredNavigation as item}
 			<div>
-				<a href={withEdition(`/docs${item.link}`)} onclick={onnavigate} class:active={currentRoute === item.link} class="nav-row" data-umami-event="docs_journey" data-umami-event-destination={withEdition(`/docs${item.link === '/' ? '' : item.link}`)} data-umami-event-source-page={sourcePage} data-umami-event-placement="docs_sidebar">
+				<a href={`/docs${item.link}`} onclick={onnavigate} class:active={currentRoute === item.link} class="nav-row" data-umami-event="docs_journey" data-umami-event-destination={`/docs${item.link === '/' ? '' : item.link}`} data-umami-event-source-page={sourcePage} data-umami-event-placement="docs_sidebar">
 					<span>{item.title}</span>
 					{#if item.children}
 						<svg class:rotate-90={active === item.link || query} class="h-3.5 w-3.5 flex-none transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

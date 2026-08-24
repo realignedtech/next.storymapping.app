@@ -13,7 +13,7 @@ function walk(directory) {
 
 const docs = walk('src/routes/docs').filter((path) => path.endsWith('+page.md'));
 
-test('documentation edition links preserve equivalent pages and shared-page context', () => {
+test('documentation edition links preserve equivalent pages with explicit routes', () => {
 	assert.deepEqual(docsEditionLinks('/docs/getting-started'), {
 		core: '/docs/getting-started',
 		pro: '/docs/pro/setup'
@@ -24,7 +24,15 @@ test('documentation edition links preserve equivalent pages and shared-page cont
 	});
 	assert.deepEqual(docsEditionLinks('/docs/support/troubleshooting'), {
 		core: '/docs/support/troubleshooting',
-		pro: '/docs/support/troubleshooting?edition=pro'
+		pro: '/docs/pro/support/troubleshooting'
+	});
+	assert.deepEqual(docsEditionLinks('/docs/pro/support/privacy'), {
+		core: '/docs/support/privacy',
+		pro: '/docs/pro/support/privacy'
+	});
+	assert.deepEqual(docsEditionLinks('/docs/pro/whatsnew'), {
+		core: '/docs/whatsnew',
+		pro: '/docs/pro/whatsnew'
 	});
 	assert.deepEqual(docsEditionLinks('/docs/pro/migration'), {
 		core: '/docs',
@@ -32,11 +40,15 @@ test('documentation edition links preserve equivalent pages and shared-page cont
 	});
 });
 
-test('Advanced documentation links keep context on shared support pages', () => {
+test('Advanced documentation links use explicit Advanced routes', () => {
 	for (const path of walk('src/routes/docs/pro').filter((path) => path.endsWith('+page.md'))) {
-		for (const match of body(path).matchAll(/\[[^\]]*\]\((\/docs\/support[^)]*)\)/g)) {
-			assert.match(match[1], /[?&]edition=pro(?:&|$)/, `${path} loses Advanced docs context`);
+		for (const match of body(path).matchAll(/\[[^\]]*\]\((\/docs\/pro\/support[^)]*)\)/g)) {
+			assert.ok(existsSync(`src/routes${match[1]}/+page.md`), `${path} links to missing ${match[1]}`);
 		}
+	}
+
+	for (const path of walk('src').filter((path) => /\.(svelte|md|js)$/.test(path))) {
+		assert.doesNotMatch(readFileSync(path, 'utf8'), /[?&]edition=pro(?:&|$)/, path);
 	}
 });
 

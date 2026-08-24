@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import { browser } from '$app/environment';
 	import SiteShell from './SiteShell.svelte';
 	import DocsNav from './DocsNav.svelte';
 	import DocsSidebar from './DocsSidebar.svelte';
@@ -31,24 +30,15 @@
 
 	let currentRoute = $derived($page.url.pathname.replace('/docs', '') || '/');
 	let chunks = $derived(currentRoute.split('/').filter(Boolean));
-	let active = $derived(
-		chunks.length >= 2 && chunks[0] === 'pro' && chunks[1] === 'features'
-			? '/pro/features'
-			: chunks.length >= 2 && chunks[0] === 'pro' && chunks[1] === 'tutorials'
-				? '/pro/tutorials'
-				: chunks.length >= 1 && chunks[0] === 'tutorials'
-					? '/tutorials'
-					: chunks.length >= 1 && chunks[0] === 'pro'
-						? '/pro'
-						: chunks.length >= 1
-							? `/${chunks[0]}`
-							: '/'
-	);
-	let isProDocs = $derived(
-		$page.url.pathname.includes('/docs/pro') ||
-		$page.url.pathname === '/docs/whatsnew' ||
-		(browser && $page.url.searchParams.get('edition') === 'pro')
-	);
+	let active = $derived.by(() => {
+		if (chunks[0] === 'pro' && ['features', 'tutorials', 'support'].includes(chunks[1])) {
+			return `/pro/${chunks[1]}`;
+		}
+		if (chunks[0] === 'pro') return '/pro';
+		if (chunks[0] === 'tutorials') return '/tutorials';
+		return chunks.length ? `/${chunks[0]}` : '/';
+	});
+	let isProDocs = $derived($page.url.pathname.startsWith('/docs/pro'));
 	let currentNav = $derived(isProDocs ? ProNav : BasicNav);
 	let currentTitle = $derived(
 		findNavigationTitle(currentNav, currentRoute) ||

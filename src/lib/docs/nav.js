@@ -79,9 +79,9 @@ const ProNav = [
   { link: "/pro/admin-guide", title: titles["admin-guide"] },
   { link: "/pro/migration", title: titles["migration"] },
   { link: "/pro/cloud-migration", title: titles["cloud-migration"] },
-  { link: "/whatsnew", title: titles["whatsnew"] },
+  { link: "/pro/whatsnew", title: titles["whatsnew"] },
   {
-    link: "/support", title: titles["support"], children: [
+    link: "/pro/support", title: titles["support"], children: [
       { link: "/troubleshooting", title: titles["troubleshooting"] },
       { link: "/privacy", title: titles["privacy"] },
       { link: "/eula", title: titles["eula"] },

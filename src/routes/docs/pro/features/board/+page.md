@@ -31,7 +31,7 @@ For a board that covers several projects, sprint changes require **Manage Sprint
 
 Choose a board whose scope matches the purpose of the map. If an existing board mixes unrelated work or changes frequently, create a dedicated Jira board and filter for the story map. Document any shared filter assumptions so later board changes do not unexpectedly alter the map.
 
-See [Common Issues & Questions](/docs/support/troubleshooting?edition=pro) when sprints, releases, or issues are missing.
+See [Common Issues & Questions](/docs/pro/support/troubleshooting) when sprints, releases, or issues are missing.
 2. **Check Prerequisites**: Verify permissions and connectivity
 3. **Test Configuration**: Validate board and filter settings
 4. **Contact Support**: For persistent issues
