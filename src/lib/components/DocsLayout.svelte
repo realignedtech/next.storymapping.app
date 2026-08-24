@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 	import SiteShell from './SiteShell.svelte';
 	import DocsNav from './DocsNav.svelte';
 	import DocsSidebar from './DocsSidebar.svelte';
@@ -45,7 +46,8 @@
 	);
 	let isProDocs = $derived(
 		$page.url.pathname.includes('/docs/pro') ||
-		$page.url.pathname === '/docs/whatsnew'
+		$page.url.pathname === '/docs/whatsnew' ||
+		(browser && $page.url.searchParams.get('edition') === 'pro')
 	);
 	let currentNav = $derived(isProDocs ? ProNav : BasicNav);
 	let currentTitle = $derived(

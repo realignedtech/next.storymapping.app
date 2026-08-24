@@ -3,9 +3,9 @@ title: "Migrate Advanced Story Maps between Cloud sites"
 description: "Export Advanced Story Maps from one Jira Cloud site and import them into another"
 ---
 
-The Cloud migration assistant copies Advanced Story Maps project data between Jira Cloud sites. It does not migrate Jira projects, issues, users, boards, or filters. Move that Jira data first and install Advanced Story Maps on the target site.
+Use the Cloud migration assistant to copy Advanced Story Maps from one Jira Cloud site to another. Move the Jira projects and issues first, then install Advanced Story Maps on the target site.
 
-> Export the target site's Advanced Story Maps data before importing. The assistant merges the existing map list, but other app properties with the same key can be replaced. Writes happen one property at a time and partial failures are not rolled back.
+Before you start, make sure that you are a Jira administrator on both sites. If the target site already has story maps, export them first as a backup.
 
 ## Export from the source site
 
@@ -13,8 +13,6 @@ The Cloud migration assistant copies Advanced Story Maps project data between Ji
 2. Open **Cloud Migration** and select **Scan projects**.
 3. Review the projects, map count, and archived-map count.
 4. Select **Download export** and save the `storymap-cloud-export-*.json` file securely.
-
-The export includes map lists, map data, and supported project-level Advanced Story Maps properties. Global app settings are not included.
 
 ## Import into the target site
 
@@ -25,10 +23,10 @@ The export includes map lists, map data, and supported project-level Advanced St
 5. Map referenced issue types and link types. The assistant auto-matches global issue types and link types with the same names. Map unmatched names manually or choose **Skip (leave unresolved)**.
 6. Continue to **Apply** and select **Apply now**.
 
-Skipping a project excludes all of its properties. Skipping an issue or link type leaves that reference unresolved and can require manual repair.
+Choose **Skip** only for projects or settings that you do not want to import.
 
 ## What to verify
 
-The assistant remaps backbone issue IDs when the same issue keys exist on the target. It does not translate board or filter IDs, so reselect the correct Cloud board and filter on each imported map.
+Backbone issues are matched by issue key, so make sure the same issue keys exist on the target site. After the import, open each map and reselect the correct Cloud board and filter.
 
-After the import, review the **Written**, **Skipped**, and **Failed** results. Then open each imported map and confirm its project, backbone issues, issue and link types, board, filter, archived state, and permissions. Resolve every skipped or failed property before users resume work.
+Review the import results and fix any skipped or failed items. Confirm the maps, backbone issues, issue types, link types, archived maps, and project access. Finally, review the **App** and **Privacy** settings because site-wide settings are not included in the migration.

@@ -25,7 +25,7 @@ These tutorials assume you have:
 ## Need Help?
 
 If you encounter issues with any tutorial:
-- Check the [troubleshooting guide](/docs/support/troubleshooting)
+- Check the [troubleshooting guide](/docs/support/troubleshooting?edition=pro)
 - Review the [admin guide](/docs/pro/admin-guide) for setup requirements
 - Contact our support team for assistance
 

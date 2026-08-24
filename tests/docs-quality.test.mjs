@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import test from 'node:test';
+import { docsEditionLinks } from '../src/lib/docs/edition-links.js';
 
 function walk(directory) {
 	return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -11,6 +12,33 @@ function walk(directory) {
 }
 
 const docs = walk('src/routes/docs').filter((path) => path.endsWith('+page.md'));
+
+test('documentation edition links preserve equivalent pages and shared-page context', () => {
+	assert.deepEqual(docsEditionLinks('/docs/getting-started'), {
+		core: '/docs/getting-started',
+		pro: '/docs/pro/setup'
+	});
+	assert.deepEqual(docsEditionLinks('/docs/pro/tutorials'), {
+		core: '/docs/tutorials',
+		pro: '/docs/pro/tutorials'
+	});
+	assert.deepEqual(docsEditionLinks('/docs/support/troubleshooting'), {
+		core: '/docs/support/troubleshooting',
+		pro: '/docs/support/troubleshooting?edition=pro'
+	});
+	assert.deepEqual(docsEditionLinks('/docs/pro/migration'), {
+		core: '/docs',
+		pro: '/docs/pro/migration'
+	});
+});
+
+test('Advanced documentation links keep context on shared support pages', () => {
+	for (const path of walk('src/routes/docs/pro').filter((path) => path.endsWith('+page.md'))) {
+		for (const match of body(path).matchAll(/\[[^\]]*\]\((\/docs\/support[^)]*)\)/g)) {
+			assert.match(match[1], /[?&]edition=pro(?:&|$)/, `${path} loses Advanced docs context`);
+		}
+	}
+});
 
 function body(path) {
 	return readFileSync(path, 'utf8').replace(/^---[\s\S]*?---\s*/, '');
@@ -33,30 +61,34 @@ test('task-oriented docs pages contain substantive guidance', () => {
 	]) assert.ok(words(path) >= 120, `${path} has only ${words(path)} words`);
 });
 
-test('Cloud migration guide states the implemented assistant constraints', () => {
+test('Cloud migration guide covers the user workflow', () => {
 	const guide = body('src/routes/docs/pro/cloud-migration/+page.md');
 	for (const phrase of [
-		'does not migrate Jira projects',
+		'Move the Jira projects and issues first',
+		'Jira administrator on both sites',
 		'Matching project keys',
 		'global issue types',
-		'the same names',
-		'the same issue keys',
-		'does not translate board or filter IDs',
-		'partial failures are not rolled back',
-		'merges the existing map list'
+		'Map unmatched names manually',
+		'Choose **Skip** only',
+		'same issue keys',
+		'reselect the correct Cloud board and filter',
+		'**App** and **Privacy** settings'
 	]) assert.ok(guide.includes(phrase), `Cloud migration guide is missing: ${phrase}`);
 });
 
-test('Data Center migration guide states the assistant constraints', () => {
+test('Data Center migration guide covers the user workflow', () => {
 	const guide = body('src/routes/docs/pro/migration/+page.md');
 	for (const phrase of [
-		'does not move Jira projects',
+		'does not migrate Jira data',
+		'Jira administrator on both sites',
+		'Migrate the Jira projects and issues first',
 		'same project keys',
-		'same issue keys',
+		'backbone issue keys',
 		'global issue types',
 		'same names',
-		'can replace properties',
-		'Cloud Migration'
+		'Fix any warnings',
+		'correct Cloud agile board and filter',
+		'**App** and **Privacy** settings'
 	]) assert.ok(guide.includes(phrase), `migration guide is missing: ${phrase}`);
 });
 
