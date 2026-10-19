@@ -1,0 +1,17 @@
+[Unit]
+Description=Story Mapping static production site
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=localhost/storymapping-next:1
+ContainerName=storymapping-next
+Network=windshift.network
+LogDriver=journald
+
+[Service]
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target default.target
