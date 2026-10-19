@@ -7,8 +7,8 @@ Use these guides after you have opened the app in a Jira Software project.
 
 ## Core workflows
 
-- [Working With the Map](/docs/tutorials/working-with-the-map) explains the backbone, detail issues, filters, and a practical team routine.
-- [Plan Sprints and Releases](/docs/tutorials/planning-sprints-and-releases) shows how swimlanes update Jira planning fields.
+- [Working With the Map](/docs/tutorials/working-with-the-map) explains the three map levels, the toolbar, view modes, and dependency lines.
+- [Plan Sprints and Releases](/docs/tutorials/planning-sprints-and-releases) shows how swimlane views update Jira planning fields.
 
 If you have not created a map yet, begin with [Getting Started](/docs/getting-started).
 
@@ -16,5 +16,5 @@ If you have not created a map yet, begin with [Getting Started](/docs/getting-st
 
 Advanced Story Maps adds planning patterns for more complex Jira configurations:
 
-- [Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes)
-- [Multi-Project Releases](/docs/pro/tutorials/multi-project-releases)
+- [Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes)
+- [Multi-Project Releases](/docs/tutorials/multi-project-releases)

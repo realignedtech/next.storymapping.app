@@ -21,7 +21,7 @@ Story mapping for teams who plan in Jira. The product puts the user journey abov
 
 Two editions ship on the Atlassian Marketplace under the Realigned brand:
 
-- **Story Maps for Jira** — the focused edition. Free for up to 10 users; larger teams pay through the Marketplace. Marketplace app `1224357`.
+- **Story Maps for Jira** — the focused paid edition, licensed through Atlassian Marketplace. Marketplace app `1224357`.
 - **Advanced Story Maps for Jira** — the paid edition for complex planning environments. Marketplace app `1224417`. Formerly "Story Mapping for Jira - Pro"; renamed May 2022.
 
 Success is a customer who finds the answer they came for and keeps planning, and an evaluator or admin who can verify what the product does and how it handles their data without contacting anyone.
@@ -46,11 +46,9 @@ Three claims a neighboring Jira story-mapping app could not truthfully copy:
 
 **Confirmed capabilities** (see `src/routes/docs/` for the authoritative detail):
 
-- Story Maps for Jira: one map per Jira project, visual planning with epics and issues, sprint and release swimlanes.
-- Advanced Story Maps for Jira: everything above plus multiple maps per project, any Jira issue and link type for hierarchy levels, top-level goals and activities, custom-field swimlanes, configurable card layout, epic and swimlane statistics (including time tracking and third-party apps such as Foxly), per-project enable/disable, dynamic maps loaded from any agile board, PNG export, and Advanced Roadmaps parent/child relationships on Jira Premium.
-- Upgrading from free to Advanced requires no migration: Advanced reads the free edition's data structures and adds to them. Customers uninstall the free edition to avoid duplicate menu entries.
-
-**Release status (confirmed 2026-08-02):** the Forge rebuild of Story Maps for Jira is **still pre-release**. "Coming soon" and "nearing public release" copy is currently accurate. It is time-sensitive — re-confirm before restating it, and never invent a date.
+- Story Maps for Jira: multiple maps per Jira project, visual planning with epics and issues, sprint and release swimlanes.
+- Advanced Story Maps for Jira: everything above plus maps spanning multiple Jira projects, any Jira issue and link type for hierarchy levels, top-level goals and activities, custom-field swimlanes, configurable card layout, epic and swimlane statistics (including time tracking and third-party apps such as Foxly), per-project enable/disable, dynamic maps loaded from any agile board, PNG export, and Advanced Roadmaps parent/child relationships on Jira Premium.
+- Moving from Story Maps to Advanced requires no migration: Advanced reads the Story Maps data structures and adds to them. Customers uninstall Story Maps after verifying the Advanced installation to avoid duplicate menu entries.
 
 **Technical constraints:**
 
@@ -79,6 +77,7 @@ Three claims a neighboring Jira story-mapping app could not truthfully copy:
 **Absences that must not be filled with invention:**
 
 - No named customers, testimonials, quotes, or customer logos exist. Do not write any.
+- As of 2026-08-24, Atlassian Marketplace reports more than 3,000 combined installations across Story Maps for Jira and Advanced Story Maps for Jira. Describe this as installations, not unique teams or customers, because the two listings may overlap. Revalidate the count before raising the threshold.
 - No install counts, revenue, team-size, or performance benchmarks are on record here.
 - The homepage currently uses Unsplash stock photography for its "why story mapping" cards. Stock imagery is decoration, not evidence, and carries no claim.
 

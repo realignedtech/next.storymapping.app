@@ -1,0 +1,124 @@
+<svg width="880" height="460" viewBox="0 0 880 460" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect x="1" y="1" width="878" height="458" rx="8" fill="#FFFFFF" stroke="#DCDFE4"/>
+
+  <!-- header bar -->
+  <rect x="1" y="1" width="878" height="46" rx="8" fill="#FFFFFF"/>
+  <line x1="1" y1="47" x2="879" y2="47" stroke="#DCDFE4"/>
+  <rect x="14" y="13" width="20" height="20" rx="4" fill="#0C66E4"/>
+  <text x="24" y="27" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700">S</text>
+  <text x="44" y="28" font-size="14" font-weight="600" fill="#172B4D">Checkout</text>
+  <path d="M116 20 l4 5 h-8 z" fill="#6B778C"/>
+  <g>
+    <rect x="658" y="10" width="78" height="28" rx="5" fill="#0C66E4"/>
+    <text x="668" y="28" font-size="12.5" font-weight="600" fill="#FFFFFF">Releases</text>
+    <path d="M720 21 l4 5 h-8 z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- map canvas -->
+  <rect x="1" y="47" width="878" height="413" fill="#F7F8F9"/>
+
+  <!-- epic backbone -->
+  <g>
+    <rect x="20" y="60" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="20" y="60" width="4" height="52" fill="#0C66E4"/>
+    <text x="32" y="80" font-size="11" font-weight="500" fill="#172B4D">Search products</text>
+    <rect x="32" y="90" width="10" height="10" rx="2" fill="#0C66E4"/>
+    <text x="46" y="99" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-12</text>
+    <rect x="204" y="91" width="12" height="12" rx="2" fill="#1F845A"/>
+  </g>
+  <g>
+    <rect x="230" y="60" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="230" y="60" width="4" height="52" fill="#0C66E4"/>
+    <text x="242" y="80" font-size="11" font-weight="500" fill="#172B4D">Filter results</text>
+    <rect x="242" y="90" width="10" height="10" rx="2" fill="#0C66E4"/>
+    <text x="256" y="99" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-15</text>
+    <rect x="414" y="91" width="12" height="12" rx="2" fill="#758195"/>
+  </g>
+  <g>
+    <rect x="440" y="60" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="440" y="60" width="4" height="52" fill="#7A5AB8"/>
+    <text x="452" y="80" font-size="11" font-weight="500" fill="#172B4D">Cart</text>
+    <rect x="452" y="90" width="10" height="10" rx="2" fill="#7A5AB8"/>
+    <text x="466" y="99" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-20</text>
+    <rect x="624" y="91" width="12" height="12" rx="2" fill="#758195"/>
+  </g>
+  <g>
+    <rect x="650" y="60" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="650" y="60" width="4" height="52" fill="#7A5AB8"/>
+    <text x="662" y="80" font-size="11" font-weight="500" fill="#172B4D">Payment</text>
+    <rect x="662" y="90" width="10" height="10" rx="2" fill="#7A5AB8"/>
+    <text x="676" y="99" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-23</text>
+    <rect x="834" y="91" width="12" height="12" rx="2" fill="#758195"/>
+  </g>
+
+  <!-- ===== lane: release 2.4 ===== -->
+  <rect x="1" y="122" width="878" height="124" fill="#FFF7E0"/>
+  <rect x="1" y="122" width="878" height="28" fill="#FAE5B5"/>
+  <text x="14" y="140" font-size="11" font-weight="700" fill="#7F5F01">RELEASE 2.4 · June</text>
+  <text x="140" y="140" font-size="10" fill="#7F5F01">8 of 12 issues done</text>
+
+  <g>
+    <rect x="20" y="158" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="32" y="178" font-size="11" fill="#172B4D">Search bar on home</text>
+    <rect x="32" y="188" width="10" height="10" rx="2" fill="#0C66E4"/>
+    <text x="46" y="197" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-142</text>
+    <circle cx="196" cy="193" r="7" fill="#F1B64B"/>
+    <text x="196" y="196" font-size="7" fill="#7F5F01" text-anchor="middle" font-weight="600">JD</text>
+    <rect x="204" y="189" width="12" height="12" rx="2" fill="#1F845A"/>
+  </g>
+  <g>
+    <rect x="440" y="158" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="452" y="178" font-size="11" fill="#172B4D">Add to cart</text>
+    <rect x="452" y="188" width="10" height="10" rx="2" fill="#7A5AB8"/>
+    <text x="466" y="197" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-201</text>
+    <circle cx="616" cy="193" r="7" fill="#2E7D57"/>
+    <text x="616" y="196" font-size="7" fill="#FFFFFF" text-anchor="middle" font-weight="600">MT</text>
+    <rect x="624" y="189" width="12" height="12" rx="2" fill="#1F845A"/>
+  </g>
+  <g>
+    <rect x="650" y="158" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="662" y="178" font-size="11" fill="#172B4D">Credit card form</text>
+    <rect x="662" y="188" width="10" height="10" rx="2" fill="#7A5AB8"/>
+    <text x="676" y="197" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-231</text>
+    <circle cx="826" cy="193" r="7" fill="#7A5AB8"/>
+    <text x="826" y="196" font-size="7" fill="#FFFFFF" text-anchor="middle" font-weight="600">AK</text>
+    <rect x="834" y="189" width="12" height="12" rx="2" fill="#2C5AA8"/>
+  </g>
+
+  <!-- ===== lane: release 2.5 ===== -->
+  <rect x="1" y="246" width="878" height="112" fill="#F7F8F9"/>
+  <rect x="1" y="246" width="878" height="28" fill="#EDEFF3"/>
+  <text x="14" y="264" font-size="11" font-weight="700" fill="#44546F">RELEASE 2.5 · August</text>
+  <text x="160" y="264" font-size="10" fill="#6B778C">2 of 14 issues done</text>
+  <g>
+    <rect x="20" y="282" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="32" y="302" font-size="11" fill="#172B4D">Recent searches</text>
+    <rect x="32" y="312" width="10" height="10" rx="2" fill="#0C66E4"/>
+    <text x="46" y="321" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-151</text>
+    <rect x="204" y="313" width="12" height="12" rx="2" fill="#758195"/>
+  </g>
+  <g>
+    <rect x="650" y="282" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="662" y="302" font-size="11" fill="#172B4D">Wallet integration</text>
+    <rect x="662" y="312" width="10" height="10" rx="2" fill="#7A5AB8"/>
+    <text x="676" y="321" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-233</text>
+    <circle cx="826" cy="317" r="7" fill="#2E7D57"/>
+    <text x="826" y="320" font-size="7" fill="#FFFFFF" text-anchor="middle" font-weight="600">MT</text>
+    <rect x="834" y="313" width="12" height="12" rx="2" fill="#2C5AA8"/>
+  </g>
+
+  <!-- ===== lane: no release ===== -->
+  <rect x="1" y="358" width="878" height="80" fill="#F7F8F9"/>
+  <rect x="1" y="358" width="878" height="28" fill="#EDEFF3"/>
+  <text x="14" y="376" font-size="11" font-weight="700" fill="#44546F">No release</text>
+  <g>
+    <rect x="230" y="394" width="200" height="36" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="242" y="410" font-size="11" fill="#172B4D">Category facets</text>
+    <rect x="242" y="416" width="10" height="10" rx="2" fill="#0C66E4"/>
+    <text x="256" y="425" font-size="9.5" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-124</text>
+    <rect x="414" y="417" width="12" height="12" rx="2" fill="#758195"/>
+  </g>
+
+  <!-- caption -->
+  <text x="440" y="447" font-size="12" fill="#6B778C" text-anchor="middle">Release view — lanes follow the fix versions of the project</text>
+</svg>

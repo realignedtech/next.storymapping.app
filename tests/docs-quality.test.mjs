@@ -13,10 +13,41 @@ function walk(directory) {
 
 const docs = walk('src/routes/docs').filter((path) => path.endsWith('+page.md'));
 
+test('customer copy does not position either app as free', () => {
+	const pricingLanguage = /\b(?:try free|completely free|free (?:app|edition|version|user story|story mapping|for up to))\b/i;
+	const copyFiles = [
+		...walk('src').filter((path) => /\.(?:svelte|md|js)$/.test(path)),
+		'static/whatsnew.json'
+	];
+	for (const path of copyFiles) {
+		assert.doesNotMatch(readFileSync(path, 'utf8'), pricingLanguage, path);
+	}
+});
+
+test('customer copy does not use pre-release positioning', () => {
+	const preReleaseLanguage = /\b(?:coming soon|nearing public release|final validation in progress)\b/i;
+	for (const path of walk('src').filter((path) => /\.(?:svelte|md|js)$/.test(path))) {
+		assert.doesNotMatch(readFileSync(path, 'utf8'), preReleaseLanguage, path);
+	}
+});
+
+test('homepage presents the adoption milestone as social proof', () => {
+	assert.match(readFileSync('src/routes/+page.svelte', 'utf8'), /Trusted by .*3,000\+ Jira teams/);
+});
+
+test('Story Maps documentation includes multiple maps per project', () => {
+	assert.match(readFileSync('src/routes/docs/+page.md', 'utf8'), /provides multiple maps in each Jira Software project/);
+	assert.match(readFileSync('src/routes/docs/getting-started/+page.md', 'utf8'), /provides multiple story maps in each project/);
+});
+
 test('documentation edition links preserve equivalent pages with explicit routes', () => {
 	assert.deepEqual(docsEditionLinks('/docs/getting-started'), {
 		core: '/docs/getting-started',
-		pro: '/docs/pro/setup'
+		pro: '/docs/pro-app/pro-setup'
+	});
+	assert.deepEqual(docsEditionLinks('/docs/pro-app/pro-setup'), {
+		core: '/docs/getting-started',
+		pro: '/docs/pro-app/pro-setup'
 	});
 	assert.deepEqual(docsEditionLinks('/docs/pro/tutorials'), {
 		core: '/docs/tutorials',
@@ -68,6 +99,8 @@ test('task-oriented docs pages contain substantive guidance', () => {
 		'src/routes/docs/tutorials/planning-sprints-and-releases/+page.md',
 		'src/routes/docs/pro/+page.md',
 		'src/routes/docs/pro/features/+page.md',
+		'src/routes/docs/pro/features/using-the-app/+page.md',
+		'src/routes/docs/pro/features/hierarchy/+page.md',
 		'src/routes/docs/pro/migration/+page.md',
 		'src/routes/docs/pro/cloud-migration/+page.md'
 	]) assert.ok(words(path) >= 120, `${path} has only ${words(path)} words`);
@@ -118,7 +151,11 @@ test('unsupported Advanced claims stay out of the docs', () => {
 		'smtp configuration',
 		'soc 2 type ii',
 		'hipaa compliance',
-		'unlimited story maps'
+		'unlimited story maps',
+		'user activity tracking',
+		'health monitoring',
+		'performance degradation warnings',
+		'proactive maintenance recommendations'
 	]) assert.ok(!all.toLowerCase().includes(phrase), phrase);
 });
 
@@ -126,8 +163,8 @@ test('internal documentation links resolve to source routes', () => {
 	for (const path of docs) {
 		for (const match of body(path).matchAll(/(?<!!)\[[^\]]*\]\((\/docs[^)#?]*)/g)) {
 			const route = match[1].replace(/\/$/, '');
-			const target = route === '/docs' ? 'src/routes/docs/+page.md' : `src/routes${route}/+page.md`;
-			assert.ok(existsSync(target), `${path} links to missing ${route}`);
+			const base = route === '/docs' ? 'src/routes/docs/+page' : `src/routes${route}/+page`;
+			assert.ok(existsSync(`${base}.md`) || existsSync(`${base}.svelte`), `${path} links to missing ${route}`);
 		}
 	}
 });

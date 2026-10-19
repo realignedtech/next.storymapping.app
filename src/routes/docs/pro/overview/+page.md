@@ -5,7 +5,9 @@ description: "Advanced Story Maps for Jira overview screens allows managing mult
 
 You can manage multiple maps inside a single project. You will be presented with the overview screen when opening the app for the first time or if the project does not contain any story maps.
 
-You will find a list of all available story maps here, and you will be able to create a new one.
+You will find a list of all available story maps here, and you can create a new one.
+
+![The map switcher with several maps in a project](/docs/mockups/map-switcher.svg)
 
 For each story map, you will have the following options:
 
@@ -27,17 +29,18 @@ Will remove the story map alongside all the configurations. The issues inside th
 
 ## Adding a new story map 
 
-Please read our guide [here](/docs/pro/setup).
+Read the [Advanced Story Maps setup guide](/docs/pro/setup).
 
 ## The story map screen
 
-![Story Map Visualization](/docs/Overview.svg)
+![An Advanced story map with goals, activities, backbone and stories](/docs/mockups/asm-layers.svg)
 
-1. Add Button to add issues, sprints or releases to your story map
-2. Filter visible issues on your story map
-3. Switch swimlanes to assign issues to sprints, releases or custom swimlanes
-4. Hierarchy configuration
-5. App menu - find settings, support options and help here
-6. Backbone row that determines the columns of the story map
-7. A swim lane - in this example a sprint swim lane
-8. The unassigned swim lane with all elements that are not assigned to a sprint
+1. **Reload** re-reads activities, epics and issues from Jira.
+2. **Add** creates issues at any level of the hierarchy, or sprints and releases in swimlane views.
+3. **The view switcher** changes between no swimlanes, TreeView, sprints, releases, and custom swimlanes.
+4. **Dependencies** overlays issue-link lines between the cards.
+5. **Goals** opens the goals panel where that feature is configured.
+6. **Settings** opens the map configuration: general, view, hierarchy, fields, and advanced.
+7. The **goal row** sits above the activities when the map uses a top-level hierarchy.
+8. The **backbone** determines the columns of the story map.
+9. The **minimap** in the lower-right corner helps you navigate large maps.

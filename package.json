@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite dev",
 		"build": "vite build",
+		"deploy": "./scripts/deploy.sh",
 		"test": "npm run build && node --test tests/*.test.mjs",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

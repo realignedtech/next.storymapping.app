@@ -1,12 +1,4 @@
-<script>
-	import Header from '$lib/components/Header.svelte';
-</script>
-
-<Header title="Advanced Story Maps for Jira - Security Scanning" description="Security scanning practices by Realigned Technologies as well as Atlassian" />
-
 <main class="max-w-4xl mx-auto pb-24 px-4 min-h-[50vh]">
-	<h1 class="text-3xl font-bold text-gray-800 mt-8 mb-8">Security Scanning Practices</h1>
-
 	<section class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-500">
 		<h2>Security Scanning with Snyk</h2>
 
@@ -24,7 +16,7 @@
 		<p>
 			Atlassian requires us to scan all of our backend dependencies using their own
 			scanner to renew the certification of our apps for Atlassian Data Center every year.
-			You can read more about it <a href="https://developer.atlassian.com/platform/marketplace/dc-apps-security-scanner/" target="_blank" rel="noreferrer">here</a>.
+			You can read more about it in Atlassian's <a href="https://developer.atlassian.com/platform/marketplace/sast-scanner-dc-apps/" target="_blank" rel="noreferrer">Data Center SAST scanner documentation</a>.
 		</p>
 
 		<h2>Ecoscanner by Atlassian</h2>

@@ -3,7 +3,7 @@
 
 	let { currentPage = '' } = $props();
 	const tabs = [
-		{ id: 'basic', href: '/showcase/basic', label: 'Story Maps', icon: '/smFreeIcon.svg' },
+		{ id: 'basic', href: '/free-app', label: 'Story Maps', icon: '/smFreeIcon.svg' },
 		{ id: 'advanced', href: '/showcase/advanced', label: 'Advanced Story Maps', icon: '/smProIcon.svg', badge: 'Pro' }
 	];
 </script>

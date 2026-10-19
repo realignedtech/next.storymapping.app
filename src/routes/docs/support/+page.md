@@ -7,7 +7,7 @@ Use the troubleshooting guide for common Jira configuration and permission probl
 
 ## Quick Links
 
-- [Upgrading to Pro](/docs/support/freetopro) — move from Story Maps to Advanced Story Maps.
+- [Moving to Advanced Story Maps](/docs/support/freetopro) — move from Story Maps without recreating your maps.
 - [Common Issues & Questions](/docs/support/troubleshooting) — check missing controls, permissions, fields, sprints, and releases.
 - [Privacy Information](/docs/support/privacy) — understand how the app handles data.
 - [End User License Agreement](/docs/support/eula) — review the terms and conditions.

@@ -1,12 +1,4 @@
-<script>
-	import Header from '$lib/components/Header.svelte';
-</script>
-
-<Header title="Advanced Story Maps for Jira - Security and Privacy FAQ" description="Frequently asked questions regarding our security and privacy practices" />
-
 <main class="max-w-4xl mx-auto pb-24 px-4">
-	<h1 class="text-3xl font-bold text-gray-800 mt-8 mb-8">Security and Privacy FAQ</h1>
-
 	<section class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-500">
 		<h2>How does the application access Jira data (issues, projects, user information, etc)?</h2>
 

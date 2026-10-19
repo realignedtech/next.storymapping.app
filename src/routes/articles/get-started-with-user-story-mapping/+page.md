@@ -1,6 +1,6 @@
 ---
 title: "Getting started with user story mapping in Jira"
-description: "Learn how to build your first user story map within minutes. Story Maps for Jira makes this process simple and completely free"
+description: "Learn how to build your first user story map within minutes with Story Maps for Jira"
 date: "2022-07-19"
 ---
 
@@ -46,6 +46,5 @@ create stories by simply adding a short summary. This can be expanded upon
 later - edit issues by simply double clicking them or clicking on the little
 edit icon.
 
-I hope I could give you a simple introduction to user story mapping - if you want
-to try it for yourself - simply head on over to the [Atlassian Marketplace](https://marketplace.atlassian.com/1224357)
-and install the app in your Jira instance - its completely free.
+I hope I could give you a simple introduction to user story mapping. To try it for yourself, visit the [Atlassian Marketplace](https://marketplace.atlassian.com/1224357)
+and install the app in your Jira instance.

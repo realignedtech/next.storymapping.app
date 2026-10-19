@@ -49,3 +49,16 @@ This SvelteKit version provides:
 - **Simpler state management** with Svelte 5 runes
 - **Improved developer experience** with less boilerplate
 - **Native reactivity** without additional libraries
+
+## Deployment
+
+Deploy the current checkout to the Hetzner-hosted production site:
+
+```bash
+npm run deploy
+```
+
+The command builds the static site, rebuilds and restarts
+`storymapping-next.service`, then verifies `https://storymapping.app`.
+It does not modify Traefik configuration. Override `SSH_TARGET` or `SSH_KEY`
+when deploying to another host or with another key.

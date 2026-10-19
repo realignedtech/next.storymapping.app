@@ -1,12 +1,4 @@
-<script>
-	import Header from '$lib/components/Header.svelte';
-</script>
-
-<Header title="Advanced Story Maps for Jira - Bug Fix Policy" description="Learn how we prioritize and fix application bugs and security issues" />
-
 <main class="max-w-4xl mx-auto pb-24 px-4">
-	<h1 class="text-3xl font-bold text-gray-800 mt-8 mb-8">Bug Fix Policy</h1>
-
 	<section class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-500">
 		<h2>Scope</h2>
 

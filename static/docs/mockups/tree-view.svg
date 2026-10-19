@@ -1,0 +1,127 @@
+<svg width="880" height="440" viewBox="0 0 880 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect x="1" y="1" width="878" height="438" rx="8" fill="#FFFFFF" stroke="#DCDFE4"/>
+
+  <!-- header bar -->
+  <rect x="1" y="1" width="878" height="46" rx="8" fill="#FFFFFF"/>
+  <line x1="1" y1="47" x2="879" y2="47" stroke="#DCDFE4"/>
+  <rect x="14" y="13" width="20" height="20" rx="4" fill="#0C66E4"/>
+  <text x="24" y="27" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700">S</text>
+  <text x="44" y="28" font-size="14" font-weight="600" fill="#172B4D">Checkout</text>
+  <path d="M116 20 l4 5 h-8 z" fill="#6B778C"/>
+  <g>
+    <rect x="658" y="10" width="78" height="28" rx="5" fill="#0C66E4"/>
+    <text x="672" y="28" font-size="12.5" font-weight="600" fill="#FFFFFF">TreeView</text>
+    <path d="M720 21 l4 5 h-8 z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ===== tree table ===== -->
+  <!-- table header -->
+  <rect x="1" y="47" width="878" height="34" fill="#F7F8F9"/>
+  <line x1="1" y1="81" x2="879" y2="81" stroke="#DCDFE4"/>
+  <text x="24" y="69" font-size="12" font-weight="500" fill="#6B778C">Issue</text>
+  <text x="300" y="69" font-size="12" font-weight="500" fill="#6B778C">Summary</text>
+  <text x="700" y="69" font-size="12" font-weight="500" fill="#6B778C">Status</text>
+  <!-- add column picker -->
+  <rect x="846" y="55" width="24" height="24" rx="4" fill="#FFFFFF" stroke="#DCDFE4"/>
+  <path d="M852 67 h12 M858 61 v12" stroke="#44546F" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- row 1: activity -->
+  <g>
+    <rect x="1" y="81" width="878" height="38" fill="#FFFFFF"/>
+    <path d="M28 96 l6 6 6 -6" fill="none" stroke="#44546F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="52" y="91" width="12" height="12" rx="2" fill="#206B8B"/>
+    <text x="70" y="101" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-88</text>
+    <text x="300" y="101" font-size="12" font-weight="500" fill="#172B4D">Browse catalog</text>
+  </g>
+  <line x1="1" y1="119" x2="879" y2="119" stroke="#EBECF0"/>
+
+  <!-- row 2: epic (indent 1) -->
+  <g>
+    <rect x="1" y="119" width="878" height="38" fill="#FFFFFF"/>
+    <path d="M48 134 l6 6 6 -6" fill="none" stroke="#44546F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="72" y="129" width="12" height="12" rx="2" fill="#0C66E4"/>
+    <text x="90" y="139" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-12</text>
+    <text x="300" y="139" font-size="12" font-weight="500" fill="#172B4D">Search products</text>
+  </g>
+  <line x1="1" y1="157" x2="879" y2="157" stroke="#EBECF0"/>
+
+  <!-- row 3: issue (indent 2) -->
+  <g>
+    <rect x="1" y="157" width="878" height="38" fill="#FFFFFF"/>
+    <rect x="92" y="167" width="12" height="12" rx="2" fill="#0C66E4"/>
+    <path d="M95.5 173 h5 M98 170.5 v5" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="110" y="177" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-142</text>
+    <text x="300" y="177" font-size="12" fill="#172B4D">Search bar on home</text>
+    <rect x="694" y="165" width="106" height="22" rx="4" fill="#F1F2F4"/>
+    <circle cx="706" cy="176" r="4" fill="#1F845A"/>
+    <text x="716" y="180" font-size="11" fill="#172B4D">Done</text>
+  </g>
+  <line x1="1" y1="195" x2="879" y2="195" stroke="#EBECF0"/>
+
+  <!-- row 4: issue (indent 2) -->
+  <g>
+    <rect x="1" y="195" width="878" height="38" fill="#FFFFFF"/>
+    <rect x="92" y="205" width="12" height="12" rx="2" fill="#0C66E4"/>
+    <path d="M95.5 211 h5 M98 208.5 v5" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="110" y="215" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-143</text>
+    <text x="300" y="215" font-size="12" fill="#172B4D">Autocomplete query</text>
+    <rect x="694" y="203" width="106" height="22" rx="4" fill="#F1F2F4"/>
+    <circle cx="706" cy="214" r="4" fill="#2C5AA8"/>
+    <text x="716" y="218" font-size="11" fill="#172B4D">In Progress</text>
+  </g>
+  <line x1="1" y1="233" x2="879" y2="233" stroke="#EBECF0"/>
+
+  <!-- row 5: issue (indent 2) -->
+  <g>
+    <rect x="1" y="233" width="878" height="38" fill="#FFFFFF"/>
+    <rect x="92" y="243" width="12" height="12" rx="2" fill="#0C66E4"/>
+    <path d="M95.5 249 h5 M98 246.5 v5" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="110" y="253" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-151</text>
+    <text x="300" y="253" font-size="12" fill="#172B4D">Recent searches</text>
+    <rect x="694" y="241" width="106" height="22" rx="4" fill="#F1F2F4"/>
+    <circle cx="706" cy="252" r="4" fill="#758195"/>
+    <text x="716" y="256" font-size="11" fill="#172B4D">To Do</text>
+  </g>
+  <line x1="1" y1="271" x2="879" y2="271" stroke="#EBECF0"/>
+
+  <!-- row 6: epic (indent 1) -->
+  <g>
+    <rect x="1" y="271" width="878" height="38" fill="#FFFFFF"/>
+    <path d="M31 283 l6 6 -6 6" fill="none" stroke="#44546F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="72" y="281" width="12" height="12" rx="2" fill="#0C66E4"/>
+    <text x="90" y="291" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-15</text>
+    <text x="300" y="291" font-size="12" font-weight="500" fill="#172B4D">Filter results</text>
+  </g>
+  <line x1="1" y1="309" x2="879" y2="309" stroke="#EBECF0"/>
+
+  <!-- row 7: issue under filter results (indent 2) -->
+  <g>
+    <rect x="1" y="309" width="878" height="38" fill="#FFFFFF"/>
+    <rect x="92" y="319" width="12" height="12" rx="2" fill="#0C66E4"/>
+    <path d="M95.5 325 h5 M98 322.5 v5" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="110" y="329" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-118</text>
+    <text x="300" y="329" font-size="12" fill="#172B4D">Price range filter</text>
+    <rect x="694" y="317" width="106" height="22" rx="4" fill="#F1F2F4"/>
+    <circle cx="706" cy="328" r="4" fill="#1F845A"/>
+    <text x="716" y="332" font-size="11" fill="#172B4D">Done</text>
+  </g>
+  <line x1="1" y1="347" x2="879" y2="347" stroke="#EBECF0"/>
+
+  <!-- row 8: activity 2 -->
+  <g>
+    <rect x="1" y="347" width="878" height="38" fill="#FFFFFF"/>
+    <path d="M31 359 l6 6 -6 6" fill="none" stroke="#44546F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="52" y="357" width="12" height="12" rx="2" fill="#7A5AB8"/>
+    <text x="70" y="367" font-size="11" fill="#0C66E4" font-family="ui-monospace, Menlo, monospace">SHOP-95</text>
+    <text x="300" y="367" font-size="12" font-weight="500" fill="#172B4D">Checkout</text>
+  </g>
+  <line x1="1" y1="385" x2="879" y2="385" stroke="#EBECF0"/>
+
+  <!-- row 9: unassigned group -->
+  <g>
+    <rect x="1" y="385" width="878" height="38" fill="#FFFFFF"/>
+    <path d="M28 398 l6 6 6 -6" fill="none" stroke="#44546F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="300" y="405" font-size="12" font-weight="500" fill="#172B4D">Unassigned Epics</text>
+  </g>
+  <text x="440" y="434" font-size="12" fill="#6B778C" text-anchor="middle">TreeView shows the same work as a table — indented, with status at a glance</text>
+</svg>

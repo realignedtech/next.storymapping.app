@@ -15,7 +15,7 @@ Click create - you can now select from a variety of supported custom field types
 best with the story map but "Select List (multiple choices)", "Checkboxes" or "Radio Buttons" will also work (a note on working with multi-value fields: assigning multiple values via the story map will not work, but the app
 preserves existing custom field values if you drag issues between swim lanes).
 
-![Adding a custom field](/docs/customfields1.png)
+![Adding a custom field](/docs/customfields1.webp)
 
 On the next screen, you will be able to add custom field values. You can modify these later if you go to the custom field administration and click on the menu next to the custom field and select "Contexts and default value".
 

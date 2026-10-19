@@ -1,8 +1,8 @@
 {
-  "freevspro": {
+  "advancedFeatures": {
     "title1": "Features",
     "features1": [
-      "Multiple story maps per project",
+      "Story maps spanning multiple Jira projects",
       "Use any Jira Issue & Link Type",
       "Add top level goals & activities",
       "Map issues to custom field values",
@@ -30,11 +30,11 @@
     },
     {
     "month": "July 2023",
-    "title": "Dark Theme comes to the free version",
+    "title": "Dark Theme comes to Story Maps",
     "content": [
       {
         "type": "text",
-        "content": "The free version now also supports Jiras dark theme!"
+        "content": "Story Maps now also supports Jira's dark theme!"
       }
     ]
   }, {

@@ -17,10 +17,12 @@
         showAppsPopover = !showAppsPopover;
     }
 
-    function closePopover() {
-        showAppsPopover = false;
-    }
+	function closePopover() {
+		showAppsPopover = false;
+	}
 </script>
+
+<svelte:window onkeydown={(event) => event.key === 'Escape' && closePopover()} />
 
 <nav aria-label="Secondary Navigation" class="header-gradient from-blue-400 to-emerald-300 p-3 mt-0 w-full">
     <div class="max-w-6xl mx-auto flex flex-wrap items-center px-4">
@@ -35,11 +37,9 @@
                     <button 
                         bind:this={buttonElement}
                         class="inline-flex items-center gap-1 text-white no-underline hover:text-cyan-300 py-2 px-4 transition-colors duration-200" 
-						aria-controls="secondary-apps-popover"
-						aria-expanded={showAppsPopover}
-						aria-haspopup="true"
-                        onclick={toggleAppsPopover}
-                        onblur={() => setTimeout(closePopover, 150)}>
+                        aria-expanded={showAppsPopover}
+                        aria-haspopup="true"
+						onclick={toggleAppsPopover}>
                         All Apps
                         <svg class="w-4 h-4 transition-transform duration-200 {showAppsPopover ? 'rotate-180' : ''}" 
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,8 +53,8 @@
 </nav>
 
 <!-- Portal popover to body level -->
-{#if showAppsPopover}
     <!-- Backdrop to prevent overlap and allow clicking outside to close -->
+{#if showAppsPopover}
     <button type="button" aria-label="Close apps menu" class="fixed inset-0 z-[9998] cursor-default" onclick={closePopover}></button>
     
     <!-- Popover positioned using calculated coordinates -->
@@ -65,11 +65,11 @@
             <div class="grid gap-1 sm:grid-cols-2">
                 {#each realignedApps as app}
                     <a href={app.url} 
-					   target="_blank"
+					   target={app.url.startsWith('http') ? '_blank' : undefined}
 					   class="group flex min-w-0 items-center gap-3 rounded-lg p-3 no-underline transition-colors duration-200 hover:bg-gray-50 focus-visible:bg-gray-50"
-                       rel="noreferrer">
+                       rel={app.url.startsWith('http') ? 'noreferrer' : undefined}>
                         <div class="w-10 h-10 flex-shrink-0">
-							<img src={app.icon} alt="" aria-hidden="true" class="h-full w-full rounded-[0.6rem] object-contain" />
+							<img src={app.icon} width="40" height="40" loading="lazy" decoding="async" alt="" aria-hidden="true" class="h-full w-full rounded-[0.6rem] object-contain" />
                         </div>
 						<div class="min-w-0 flex-1">
                             <h4 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200">

@@ -3,7 +3,7 @@ title: User story vs journey map
 description: What is a user story map compared to a user journey map
 ---
 
-We have developed [Journey Mapping for Jira](https://journeymapping.app) alongside Story Mapping for Jira
+We have developed [Journey Mapping for Jira](https://marketplace.atlassian.com/apps/1223654/journey-mapping-for-jira) alongside Story Mapping for Jira
 in order to support the different needs of each practice.
 
 Although a journey map and user story map may contain
@@ -14,9 +14,8 @@ features from a user's perspective and also aims at discovery and understanding 
 
 Therefore, our apps do very different things. In practical terms:
 
-| Feature | Story Mapping for Jira - Free | Journey Mapping for Jira |
+| Feature | Story Mapping for Jira | Journey Mapping for Jira |
 | --- | :-: | :-: |
-| One map for each use case or scenario | &#10007; | &#10003; |
 | Planning sprints and releases | &#10003; | &#10007; |
 | Use standard issue types like Epic, Story, etc. | &#10003; | Custom |
 | Analyse personas and their behaviour | &#10007; | &#10003; |
@@ -58,7 +57,7 @@ and implementation is best done on the User Story Map.
 
 This is what a simple story map for your shop software could look like:
 
-![Example User Story](/img/story-map-example.png)
+![Example User Story](/docs/mockups/map-overview.svg)
 
 As you can see, the epics at the top only represent a generalized version of the user's actions.
 You can add the individual tickets to sprints or releases for planning purposes.

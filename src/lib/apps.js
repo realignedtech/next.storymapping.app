@@ -2,14 +2,14 @@ export const realignedApps = [
 	{
 		name: 'Advanced Story Maps for Jira',
 		icon: '/smProIcon.svg',
-		url: 'https://storymapping.app/showcase/advanced',
+		url: '/showcase/advanced',
 		description: 'Advanced roadmaps and story maps'
 	},
 	{
 		name: 'Story Maps for Jira',
 		icon: '/smFreeIcon.svg',
-		url: 'https://storymapping.app/showcase/basic',
-		description: 'Free story mapping in Jira'
+		url: '/free-app',
+		description: 'Focused story mapping in Jira'
 	},
 	{
 		name: 'Customer Actions for Jira',
@@ -20,7 +20,7 @@ export const realignedApps = [
 	{
 		name: 'Journey Mapping for Jira',
 		icon: 'https://marketplace.atlassian.com/product-listing/files/55e2ab86-3b59-46f2-837a-49a3f46ed79a?width=144&height=144',
-		url: 'https://journeymapping.app',
+		url: 'https://marketplace.atlassian.com/apps/1223654/journey-mapping-for-jira',
 		description: 'Customer journeys connected to Jira'
 	},
 	{

@@ -1,12 +1,4 @@
-<script>
-	import Header from '$lib/components/Header.svelte';
-</script>
-
-<Header title="Advanced Story Maps for Jira - Bug Bounty Program" description="Information about the bug bounty program by Realigned Technologies Ltd" />
-
 <main class="max-w-4xl mx-auto pb-24 px-4">
-	<h1 class="text-3xl font-bold text-gray-800 mt-8 mb-8">Bug Bounty Program</h1>
-
 	<section class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-500">
 		<h2>Introduction</h2>
 
@@ -44,18 +36,18 @@
 
 		<p>We use BugCrowd's standard rating system for security vulnerabilities as well
 			as Atlassian's defined reward scheme for the marketplace security program.
-			You can find more information <a href="https://developer.atlassian.com/platform/marketplace/marketplace-security-bug-bounty-program/" target="_blank" rel="noreferrer">here</a>.</p>
+			Review the <a href="https://developer.atlassian.com/platform/marketplace/marketplace-security-bug-bounty-program/" target="_blank" rel="noreferrer">Atlassian Marketplace bug bounty program</a> for more information.</p>
 
 		<h2>Remediation</h2>
 
 		<p>We have defined our own bug fix policy which is more strict than the remediation due dates
-			set by Atlassian. You can read more <a href="/trust/bug-fix-policy">here</a>.</p>
+			set by Atlassian. Review our <a href="/trust/bug-fix-policy">Bug Fix Policy</a> for the applicable timeframes.</p>
 
 		<h2>Contact</h2>
 
 		<p>
 			If you want to participate in this program
-			or have other questions, feel free to contact us via
+			or have other questions, please contact us via
 			<a href="https://realignedtechnologies.atlassian.net/servicedesk/customer/portal/1" target="_blank" rel="noreferrer">support portal</a>
 			or via email to <a href="mailto:info@realigned.io">info@realigned.io</a>.
 		</p>

@@ -1,0 +1,66 @@
+<svg width="880" height="360" viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect x="1" y="1" width="878" height="358" rx="8" fill="#F7F8F9" stroke="#DCDFE4"/>
+
+  <!-- header bar -->
+  <rect x="1" y="1" width="878" height="46" rx="8" fill="#FFFFFF"/>
+  <line x1="1" y1="47" x2="879" y2="47" stroke="#DCDFE4"/>
+  <rect x="14" y="13" width="20" height="20" rx="4" fill="#0C66E4"/>
+  <text x="24" y="27" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700">S</text>
+  <!-- map switcher trigger, active -->
+  <rect x="42" y="9" width="150" height="30" rx="5" fill="#EDEFF3"/>
+  <text x="56" y="28" font-size="14" font-weight="600" fill="#172B4D">Onboarding</text>
+  <path d="M172 20 l5 6 h-10 z" fill="#44546F"/>
+
+  <!-- open map switcher dropdown -->
+  <g>
+    <rect x="42" y="46" width="300" height="178" rx="8" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <!-- search -->
+    <rect x="56" y="58" width="272" height="30" rx="5" fill="#F7F8F9" stroke="#8590A2"/>
+    <circle cx="70" cy="73" r="5" fill="none" stroke="#8590A2" stroke-width="1.5"/>
+    <path d="M74 77 l5 5" stroke="#8590A2" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="86" y="77" font-size="11.5" fill="#8590A2">Search maps</text>
+
+    <!-- map item 1 -->
+    <rect x="56" y="98" width="272" height="38" rx="5" fill="#E9F2FF"/>
+    <rect x="64" y="106" width="22" height="22" rx="4" fill="#206B8B"/>
+    <path d="M69 117 h12 M75 111 v12" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="96" y="113" font-size="12.5" font-weight="600" fill="#172B4D">Checkout</text>
+    <text x="96" y="128" font-size="10" fill="#6B778C">Scrum board · 3 days ago</text>
+    <path d="M314 103 l3.5 7 7.5 1 -5.5 5.5 1.5 7.5 -7 -3.7 -7 3.7 1.5 -7.5 -5.5 -5.5 7.5 -1 z" fill="#F5CD47"/>
+    <!-- map item 2 -->
+    <rect x="56" y="146" width="272" height="38" rx="5" fill="#FFFFFF"/>
+    <rect x="64" y="154" width="22" height="22" rx="4" fill="#7A5AB8"/>
+    <path d="M68.5 165 h13 M68.5 160 h13 M68.5 170 h9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="96" y="161" font-size="12.5" font-weight="600" fill="#172B4D">Onboarding</text>
+    <text x="96" y="176" font-size="10" fill="#6B778C">Kanban board · yesterday</text>
+    <path d="M314 151 l3.5 7 7.5 1 -5.5 5.5 1.5 7.5 -7 -3.7 -7 3.7 1.5 -7.5 -5.5 -5.5 7.5 -1 z" fill="none" stroke="#8590A2"/>
+    <!-- map item 3 -->
+    <rect x="56" y="194" width="272" height="24" rx="5" fill="#FFFFFF"/>
+    <path d="M68 206 h13 M74.5 199.5 v13" stroke="#44546F" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="96" y="210" font-size="12.5" fill="#0C66E4" font-weight="600">Create story map</text>
+  </g>
+
+  <!-- faded map behind -->
+  <g opacity="0.15">
+    <rect x="20" y="80" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="20" y="80" width="4" height="52" fill="#206B8B"/>
+    <text x="32" y="100" font-size="11" font-weight="500" fill="#172B4D">Browse catalog</text>
+    <rect x="230" y="80" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="230" y="80" width="4" height="52" fill="#7A5AB8"/>
+    <text x="242" y="100" font-size="11" font-weight="500" fill="#172B4D">Checkout</text>
+    <rect x="20" y="144" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="20" y="144" width="4" height="52" fill="#0C66E4"/>
+    <text x="32" y="164" font-size="11" font-weight="500" fill="#172B4D">Search products</text>
+    <rect x="230" y="144" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <rect x="230" y="144" width="4" height="52" fill="#7A5AB8"/>
+    <text x="242" y="164" font-size="11" font-weight="500" fill="#172B4D">Cart</text>
+    <rect x="20" y="208" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="32" y="228" font-size="11" fill="#172B4D">Search bar on home</text>
+    <rect x="230" y="208" width="200" height="52" rx="3" fill="#FFFFFF" stroke="#DFE1E6"/>
+    <text x="242" y="228" font-size="11" fill="#172B4D">Add to cart</text>
+  </g>
+
+  <!-- caption -->
+  <text x="440" y="310" font-size="12" fill="#6B778C" text-anchor="middle">Each project can hold several maps. The starred map opens by default.</text>
+  <text x="440" y="328" font-size="12" fill="#6B778C" text-anchor="middle">Switch maps from the dropdown next to the map name.</text>
+</svg>

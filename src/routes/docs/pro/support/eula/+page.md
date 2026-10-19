@@ -1,6 +1,6 @@
 ---
 title: "End User License Agreement"
-description: "This End-User License Agreement (\"EULA\") is a legal agreement between you and Realigned Technologies Ltd"
+description: "License terms for Advanced Story Maps for Jira and its use through the Atlassian Marketplace."
 ---
 
 This End-User License Agreement ("EULA") is a legal agreement between you and Realigned Technologies Ltd
@@ -9,7 +9,7 @@ This EULA agreement governs your acquisition and use of our Realigned Technologi
 
 Please read this EULA agreement carefully before completing the installation process and using the Realigned Technologies Products software. It provides a license to use the Realigned Technologies Products software and contains warranty information and liability disclaimers.
 
-If you register for a free trial of the Realigned Technologies Products software, this EULA agreement will also govern that trial. By clicking "accept" or installing and/or using the Realigned Technologies Products software, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this EULA agreement.
+If you register for a trial of the Realigned Technologies Products software, this EULA agreement will also govern that trial. By clicking "accept" or installing and/or using the Realigned Technologies Products software, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this EULA agreement.
 
 If you are entering into this EULA agreement on behalf of a company or other legal entity, you represent that you have the authority to bind such entity and its affiliates to these terms and conditions. If you do not have such authority or if you do not agree with the terms and conditions of this EULA agreement, do not install or use the Software, and you must not accept this EULA agreement.
 

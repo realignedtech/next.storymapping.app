@@ -1,12 +1,4 @@
-<script>
-	import Header from '$lib/components/Header.svelte';
-</script>
-
-<Header title="Advanced Story Maps for Jira - Security & Technology Policies" description="Documentation of our major Security & Technology policies" />
-
 <main class="max-w-4xl mx-auto pb-24 px-4">
-	<h1 class="text-3xl font-bold text-gray-800 mt-8 mb-8">Security & Technology Policies</h1>
-
 	<section class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-500">
 		<h2>Security Policy, Risk, and Governance</h2>
 

@@ -1,0 +1,71 @@
+<svg width="880" height="300" viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect x="1" y="1" width="878" height="298" rx="8" fill="#F7F8F9" stroke="#DCDFE4"/>
+
+  <!-- header bar -->
+  <rect x="1" y="1" width="878" height="46" rx="8" fill="#FFFFFF"/>
+  <line x1="1" y1="47" x2="879" y2="47" stroke="#DCDFE4"/>
+  <rect x="14" y="13" width="20" height="20" rx="4" fill="#0C66E4"/>
+  <text x="24" y="27" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700">A</text>
+  <text x="44" y="28" font-size="14" font-weight="600" fill="#172B4D">Web Shop</text>
+  <path d="M116 20 l4 5 h-8 z" fill="#6B778C"/>
+  <g opacity="0.45">
+    <rect x="560" y="10" width="30" height="28" rx="5" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="598" y="10" width="62" height="28" rx="5" fill="#0C66E4"/>
+    <text x="612" y="28" font-size="12.5" font-weight="600" fill="#FFFFFF">Add</text>
+    <rect x="668" y="10" width="104" height="28" rx="5" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="682" y="28" font-size="12.5" fill="#44546F">No swimlane</text>
+    <rect x="780" y="10" width="42" height="28" rx="5" fill="#FFFFFF" stroke="#DCDFE4"/>
+  </g>
+  <!-- active more button -->
+  <rect x="830" y="10" width="36" height="28" rx="5" fill="#0C66E4"/>
+  <circle cx="843" cy="20" r="2.2" fill="#FFFFFF"/>
+  <circle cx="850" cy="20" r="2.2" fill="#FFFFFF"/>
+  <circle cx="843" cy="27" r="2.2" fill="#FFFFFF"/>
+  <circle cx="850" cy="27" r="2.2" fill="#FFFFFF"/>
+
+  <!-- more menu open, dropping left -->
+  <g>
+    <rect x="624" y="44" width="196" height="100" rx="8" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="630" y="50" width="184" height="34" rx="5" fill="#EDEFF3"/>
+    <rect x="640" y="58" width="18" height="18" rx="3" fill="none" stroke="#44546F" stroke-width="1.5"/>
+    <path d="M644 68 l4 -5 3 3 5 -7" fill="none" stroke="#44546F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="666" y="72" font-size="12.5" fill="#172B4D">Export as PNG</text>
+
+    <line x1="630" y1="98" x2="814" y2="98" stroke="#EBECF0"/>
+    <path d="M642 112 h18 M642 117 h12" stroke="#6B778C" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="666" y="119" font-size="12.5" fill="#172B4D">Support</text>
+  </g>
+
+  <!-- faded map behind -->
+  <g opacity="0.3">
+    <rect x="20" y="90" width="270" height="50" rx="6" fill="#206B8B"/>
+    <text x="34" y="119" font-size="13" font-weight="600" fill="#FFFFFF">Browse catalog</text>
+    <rect x="302" y="90" width="270" height="50" rx="6" fill="#7A5AB8"/>
+    <text x="316" y="119" font-size="13" font-weight="600" fill="#FFFFFF">Checkout</text>
+    <rect x="20" y="152" width="131" height="40" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="32" y="176" font-size="11.5" font-weight="600" fill="#172B4D">Search products</text>
+    <rect x="302" y="152" width="130" height="40" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="314" y="176" font-size="11.5" font-weight="600" fill="#172B4D">Cart</text>
+    <rect x="20" y="204" width="131" height="50" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="32" y="222" font-size="10" fill="#6B778C">SHOP-142</text>
+    <text x="32" y="238" font-size="11" fill="#172B4D">Search bar on home</text>
+    <rect x="302" y="204" width="130" height="50" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="314" y="222" font-size="10" fill="#6B778C">SHOP-201</text>
+    <text x="314" y="238" font-size="11" fill="#172B4D">Add to cart</text>
+  </g>
+
+  <!-- resulting image thumbnail -->
+  <g>
+    <rect x="620" y="196" width="150" height="76" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="630" y="208" width="90" height="10" rx="3" fill="#206B8B"/>
+    <rect x="730" y="208" width="30" height="10" rx="3" fill="#7A5AB8"/>
+    <rect x="630" y="224" width="40" height="18" rx="3" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="676" y="224" width="40" height="18" rx="3" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="722" y="224" width="38" height="18" rx="3" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="630" y="248" width="60" height="16" rx="3" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <rect x="696" y="248" width="40" height="16" rx="3" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <path d="M758 262 l8 -8 m0 0 h-5.5 m5.5 0 v5.5" fill="none" stroke="#0C66E4" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <text x="440" y="286" font-size="12" fill="#6B778C" text-anchor="middle">Export renders the visible map area to a PNG image</text>
+</svg>

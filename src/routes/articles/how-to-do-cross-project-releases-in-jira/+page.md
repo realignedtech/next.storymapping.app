@@ -74,4 +74,4 @@ Simply drag the issue to the respective release and the app will figure out the 
 
 We hope you found this helpful. Let us know what your preferred way of working with releases in Jira is.
 
-Give [Advanced Story Maps](/) a try today - it's free for up to 10 users.
+See [Advanced Story Maps](/showcase/advanced) in action, then visit Atlassian Marketplace for current plans.

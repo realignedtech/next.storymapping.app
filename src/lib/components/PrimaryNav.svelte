@@ -57,14 +57,14 @@
                     </a>
                 </li>
                 <li class="mr-4">
-                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Upgrade' ? 'text-sky-500 font-bold' : 'text-black'}" href="/upgrade">
-                        Upgrade
+                    <a class="inline-block py-2 no-underline hover:text-sky-500 {highlight === 'Download' ? 'text-sky-500 font-bold' : 'text-black'}" href="/download">
+                        Compare editions
                     </a>
                 </li>
                 <li>
                     <a href={marketplaceLink} target="_blank" rel="noreferrer">
-                        <button id="try-free-button" class="mx-auto lg:mx-0 bg-[#0052cc] hover:bg-[#0065ff] text-white rounded mt-4 lg:mt-0 py-2 px-4">
-                            Try free
+                        <button id="marketplace-button" class="mx-auto lg:mx-0 bg-[#0052cc] hover:bg-[#0065ff] text-white rounded mt-4 lg:mt-0 py-2 px-4">
+                            View on Marketplace
                         </button>
                     </a>
                 </li>

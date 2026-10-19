@@ -9,29 +9,29 @@
 	const editions = [
 		{
 			name: 'Story Maps for Jira',
-			eyebrow: 'Free for up to 10 users',
-			description: 'Turn a Jira backlog into a shared story map and plan the next release with your team. Larger teams pay through Atlassian Marketplace.',
+			eyebrow: 'Focused story mapping',
+			description: 'Turn a Jira backlog into a shared story map and plan the next release with your team.',
 			iconSrc: '/smFreeIcon.svg',
 			iconAlt: 'Story Maps for Jira',
 			features: [
-				'One story map in each Jira project',
+				'Multiple story maps in each Jira project',
 				'Visual planning with epics and issues',
 				'Sprint and release swimlanes',
 				'No separate account or service to manage'
 			],
 			marketplaceLink: STORY_MAPS_APP_LINK,
-			marketplaceLabel: 'Try free',
-			detailsHref: '/showcase/basic',
+			marketplaceLabel: 'View on Marketplace',
+			detailsHref: '/free-app',
 			detailsLabel: 'See Story Maps features'
 		},
 		{
 			name: 'Advanced Story Maps for Jira',
 			eyebrow: 'For larger planning needs',
-			description: 'For teams that need multiple maps, flexible Jira hierarchies, custom swimlanes, and planning across projects.',
+			description: 'For teams that need maps spanning Jira projects, flexible hierarchies, custom swimlanes, and more planning controls.',
 			iconSrc: '/smProIcon.svg',
 			iconAlt: 'Advanced Story Maps for Jira',
 			features: [
-				'Multiple story maps in a Jira project',
+				'Story maps spanning multiple Jira projects',
 				'Flexible issue types and map hierarchies',
 				'Custom swimlanes and multi-project planning',
 				'Export features and administrator controls'
@@ -57,9 +57,9 @@
 	highlight="Download"
 	marketplaceLink={STORY_MAPS_APP_LINK}
 >
-	<main class="bg-[var(--bg-base)] text-white">
+	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
 		<PageHero
-			id="editions-title"
+			id="download-title"
 			eyebrow="Available on Atlassian Marketplace"
 			title="Choose the Story Maps edition for your team"
 			description="Both apps run inside Jira and are available through Atlassian Marketplace. Choose the one that fits how your team plans."
@@ -71,11 +71,11 @@
 			</div>
 		</PageHero>
 
-		<section id="editions" aria-labelledby="editions-title" class="realigned-dark-gradient scroll-mt-24 py-16 sm:py-20">
+		<section id="editions" aria-labelledby="editions-title" class="realigned-band scroll-mt-24 py-16 sm:py-20">
 			<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 				<div class="mx-auto max-w-3xl text-center">
 					<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Choose your edition</p>
-					<h2 id="editions-title" class="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">Start simple. Move up when your maps need more.</h2>
+					<h2 id="editions-title" class="mt-4 text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">Story Maps for Jira or Advanced Story Maps?</h2>
 					<p class="mt-4 text-lg leading-8 text-[var(--text-secondary)]">Both editions keep planning connected to Jira issues. Advanced Story Maps adds more ways to structure and coordinate the work.</p>
 				</div>
 
@@ -90,22 +90,22 @@
 		<section aria-labelledby="install-steps-title" class="bg-[var(--bg-base)] py-16 sm:py-20">
 			<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 				<div class="max-w-2xl">
-					<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">How installation works</p>
-					<h2 id="install-steps-title" class="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">From Marketplace to your first map.</h2>
+					<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Installation</p>
+					<h2 id="install-steps-title" class="mt-4 text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">How installation works.</h2>
 				</div>
 
 				<ol class="mt-10 grid gap-5 md:grid-cols-3">
 					{#each steps as step, index}
 						<li class="realigned-card rounded-xl p-6">
-							<span class="text-sm font-bold text-cyan-300">0{index + 1}</span>
-							<h3 class="mt-4 text-xl font-semibold text-white">{step[0]}</h3>
+						<span class="text-sm font-bold text-[var(--accent-cyan)]">0{index + 1}</span>
+							<h3 class="mt-4 text-xl font-semibold text-[var(--text-primary)]">{step[0]}</h3>
 							<p class="mt-3 text-sm leading-6 text-[var(--text-secondary)]">{step[1]}</p>
 						</li>
 					{/each}
 				</ol>
 
-				<div class="mt-8 rounded-xl border border-sky-300/15 bg-sky-300/[0.06] px-5 py-4 text-sm leading-6 text-blue-100">
-					<strong class="text-white">Jira administrator access is required.</strong>
+				<div class="mt-8 rounded-xl border border-[#bae6fd] bg-[var(--action-soft)] px-5 py-4 text-sm leading-6 text-[var(--text-secondary)]">
+					<strong class="text-[var(--text-primary)]">Jira administrator access is required.</strong>
 					If you are not a Jira administrator, send the Marketplace listing to the person who manages apps for your site.
 				</div>
 			</div>

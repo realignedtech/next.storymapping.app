@@ -7,7 +7,8 @@
 		waveAmplitude = 1,    // Multiplier for wave amplitude (higher = bigger waves)
 		ribbonWidth = 1,      // Multiplier for ribbon thickness
 		bleedAmount = 0,      // Pixels to extend below section
-		bleedColor = null     // RGB string for bleed zone dots (e.g., "200, 200, 200")
+		bleedColor = null,    // RGB string for bleed zone dots (e.g., "200, 200, 200")
+		dotColor = '255, 255, 255' // RGB string; blue ('3, 105, 161') on light bands
 	} = $props();
 
 	let canvas;
@@ -35,7 +36,7 @@
 	function updateFillStyles() {
 		fillStyles = Array.from({ length: OPACITY_BUCKETS }, (_, i) => {
 			const bucketOpacity = opacity * (1 - (i / OPACITY_BUCKETS) * 0.7);
-			return `rgba(255, 255, 255, ${bucketOpacity})`;
+			return `rgba(${dotColor}, ${bucketOpacity})`;
 		});
 
 		// Pre-compute bleed zone styles if needed

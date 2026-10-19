@@ -3,7 +3,7 @@ export const titles = {
   "getting-started": "Getting Started",
   "working-with-the-map": "Working With the Map",
   "planning-sprints-and-releases": "Plan Sprints and Releases",
-  "freetopro": "Upgrading to Pro",
+  "story-maps-to-advanced": "Moving to Advanced",
   "troubleshooting": "Common Issues & Questions",
   "privacy": "Privacy Information",
   "eula": "End User License Agreement",
@@ -19,6 +19,8 @@ export const titles = {
   "export": "Export Features",
   "board": "Board Management",
   "settings": "Settings",
+  "using-the-app": "Using the App",
+  "hierarchy": "Hierarchy & Top-level Elements",
   // Tutorials
   "tutorials": "Tutorials",
   "custom-field-swimlanes": "Custom Field Swimlanes",
@@ -49,7 +51,7 @@ const BasicNav = [
   },
   {
     link: "/support", title: titles["support"], children: [
-      { link: "/freetopro", title: titles["freetopro"] },
+      { link: "/story-maps-to-advanced", title: titles["story-maps-to-advanced"] },
       { link: "/troubleshooting", title: titles["troubleshooting"] },
       { link: "/privacy", title: titles["privacy"] },
       { link: "/eula", title: titles["eula"] },
@@ -64,6 +66,8 @@ const ProNav = [
   { link: "/pro/setup", title: titles["pro-setup"] },
   {
     link: "/pro/features", title: "Features", children: [
+      { link: "/using-the-app", title: titles["using-the-app"] },
+      { link: "/hierarchy", title: titles["hierarchy"] },
       { link: "/map-types", title: titles["map-types"] },
       { link: "/export", title: titles["export"] },
       { link: "/board", title: titles["board"] },
@@ -97,6 +101,8 @@ const Nav = [
       { link: "/pro/overview", title: titles["overview"] },
       { link: "/pro/setup", title: titles["pro-setup"] },
       { link: "/pro/features/map-types", title: titles["map-types"] },
+      { link: "/pro/features/using-the-app", title: titles["using-the-app"] },
+      { link: "/pro/features/hierarchy", title: titles["hierarchy"] },
       { link: "/pro/admin-guide", title: titles["admin-guide"] },
       { link: "/pro/migration", title: titles["migration"] },
       { link: "/pro/cloud-migration", title: titles["cloud-migration"] },
@@ -119,7 +125,7 @@ const Nav = [
   { link: "/whatsnew", title: titles["whatsnew"] },
   {
     link: "/support", title: titles["support"], children: [
-      { link: "/freetopro", title: titles["freetopro"] },
+      { link: "/story-maps-to-advanced", title: titles["story-maps-to-advanced"] },
       { link: "/troubleshooting", title: titles["troubleshooting"] },
       { link: "/privacy", title: titles["privacy"] },
       { link: "/eula", title: titles["eula"] },

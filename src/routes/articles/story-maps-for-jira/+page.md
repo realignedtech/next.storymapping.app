@@ -1,6 +1,6 @@
 ---
-title: "Story Maps for Jira - The Free User Story Mapping Tool"
-description: "Looking for a free user story map tool? Story Maps for Jira can be installed in seconds, providing you with everything to start your first story mapping session"
+title: "Story Maps for Jira - User Story Mapping in Jira"
+description: "Story Maps for Jira can be installed in seconds, providing everything you need to start your first story mapping session"
 date: "2022-10-06"
 ---
 
@@ -10,9 +10,9 @@ User story mapping is a tool that helps agile development teams plan and organiz
 User Story Maps replace the flat backlog that can make it difficult to assess which stories to deliver first and which stories serve the user most.
 The practice is credited to Jeff Patton, although there is evidence that others used similar techniques around the same time.
 
-## Agile Tools and their cost
+## User story mapping tools for Jira
 
-There are many tools on the market to choose from when it comes to user story mapping. Many can be used with Jira or are integrated directly into Jira. However, few tools are completely free. Story Maps for Jira can be installed in seconds, providing you with everything to start your first story mapping session.
+There are many tools to choose from for user story mapping. Some can be used alongside Jira, while others work directly inside it. Story Maps for Jira can be installed in seconds, providing everything you need to start your first story mapping session without moving planning into a separate tool.
 
 ## How to create a user story map?
 
@@ -69,6 +69,6 @@ stories will have priority over others when keeping the user perspective front a
 
 ![Release Planning](/blog/story-maps-for-jira/step9.png)
 
-We hope Story Maps for Jira - Free is helpful to you. If you want to check it out, head over to the [Atlassian Marketplace](https://marketplace.atlassian.com/1224357) and try it for yourself.
+We hope Story Maps for Jira is helpful to you. To see the current plans and install the app, visit the [Atlassian Marketplace](https://marketplace.atlassian.com/1224357).
 And, if you wish to use other Issue Types for user story steps, connect issues with custom links issues with custom links or have multi-project swimlanes,
 give [Advanced Story Maps for Jira](https://marketplace.atlassian.com/1224417) a try.

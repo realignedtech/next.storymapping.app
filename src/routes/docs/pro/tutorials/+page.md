@@ -9,11 +9,11 @@ These tutorials cover advanced features and complex workflows available in Advan
 
 ### Advanced Configuration
 
-- **[Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes)** - Set up custom field swimlanes for advanced story map organization
+- **[Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes)** - Set up custom field swimlanes for advanced story map organization
 
 ### Project Management
 
-- **[Multi-Project Releases](/docs/pro/tutorials/multi-project-releases)** - Coordinate releases across multiple Jira projects using Advanced Story Maps
+- **[Multi-Project Releases](/docs/tutorials/multi-project-releases)** - Coordinate releases across multiple Jira projects using Advanced Story Maps
 
 ## Prerequisites
 

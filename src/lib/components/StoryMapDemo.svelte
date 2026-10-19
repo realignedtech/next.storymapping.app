@@ -264,7 +264,7 @@
 		<header class="app-header">
 			<div class="titles">
 				<span class="breadcrumb">Story Map Demo</span>
-				<h3>User Story Map</h3>
+				<p class="map-title">User Story Map</p>
 			</div>
 
 			<div class="actions">
@@ -539,7 +539,7 @@
 	}
 
 	.breadcrumb { display: block; color: var(--jira-link); font-size: 1em; font-weight: 500; }
-	.titles h3 {
+	.titles .map-title {
 		margin: 0.25em 0 0;
 		color: var(--jira-text);
 		font-size: 2.55em;
@@ -759,6 +759,6 @@
 	/* Phone widths: the header can no longer carry the full action bar. */
 	@container (max-width: 470px) {
 		.hide-tiny { display: none; }
-		.titles h3 { font-size: 2.2em; }
+		.titles .map-title { font-size: 2.2em; }
 	}
 </style>

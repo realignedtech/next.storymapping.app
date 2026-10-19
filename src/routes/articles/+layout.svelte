@@ -25,12 +25,12 @@
 			date: '2022-07-27'
 		},
 		'/articles/story-maps-for-jira-is-all-new': {
-			title: 'Introducing the all new Story Maps for Jira — Free',
+			title: 'Introducing the all new Story Maps for Jira',
 			description: 'An archive of the Story Maps for Jira improvements announced in 2022.',
 			date: '2022-07-20'
 		},
 		'/articles/story-maps-for-jira': {
-			title: 'Story Maps for Jira — The Free User Story Mapping Tool',
+			title: 'Story Maps for Jira — User Story Mapping in Jira',
 			description: 'Learn what a user story map is and how to create one from Jira issues.',
 			date: '2022-10-06'
 		}

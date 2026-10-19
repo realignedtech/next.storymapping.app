@@ -1,0 +1,82 @@
+<svg width="880" height="470" viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect x="1" y="1" width="878" height="468" rx="8" fill="#F7F8F9" stroke="#DCDFE4"/>
+
+  <!-- header bar in settings mode -->
+  <rect x="1" y="1" width="878" height="46" rx="8" fill="#FFFFFF"/>
+  <line x1="1" y1="47" x2="879" y2="47" stroke="#DCDFE4"/>
+  <rect x="14" y="10" width="64" height="28" rx="5" fill="#FFFFFF" stroke="#DCDFE4"/>
+  <path d="M26 19 l-5 5 5 5" fill="none" stroke="#44546F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="28" font-size="12.5" fill="#44546F">Back</text>
+  <rect x="96" y="10" width="70" height="28" rx="5" fill="#EDEFF3"/>
+  <text x="110" y="28" font-size="12.5" fill="#44546F">General</text>
+  <rect x="174" y="10" width="56" height="28" rx="5" fill="#EDEFF3"/>
+  <text x="188" y="28" font-size="12.5" fill="#44546F">View</text>
+  <rect x="238" y="10" width="86" height="28" rx="5" fill="#E9F2FF" stroke="#0C66E4"/>
+  <text x="254" y="28" font-size="12.5" font-weight="600" fill="#0C66E4">Hierarchy</text>
+  <rect x="332" y="10" width="60" height="28" rx="5" fill="#EDEFF3"/>
+  <text x="345" y="28" font-size="12.5" fill="#44546F">Fields</text>
+  <rect x="400" y="10" width="80" height="28" rx="5" fill="#EDEFF3"/>
+  <text x="416" y="28" font-size="12.5" fill="#44546F">Advanced</text>
+
+  <!-- ===== settings drawer ===== -->
+  <rect x="1" y="47" width="392" height="423" fill="#FFFFFF"/>
+  <line x1="393" y1="47" x2="393" y2="470" stroke="#DCDFE4"/>
+
+  <text x="20" y="86" font-size="17" font-weight="600" fill="#172B4D">Hierarchy</text>
+  <text x="20" y="108" font-size="11.5" fill="#6B778C">Choose which issue types and links form the map.</text>
+
+  <!-- top-level -->
+  <text x="20" y="146" font-size="13.5" font-weight="600" fill="#172B4D">Top-level elements</text>
+  <text x="20" y="170" font-size="11" fill="#6B778C">Issue type</text>
+  <rect x="20" y="180" width="180" height="34" rx="5" fill="#F7F8F9" stroke="#8590A2"/>
+  <rect x="28" y="187" width="20" height="20" rx="3" fill="#B2602C"/>
+  <circle cx="38" cy="197" r="5.5" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="38" cy="197" r="2" fill="#FFFFFF"/>
+  <text x="56" y="201" font-size="12.5" fill="#172B4D">Goal</text>
+  <path d="M182 193 l6 7 h-12 z" fill="#44546F"/>
+
+  <text x="220" y="170" font-size="11" fill="#6B778C">Link type</text>
+  <rect x="220" y="180" width="150" height="34" rx="5" fill="#F7F8F9" stroke="#8590A2"/>
+  <text x="232" y="201" font-size="12.5" fill="#172B4D">Parent (built-in)</text>
+  <path d="M352 193 l6 7 h-12 z" fill="#44546F"/>
+
+  <!-- activities level -->
+  <text x="20" y="254" font-size="13.5" font-weight="600" fill="#172B4D">Activities</text>
+  <text x="20" y="278" font-size="11" fill="#6B778C">Issue type</text>
+  <rect x="20" y="288" width="180" height="34" rx="5" fill="#F7F8F9" stroke="#8590A2"/>
+  <rect x="28" y="295" width="20" height="20" rx="3" fill="#206B8B"/>
+  <path d="M32.5 305 h11 M38 299.5 v11" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="56" y="309" font-size="12.5" fill="#172B4D">Activity</text>
+  <path d="M182 301 l6 7 h-12 z" fill="#44546F"/>
+
+  <text x="220" y="278" font-size="11" fill="#6B778C">Link type</text>
+  <rect x="220" y="288" width="150" height="34" rx="5" fill="#F7F8F9" stroke="#8590A2"/>
+  <text x="232" y="309" font-size="12.5" fill="#172B4D">is refined by</text>
+  <path d="M352 301 l6 7 h-12 z" fill="#44546F"/>
+
+  <!-- backbone level -->
+  <text x="20" y="362" font-size="13.5" font-weight="600" fill="#172B4D">Backbone elements</text>
+  <text x="20" y="386" font-size="11" fill="#6B778C">Issue type</text>
+  <rect x="20" y="396" width="180" height="34" rx="5" fill="#F7F8F9" stroke="#8590A2"/>
+  <rect x="28" y="403" width="20" height="20" rx="3" fill="#0C66E4"/>
+  <path d="M32.5 413 h11 M38 407.5 v11" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="56" y="417" font-size="12.5" fill="#172B4D">Epic</text>
+  <path d="M182 409 l6 7 h-12 z" fill="#44546F"/>
+
+  <!-- ===== faded map with goal row behind ===== -->
+  <g opacity="0.3">
+    <rect x="430" y="80" width="200" height="44" rx="6" fill="#B2602C"/>
+    <text x="444" y="106" font-size="12" font-weight="600" fill="#FFFFFF">Goal: Grow self-service</text>
+    <rect x="650" y="80" width="200" height="44" rx="6" fill="#7A5AB8"/>
+    <text x="664" y="106" font-size="12" font-weight="600" fill="#FFFFFF">Checkout</text>
+    <rect x="430" y="144" width="200" height="44" rx="6" fill="#206B8B"/>
+    <text x="444" y="170" font-size="12" font-weight="600" fill="#FFFFFF">Browse catalog</text>
+    <rect x="650" y="144" width="200" height="44" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="662" y="170" font-size="11.5" font-weight="600" fill="#172B4D">Cart</text>
+    <rect x="430" y="208" width="200" height="44" rx="6" fill="#FFFFFF" stroke="#DCDFE4"/>
+    <text x="442" y="232" font-size="11.5" font-weight="600" fill="#172B4D">Search products</text>
+  </g>
+
+  <text x="640" y="380" font-size="12" fill="#6B778C" text-anchor="middle">Each level of the map can use any issue type,</text>
+  <text x="640" y="398" font-size="12" fill="#6B778C" text-anchor="middle">connected by any Jira issue link type</text>
+</svg>

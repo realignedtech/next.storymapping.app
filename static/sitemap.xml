@@ -12,20 +12,27 @@
 	<url><loc>https://storymapping.app/docs/best-practices</loc></url>
 	<url><loc>https://storymapping.app/docs/best-practices/storyvsjourneymap</loc></url>
 	<url><loc>https://storymapping.app/docs/getting-started</loc></url>
-	<url><loc>https://storymapping.app/docs/pro</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/admin-guide</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/pro-admin-guide</loc></url>
 	<url><loc>https://storymapping.app/docs/pro/cloud-migration</loc></url>
 	<url><loc>https://storymapping.app/docs/pro/features</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/features/board</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/features/export</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/features/map-types</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/features/settings</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/board</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/export</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/top-level-elements</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/map-types</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/pro-settings</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/pro-story-mapping</loc></url>
 	<url><loc>https://storymapping.app/docs/pro/migration</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/overview</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/setup</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/overview</loc></url>
+	<url><loc>https://storymapping.app/docs/pro-app/pro-setup</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/support</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/support/eula</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/support/privacy</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/support/troubleshooting</loc></url>
 	<url><loc>https://storymapping.app/docs/pro/tutorials</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/tutorials/custom-field-swimlanes</loc></url>
-	<url><loc>https://storymapping.app/docs/pro/tutorials/multi-project-releases</loc></url>
+	<url><loc>https://storymapping.app/docs/tutorials/custom-field-swimlanes</loc></url>
+	<url><loc>https://storymapping.app/docs/tutorials/multi-project-releases</loc></url>
+	<url><loc>https://storymapping.app/docs/pro/whatsnew</loc></url>
 	<url><loc>https://storymapping.app/docs/support</loc></url>
 	<url><loc>https://storymapping.app/docs/support/eula</loc></url>
 	<url><loc>https://storymapping.app/docs/support/freetopro</loc></url>
@@ -37,7 +44,7 @@
 	<url><loc>https://storymapping.app/docs/whatsnew</loc></url>
 	<url><loc>https://storymapping.app/download</loc></url>
 	<url><loc>https://storymapping.app/showcase/advanced</loc></url>
-	<url><loc>https://storymapping.app/showcase/basic</loc></url>
+	<url><loc>https://storymapping.app/free-app</loc></url>
 	<url><loc>https://storymapping.app/trust</loc></url>
 	<url><loc>https://storymapping.app/trust/bug-bounty-program</loc></url>
 	<url><loc>https://storymapping.app/trust/bug-fix-policy</loc></url>
@@ -46,5 +53,4 @@
 	<url><loc>https://storymapping.app/trust/security-policy</loc></url>
 	<url><loc>https://storymapping.app/trust/security-scanning</loc></url>
 	<url><loc>https://storymapping.app/trust/self-assessment-questionaire</loc></url>
-	<url><loc>https://storymapping.app/upgrade</loc></url>
 </urlset>

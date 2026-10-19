@@ -1,30 +1,42 @@
 ---
 title: "Getting Started"
-description: "Open Story Maps in a Jira Software project and create your first useful story map."
+description: "Open Story Maps in a Jira Software project and create your first map."
 ---
 
-Story Maps for Jira runs inside a Jira Software project. Before you begin, confirm that the app is installed and that you can browse and edit issues in the project.
+Story Maps for Jira runs inside Jira Software projects. To use it, the app needs to be installed on your Jira site and you need permission to browse and edit issues in the project.
 
 ## Open the app
 
-1. Open the Jira Software project that contains the backlog you want to map.
-2. Select **Story Maps** in the project navigation.
-3. If the app asks which issue type forms the backbone, select the project's epic issue type.
+1. Open the Jira project whose backlog you want to map.
+2. Select **Story Maps** in the project navigation on the left.
 
-The Basic edition provides one story map in each project. Advanced Story Maps can manage multiple maps and can use other issue and link types.
+## Create a map
+
+The first time you open the app, it walks you through a short setup:
+
+1. **Pick a board.** The map is based on one agile board. Search for the board that contains the backlog you want to plan. A scrum board gives you sprint lanes; a kanban board limits you to release lanes.
+2. **Confirm the backbone issue type.** The app suggests your project's epic type for the backbone. Confirm the suggestion or pick a different issue type.
+
+That's it. The app loads the board's issues onto the map, grouped by the epics they belong to.
+
+![A story map with activities, an epic backbone, and story cards](/docs/mockups/map-overview.svg)
+
+## A second map, if you need one
+
+A project can hold any number of maps, for example one per team or one per product area — Story Maps for Jira provides multiple story maps in each project. Open the dropdown next to the map name and choose **Create story map**. Each map has its own board, hierarchy, and settings. The map marked with a star opens by default; hover over a map in the list to move the star.
+
+![Switching between maps in a project](/docs/mockups/map-switcher.svg)
 
 ## Build the first slice
 
-Start with a small part of the user journey. Add or select the epics that describe its main steps, then place stories, tasks, or bugs below the relevant epic. Jira remains the source of truth for each issue.
+Start with a small part of the journey rather than the whole backlog. Use the **Add** button to create issues at the level you need: an activity for a big user step, an epic for a product capability, a story for the detail. You can also use **Add** to find an existing issue and place it on the map.
 
-Use the **Add** control to create or find work without leaving the map.
+![The Add dropdown](/docs/mockups/add-dropdown.svg)
 
-![The Add control in a story map](/docs/AddButton.svg)
-
-Arrange the backbone from left to right in the order a user encounters it. Within each column, place the most important work first. A useful first map is clear enough to support a planning conversation; it does not need to contain the entire backlog.
+Arrange the activities from left to right in the order a user meets them. Within each column, put the most important work at the top. A first map is useful as soon as it can carry a planning conversation; it does not need to be complete.
 
 ## Plan delivery
 
-Open the swimlane selector to view work by sprint or release. Drag an issue between lanes to update its Jira assignment. The available lanes depend on the project's Jira features, board configuration, and your permissions.
+Switch the view from **No swimlane** to **Sprints** or **Releases**. Drag issues between lanes to assign them. The app writes the sprint or fix version back to the Jira issue, so your board stays in sync.
 
-Continue with [Working With the Map](/docs/tutorials/working-with-the-map), or see [Common Issues & Questions](/docs/support/troubleshooting) if the app or a planning control is missing.
+Continue with [Working With the Map](/docs/tutorials/working-with-the-map), or see [Common Issues & Questions](/docs/support/troubleshooting) if a control you expect is missing.

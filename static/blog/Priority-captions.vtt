@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00.000 --> 00:03.800
+The cursor opens the Priority field on a Jira issue card.
+
+00:03.800 --> 00:07.600
+A different priority is selected from the Jira edit control.
+
+00:07.600 --> 00:11.430
+The issue card updates to show the newly selected priority.

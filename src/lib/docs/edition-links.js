@@ -1,3 +1,5 @@
+import { canonicalPathFor, sourceRouteFor } from '../seo/canonical.js';
+
 const coreToPro = new Map([
   ["/docs", "/docs/pro"],
   ["/docs/getting-started", "/docs/pro/setup"],
@@ -14,10 +16,11 @@ const proToCore = new Map(
 );
 
 export function docsEditionLinks(pathname) {
-  const core = proToCore.get(pathname)
-    || (pathname.startsWith("/docs/pro") ? "/docs" : pathname);
-  const pro = coreToPro.get(pathname)
-    || (pathname.startsWith("/docs/pro") ? pathname : "/docs/pro");
+	const sourceRoute = sourceRouteFor(pathname);
+	const core = proToCore.get(sourceRoute)
+		|| (sourceRoute.startsWith("/docs/pro") ? "/docs" : sourceRoute);
+	const pro = coreToPro.get(sourceRoute)
+		|| (sourceRoute.startsWith("/docs/pro") ? sourceRoute : "/docs/pro");
 
-  return { core, pro };
+	return { core: canonicalPathFor(core), pro: canonicalPathFor(pro) };
 }

@@ -17,24 +17,24 @@
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let listingId = $derived(marketplaceLink?.match(/\/(\d+)(?:[/?]|$)/)?.[1] || '');
 	let product = $derived(listingId === '1224417' ? 'advanced_story_maps' : 'story_maps');
-	let intent = $derived(listingId === '1224417' ? 'trial' : 'free_install');
+	let intent = $derived('trial');
 </script>
 
 <article class:featured class="edition-card">
 	<div class="flex items-start justify-between gap-4">
 		<div>
-			<p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-200">{eyebrow}</p>
-			<h2 class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">{name}</h2>
+			<p class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--accent-cyan)]">{eyebrow}</p>
+			<h2 class="mt-3 text-2xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-3xl">{name}</h2>
 		</div>
-		<img src={iconSrc} alt={iconAlt} class="h-12 w-12 flex-none" />
+		<img src={iconSrc} width="48" height="48" alt={iconAlt} class="h-12 w-12 flex-none" />
 	</div>
 
 	<p class="mt-5 min-h-14 leading-7 text-[var(--text-secondary)]">{description}</p>
 
-	<ul class="mt-7 space-y-3 border-t border-white/10 pt-6">
+	<ul class="mt-7 space-y-3 border-t border-[var(--border-subtle)] pt-6">
 		{#each features as feature}
-			<li class="flex items-start gap-3 text-sm leading-6 text-blue-50">
-				<svg class="mt-1 h-4 w-4 flex-none text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+			<li class="flex items-start gap-3 text-sm leading-6 text-[var(--text-secondary)]">
+				<svg class="mt-1 h-4 w-4 flex-none text-[var(--accent-cyan)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 4 4L19 6" />
 				</svg>
 				{feature}
@@ -55,7 +55,7 @@
 			data-umami-event-placement="edition_card"
 			class="{featured ? 'realigned-primary-button' : 'realigned-secondary-button'} flex-1 text-center"
 		>{marketplaceLabel}</a>
-		<a href={detailsHref} class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-sky-200 transition hover:text-white">
+		<a href={detailsHref} class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-[var(--accent-cyan)] transition hover:text-[var(--action-hover)]">
 			{detailsLabel}
 			<svg class="ml-1.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" /></svg>
 		</a>
@@ -67,16 +67,16 @@
 		display: flex;
 		height: 100%;
 		flex-direction: column;
-		border: 1px solid rgba(156, 180, 211, 0.16);
+		border: 1px solid var(--border-subtle);
 		border-radius: 0.9rem;
 		background: var(--bg-surface);
 		padding: 2rem;
-		box-shadow: 0 20px 50px rgba(2, 18, 42, 0.14);
+		box-shadow: 0 20px 46px -34px rgba(3, 105, 161, 0.45);
 	}
 
 	.edition-card.featured {
-		border-color: rgba(56, 189, 248, 0.34);
-		background: linear-gradient(150deg, #174982, var(--bg-surface));
+		border-color: rgba(3, 105, 161, 0.35);
+		background: linear-gradient(150deg, var(--action-soft), var(--bg-surface));
 	}
 
 	.edition-card ul { flex: 1; }

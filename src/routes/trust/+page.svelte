@@ -1,5 +1,4 @@
 <script>
-	import Header from '$lib/components/Header.svelte';
 	import TrustCard from '$lib/components/TrustCard.svelte';
 
 	const resources = [
@@ -53,14 +52,12 @@
 	];
 </script>
 
-<Header title="Story Maps for Jira - Trust Center" description="Find our security, privacy, and compliance information in one place" />
-
 <main>
 	<div class="mb-8 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
 		<div class="max-w-2xl">
-			<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Security resources</p>
-			<h2 class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">Clear policies, public answers.</h2>
-			<p class="mt-3 leading-7 text-[var(--text-secondary)]">Review how Realigned approaches application security, privacy, vulnerability management, and operational controls.</p>
+			<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Trust Center</p>
+			<h2 class="mt-3 text-2xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-3xl">Security practices and policies.</h2>
+			<p class="mt-3 leading-7 text-[var(--text-secondary)]">How Realigned handles application security, privacy, vulnerability management, and operational controls.</p>
 		</div>
 		<a href="mailto:info@realigned.io" class="realigned-secondary-button shrink-0">Report a concern</a>
 	</div>

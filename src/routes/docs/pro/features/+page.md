@@ -10,6 +10,8 @@ Advanced Story Maps adds flexible structure and planning controls to the core St
 ### Maps and hierarchy
 
 - **[Map Types](/docs/pro/features/map-types):** choose a dynamic map sourced from a Jira board or a manually curated static map.
+- **[Using the App](/docs/pro/features/using-the-app):** arrange Jira issues, plan with swimlanes, update estimates, and filter a map.
+- **[Hierarchy and Top-level Elements](/docs/pro/features/hierarchy):** configure an optional activity or goal row above the backbone.
 - **Multiple maps:** maintain several planning views in one Jira project.
 - **Flexible hierarchy:** configure the issue types and links used for the backbone and optional top-level activities.
 - **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it.

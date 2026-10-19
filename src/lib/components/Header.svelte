@@ -1,11 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { canonicalUrlFor, siteOrigin } from '$lib/seo/canonical.js';
 	
 	let { title, description } = $props();
-	const siteOrigin = 'https://storymapping.app';
-	let canonicalPath = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
-	let canonicalUrl = $derived(`${siteOrigin}${canonicalPath}`);
+	let canonicalUrl = $derived(canonicalUrlFor($page.url.pathname));
 	let shareImageUrl = `${siteOrigin}/realignedOG.png`;
 	
 	onMount(() => {

@@ -3,26 +3,33 @@ title: "Plan Sprints and Releases"
 description: "Use sprint and release swimlanes to turn a story map into a delivery plan."
 ---
 
-Swimlanes divide a story map into horizontal delivery slices. Switch the map to **Sprints** for iteration planning or **Releases** for version planning.
+Swimlanes cut the map into horizontal delivery slices. The issues stay in their columns — what a lane changes is *when* the work happens. Switch views with the view switcher in the toolbar: **Sprints** for iteration planning, **Releases** for version planning.
 
 ## Plan a sprint
 
-1. Select **Sprints** from the swimlane control.
-2. Review the unassigned lane and the current order of work.
-3. Drag an issue into the intended sprint.
-4. Check the sprint scope from left to right across the user journey.
-5. Repeat until the sprint represents a coherent outcome, not only a list of capacity fillers.
+![Sprint swimlanes](/docs/mockups/swimlane-sprints.svg)
 
-![Assigning issues to sprint swimlanes](/docs/Sprint.svg)
+1. Switch the view to **Sprints**. The map shows one lane per sprint, with the active sprint first and a backlog lane at the bottom for unassigned work.
+2. Read the active sprint left to right. Each column is one step of the journey, so a sprint that is strong in one column and empty in the next shows up immediately.
+3. Drag issues between lanes to assign them. Dropping a card into a sprint writes that sprint to the issue's sprint field in Jira.
+4. Repeat until the sprint tells a coherent story rather than filling capacity.
 
-The app updates the Jira sprint field. Creating or changing a sprint requires the relevant Jira permissions. On a board that covers several projects, you need **Manage Sprints** permission in every included project.
+You can also create a sprint from the map: switch to Sprints, then use **Add → Add Sprint**. The sprint is created on the map's board.
+
+The sprint controls follow the sprint's state. When the team finishes, complete the sprint from the map like you would on the board. Moving an issue back to the backlog lane clears its sprint field.
 
 ## Plan a release
 
-Select **Releases**, then drag issues into the version that should contain them. Jira versions belong to projects, so an issue can only be assigned to a version from its own project.
+![Release swimlanes](/docs/mockups/swimlane-releases.svg)
 
-For a map that spans projects, Advanced Story Maps can use a shared custom field as a planning swimlane. This gives the projects a common planning label without changing how Jira versions are owned.
+Switch the view to **Releases**. Lanes follow the fix versions of the project, newest first by default. Drag issues into the version that should ship them, or create a version with **Add → Add Release**.
+
+Jira versions belong to a project, so an issue can only be assigned to a version of its own project. If you need to plan releases across several projects, that is what [Advanced Story Maps](/docs/support/story-maps-to-advanced) and its custom-field swimlanes are for.
 
 ## When a lane is missing
 
-Enable **Releases** in the Jira project's features if release lanes are unavailable. For sprint lanes, confirm that the selected board supports sprints and that the Sprint field is present on the relevant edit screens. See [Common Issues & Questions](/docs/support/troubleshooting) for detailed checks.
+- Release lanes require the **Releases** feature in project settings. Enable it under Project settings → Features.
+- Sprint lanes require a scrum board. Kanban boards only offer release lanes.
+- If the app shows a warning next to the Settings button, no board is configured for the map. Sprint and release views need one; set it under Settings → General.
+
+See [Common Issues & Questions](/docs/support/troubleshooting) for permission problems, such as sprints on boards that span projects.

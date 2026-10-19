@@ -25,7 +25,7 @@
 		{/if}
 
 		<div class="flex flex-col items-center justify-center gap-5 sm:flex-row">
-			{#if iconSrc}<img src={iconSrc} alt={iconAlt} class="h-16 w-16" />{/if}
+			{#if iconSrc}<img src={iconSrc} width="64" height="64" alt={iconAlt} class="h-16 w-16" />{/if}
 			<h1 {id} class="text-[clamp(38px,6vw,64px)] font-bold leading-[1.06] tracking-tight text-white">
 				{#if heading}{@render heading()}{:else}{title}{/if}
 			</h1>

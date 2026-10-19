@@ -1,11 +1,11 @@
 ---
 title: "Privacy"
-description: "Advanced Story Maps privacy information"
+description: "Data handling, analytics, and privacy information for Story Maps for Jira."
 ---
 
-Please find the Data Privacy Statement for Realigned Technologies Website [here](https://realigned.io/privacy).
+Read the [Data Processing Statement](/trust/privacy-policy) for the Realigned Technologies website.
 
-### Definition of Data
+## Definition of Data
 
 Story Mapping App collects and processes three types of data:
 
@@ -13,21 +13,21 @@ Story Mapping App collects and processes three types of data:
 - Error reports
 - Install information (Cloud only)
 
-Both the free version of Story Maps for Jira and Advanced Story Maps for Jira contain analytics software from PostHog.
+Both Story Maps for Jira and Advanced Story Maps for Jira contain analytics software from PostHog.
 
 Analytics is used to measure feature usage across our apps. We do not collect personal information at any time.
 
 Analytics components can be disabled in Advanced Story Maps for Jira.
 
-### Data residency information
+## Data residency information
 
-#### User Generated Content
+### User Generated Content
 
 All user generated content (see above) is stored within your
 Jira instance, both on Cloud, Server and Data Center.
 None of this data is stored by us.
 
-#### Install information (Cloud only)
+### Install information (Cloud only)
 
 To enable installation and licensing via the Atlassian Marketplace
 we collect information about the instance and license upon
@@ -38,10 +38,11 @@ This data includes:
 - Host ID (Client ID)
 - JWT secrets
 
-This information is stored in our databases currently located
-in Helsinki, Finland.
+For the Forge versions of Story Maps for Jira and Advanced Story Maps for Jira, this information is
+stored in Atlassian's Forge infrastructure and never in our own databases. Our own databases in
+Helsinki, Finland, are only used by the legacy Connect versions of our apps.
 
-#### Personal Data processed by our analytics products
+### Personal Data processed by our analytics products
 
 Due to the nature of analytics software, the following artefacts are collected by them that are considered
 personal data under the GDPR:
@@ -57,8 +58,8 @@ for this purpose.
 If you object to this personal data being collected, you can disable analytics products in the admin
 section of our apps.
 
-#### Error Reports
+### Error Reports
 
 We use Sentry.io for error reporting on all products.
 
-You can find Sentry's Data Addendum [here](https://sentry.io/legal/dpa/2.0.0/).
+Review [Sentry's Data Processing Addendum](https://sentry.io/legal/dpa/2.0.0/).

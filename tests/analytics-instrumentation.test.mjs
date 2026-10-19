@@ -25,6 +25,6 @@ test('every rendered named event includes source page and placement', () => {
 
 test('Marketplace events classify both editions', () => {
 	const html = readFileSync('build/download.html', 'utf8');
-	assert.match(html, /data-umami-event-product="story_maps"[^>]*data-umami-event-listing-id="1224357"[^>]*data-umami-event-intent="free_install"/);
+	assert.match(html, /data-umami-event-product="story_maps"[^>]*data-umami-event-listing-id="1224357"[^>]*data-umami-event-intent="trial"/);
 	assert.match(html, /data-umami-event-product="advanced_story_maps"[^>]*data-umami-event-listing-id="1224417"[^>]*data-umami-event-intent="trial"/);
 });

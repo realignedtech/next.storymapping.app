@@ -1,12 +1,4 @@
-<script>
-	import Header from '$lib/components/Header.svelte';
-</script>
-
-<Header title="Advanced Story Maps for Jira - Privacy Policy" description="Privacy Policy for our story mapping apps" />
-
 <main class="max-w-4xl mx-auto pb-24 px-4">
-	<h1 class="text-3xl font-bold text-gray-800 mt-8 mb-8">Data Processing Statement</h1>
-
 	<section class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-500">
 		<p>Protecting your personal data is very important to us. This is why we believe in the principle of
 			data avoidance. All information on our web site is available to you without the need to provide
@@ -108,7 +100,10 @@
 		<p>For regular operations, logs contain some anonymized metadata about operations. In case of program errors, logs are more
 			detailed and may contain personal information. These logs are only used to debug the apps and can only be accessed by the cloud admins
 			(i.e. specific people within Realigned Technologies GmbH). These logs are retained for a maximum of one Year.
-			Logs are stored in our service providers infrastructure in Helsinki, Fi.</p>
+			Logs are stored in our service providers infrastructure in Helsinki, Finland. This applies to the
+			legacy Connect versions of our apps only. The Forge versions of Story Maps for Jira and Advanced
+			Story Maps for Jira run on Atlassian's Forge platform, and their logs are stored on Atlassian's
+			infrastructure, not ours.</p>
 
 		<p>Some of our apps request access to user data (name, email). Such data is never used outside of the context of the apps and is also never stored in any database.
 			It is always requested from Atlassian services ad-hoc.</p>
