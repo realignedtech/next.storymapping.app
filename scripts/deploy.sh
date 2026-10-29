@@ -65,8 +65,15 @@ scp -i "$ssh_key" -o IdentitiesOnly=yes "$quadlet" "$ssh_target:/tmp/${name}.con
 	mkdir -p '$remote_build'
 	tar -xzf '/tmp/$(basename "$archive")' -C '$remote_build'
 	rm -f '/tmp/$(basename "$archive")'
-	sudo podman build -t '$image' '$remote_build'
+	sudo podman build --iidfile '/tmp/${name}.iid' '$remote_build'
 	rm -rf '$remote_build'
+	# Validate with the Caddy inside the new image before it gets the live tag,
+	# so a bad Caddyfile stops here and the running site is never restarted
+	# onto it (nor picked up on the next reboot).
+	sudo podman run --rm \"\$(sudo cat '/tmp/${name}.iid')\" \
+		caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile
+	sudo podman tag \"\$(sudo cat '/tmp/${name}.iid')\" '$image'
+	sudo rm -f '/tmp/${name}.iid'
 	sudo install -m 0644 -o root -g root '/tmp/${name}.container' \
 		'/etc/containers/systemd/${name}.container'
 	rm -f '/tmp/${name}.container'
