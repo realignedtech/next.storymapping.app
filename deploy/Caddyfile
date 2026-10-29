@@ -40,6 +40,36 @@
 	redir /docs/support/story-maps-to-advanced /docs/support/freetopro 301
 	redir /upgrade /free-app 301
 
+	# URLs from the earlier Docusaurus site that Google still crawls (two were
+	# reported as 404 in October 2026). Each goes to the page that now carries
+	# the same content, matched by the archived page titles. Old URLs with no
+	# current equivalent (/docs/roadmap, /docs/parent-link-instructions,
+	# /freevspro, /blog/what-problem-does-story-mapping-solve) stay 404.
+	redir /docs/overview /docs 301
+	redir /docs/setup /docs/getting-started 301
+	redir /docs/usage /docs/tutorials/working-with-the-map 301
+	redir /docs/usage2 /docs/tutorials/planning-sprints-and-releases 301
+	redir /docs/storyvsjourneymap /docs/best-practices/storyvsjourneymap 301
+	redir /docs/release-notes /docs/whatsnew 301
+	redir /whatsnew /docs/whatsnew 301
+	redir /docs/eula /docs/support/eula 301
+	redir /docs/privacy /docs/support/privacy 301
+	redir /docs/troubleshooting /docs/support/troubleshooting 301
+	redir /docs/freetopro /docs/support/freetopro 301
+	redir /docs/pro-features /docs/pro/features 301
+	redir /docs/export /docs/pro-app/export 301
+	redir /docs/map-types /docs/pro-app/map-types 301
+	redir /docs/pro-admin-guide /docs/pro-app/pro-admin-guide 301
+	redir /docs/pro-settings /docs/pro-app/pro-settings 301
+	redir /docs/pro-setup /docs/pro-app/pro-setup 301
+	redir /docs/pro-story-mapping /docs/pro-app/pro-story-mapping 301
+	redir /docs/top-level-elements /docs/pro-app/top-level-elements 301
+	redir /blog/creating-a-portfolio-map-with-storymapping-for-jira-pro /articles/creating-a-portfolio-map-with-advanced-storymaps 301
+	redir /blog/how-to-get-started-with-user-story-mapping /articles/get-started-with-user-story-mapping 301
+	redir /blog/storymapping-for-jira-what-can-it-do /articles/story-maps-for-jira 301
+	redir /blog/archive /blog 301
+	redir /blog/tags* /blog 301
+
 	# Everything under _app/immutable is content-hashed by SvelteKit.
 	header /_app/immutable/* Cache-Control "public, max-age=31536000, immutable"
 	header {
