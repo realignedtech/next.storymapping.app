@@ -7,6 +7,15 @@
 
 	encode gzip zstd
 
+	# The Journey Mapping app is retired; it was folded into Story Mapping.
+	# DNS for journeymapping.app now points at this host, and Traefik forwards
+	# the original Host header, so send every request to the Story Mapping
+	# home page with a permanent (301) redirect. Match the apex and www in one
+	# rule; the path is intentionally dropped because the retired app's routes
+	# do not map onto Story Mapping's.
+	@journeymapping host journeymapping.app www.journeymapping.app
+	redir @journeymapping https://storymapping.app/ 301
+
 	# adapter-static emits flat .html files. Normalize trailing-slash requests
 	# before try_files sees a matching directory (for example /docs/), otherwise
 	# Caddy attempts to serve the directory and returns 404.

@@ -87,6 +87,12 @@ test('deployment redirects every renamed migration route to its canonical URL', 
 	}
 });
 
+test('the retired journeymapping.app host redirects to the storymapping.app home', () => {
+	const caddyfile = readFileSync('deploy/Caddyfile', 'utf8');
+	assert.match(caddyfile, /@journeymapping host journeymapping\.app www\.journeymapping\.app/);
+	assert.match(caddyfile, /redir @journeymapping https:\/\/storymapping\.app\/ 301/);
+});
+
 test('indexed blog and article routes remain available', () => {
 	const required = [
 		'/blog',
