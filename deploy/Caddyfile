@@ -59,3 +59,29 @@
 
 	log
 }
+
+# journeymapping.app, retired with Journey Mapping for Jira (MA-42). Traefik
+# routes the host to this container as well; a site block that names its host
+# wins over the catch-all above, so none of the Story Mapping rules (try_files
+# in particular, which would rewrite /docs to /docs.html) apply here.
+#
+# The http:// scheme keeps Caddy's automatic HTTPS out of it: Traefik holds
+# the certificate. Pages with search demand move to their Story Mapping
+# equivalent; everything else is product documentation for the retired app
+# and answers 410. No catch-all redirect, which would turn retired URLs into
+# soft 404s.
+http://journeymapping.app:8074 {
+	map {path} {journeymapping_target} {
+		~^/(index\.html)?$ https://storymapping.app/
+		~^/docs(/storyvsjourneymap|/journeymapping|/journeymapping-example)?/?$ https://storymapping.app/docs/best-practices/storyvsjourneymap
+		default gone
+	}
+
+	@moved not vars {journeymapping_target} gone
+	redir @moved {journeymapping_target} 301
+	respond 410
+
+	header Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+	log
+}

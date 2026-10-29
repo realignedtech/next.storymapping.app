@@ -87,6 +87,18 @@ test('deployment redirects every renamed migration route to its canonical URL', 
 	}
 });
 
+test('retired journeymapping.app redirects land on built Story Mapping pages', () => {
+	const caddyfile = readFileSync('deploy/Caddyfile', 'utf8');
+	const block = caddyfile.slice(caddyfile.indexOf('http://journeymapping.app:8074 {'));
+	const targets = [...block.matchAll(/ https:\/\/storymapping\.app(\/[^\s]*)$/gm)].map((match) => match[1]);
+	assert.deepEqual(targets, ['/', '/docs/best-practices/storyvsjourneymap']);
+	for (const target of targets) {
+		assert.ok(existsSync(builtFile(target)), `${target} is not in the build`);
+		assert.ok(establishedPaths.includes(target), `${target} is not an established URL`);
+	}
+	assert.match(block, /^\trespond 410$/m);
+});
+
 test('indexed blog and article routes remain available', () => {
 	const required = [
 		'/blog',
