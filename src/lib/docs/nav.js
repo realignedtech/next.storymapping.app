@@ -27,7 +27,7 @@ export const titles = {
   "multi-project-releases": "Multi-Project Releases",
   // Best practices
   "best-practices": "Best Practices",
-  "storyvsjourneymap": "Story vs Journey Mapping",
+  "storyvsjourneymap": "User Story Map vs Journey Map",
   // What's new
   "whatsnew": "What's New",
 }
