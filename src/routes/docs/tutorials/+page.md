@@ -1,9 +1,21 @@
 ---
 title: 'Tutorials'
-description: 'Task-focused guides for using Story Maps for Jira.'
+description: "Task-focused tutorials for Story Maps for Jira: work with the map, plan sprints and releases, and keep the backlog aligned with the plan."
 ---
 
 Use these guides after you have opened the app in a Jira Software project.
+
+## Before you start
+
+These tutorials assume Story Maps for Jira is installed and open in a Jira Software project. You also need permission to browse and edit issues in that project, because the map reads and writes Jira issues directly.
+
+## How to use these tutorials
+
+Each guide is task-focused. Read the short introduction to understand when the workflow applies, then follow the steps in your own project. Screenshots show the current app, so the controls match what you will see.
+
+## Choosing a starting point
+
+If the map is new to you, work through Working With the Map first. It explains the three levels of the map and how issues move between them. Once that is clear, move on to sprint and release planning. The advanced workflows build on the same map and are only available in Advanced Story Maps.
 
 ## Core workflows
 

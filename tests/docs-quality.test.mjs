@@ -31,8 +31,10 @@ test('customer copy does not use pre-release positioning', () => {
 	}
 });
 
-test('homepage presents the adoption milestone as social proof', () => {
-	assert.match(readFileSync('src/routes/+page.svelte', 'utf8'), /Trusted by .*3,000\+ Jira teams/);
+test('homepage presents the adoption milestone as installations, not teams', () => {
+	const home = readFileSync('src/routes/+page.svelte', 'utf8');
+	assert.match(home, /Over .*3,000 installations/);
+	assert.doesNotMatch(home, /3,000\+ Jira teams/);
 });
 
 test('Story Maps documentation includes multiple maps per project', () => {

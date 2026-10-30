@@ -35,10 +35,19 @@ function imageDimensions(path) {
 
 function rehypeImageAttributes() {
 	return (tree) => {
+		let seen = 0;
 		function visit(node) {
 			if (node.type === 'element' && node.tagName === 'img' && typeof node.properties?.src === 'string') {
-				node.properties.loading = 'lazy';
+				// The first content image is usually near the top of an article, so
+				// load it eagerly; lazy-load everything after it.
+				if (seen === 0) {
+					node.properties.loading = 'eager';
+					node.properties.fetchpriority = 'high';
+				} else {
+					node.properties.loading = 'lazy';
+				}
 				node.properties.decoding = 'async';
+				seen++;
 				if (node.properties.src.startsWith('/')) {
 					const path = resolve('static', node.properties.src.slice(1));
 					if (existsSync(path)) Object.assign(node.properties, imageDimensions(path));
@@ -72,6 +81,11 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		// Inline all CSS into the prerendered HTML. The stylesheet is ~54 KB
+		// (about 9 KB gzipped) and shared by every page; inlining removes the
+		// render-blocking stylesheet request, and repeat visits revalidate with
+		// a 304 instead of re-transferring it. Raise this if the CSS grows.
+		inlineStyleThreshold: 100000,
 		prerender: {
 			handleHttpError: 'warn'
 		}

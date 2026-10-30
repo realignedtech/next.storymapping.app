@@ -1,6 +1,7 @@
 ---
 title: "User story map vs journey map"
-description: "A user story map plans the work; a journey map shows how a person moves through a product. How they differ, when to use each, and how to combine them in Jira."
+description: "Compare a user story map with a user journey map, what each one is for, and how they fit together when you plan work in Jira."
+preloadImage: "/img/journey-michael.png"
 ---
 
 A journey map and a user story map often contain the same pieces, so teams mix them up. They answer different questions at different points of the work. A journey map describes how a person experiences a product: the steps they take, what they expect, where they get stuck. A user story map arranges the work a team will deliver so that the next release is a coherent slice of that experience. One is for understanding; the other is for planning and building.

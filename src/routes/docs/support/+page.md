@@ -1,9 +1,13 @@
 ---
-title: "Support"
-description: "Get help with Story Maps for Jira"
+title: "Help and Support"
+description: "Get help with Story Maps for Jira: troubleshooting, moving to Advanced Story Maps, privacy information, and license terms."
 ---
 
 Use the troubleshooting guide for common Jira configuration and permission problems. If the problem remains, send support enough context to reproduce it without including confidential issue content.
+
+## What to check first
+
+Most support requests trace back to Jira configuration rather than the app. Before you write, confirm that the project is a Jira Software project, that you can edit issues in it, and that the Releases and Sprints features are enabled. The troubleshooting guide covers each of these checks in more detail.
 
 ## Quick Links
 

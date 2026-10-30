@@ -1,6 +1,6 @@
 ---
 title: 'Advanced Features'
-description: 'Verified capabilities available in Advanced Story Maps for Jira.'
+description: "Verified capabilities in Advanced Story Maps for Jira, from custom hierarchies and swimlanes to PNG export and admin controls."
 ---
 
 Advanced Story Maps adds flexible structure and planning controls to the core Story Maps experience. The app works with Jira issues, boards, links, and fields; it does not create a separate project record.
@@ -9,9 +9,9 @@ Advanced Story Maps adds flexible structure and planning controls to the core St
 
 ### Maps and hierarchy
 
-- **[Map Types](/docs/pro/features/map-types):** choose a dynamic map sourced from a Jira board or a manually curated static map.
-- **[Using the App](/docs/pro/features/using-the-app):** arrange Jira issues, plan with swimlanes, update estimates, and filter a map.
-- **[Hierarchy and Top-level Elements](/docs/pro/features/hierarchy):** configure an optional activity or goal row above the backbone.
+- **[Map Types](/docs/pro-app/map-types):** choose a dynamic map sourced from a Jira board or a manually curated static map.
+- **[Using the App](/docs/pro-app/pro-story-mapping):** arrange Jira issues, plan with swimlanes, update estimates, and filter a map.
+- **[Hierarchy and Top-level Elements](/docs/pro-app/top-level-elements):** configure an optional activity or goal row above the backbone.
 - **Multiple maps:** maintain several planning views in one Jira project.
 - **Flexible hierarchy:** configure the issue types and links used for the backbone and optional top-level activities.
 - **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it.
@@ -27,10 +27,10 @@ Advanced Story Maps adds flexible structure and planning controls to the core St
 
 - **Configurable cards:** choose which supported Jira fields appear on issue cards.
 - **Statistics:** inspect progress and story-point totals where the underlying Jira configuration provides them.
-- **[PNG export](/docs/pro/features/export):** save a visual snapshot of the current map.
+- **[PNG export](/docs/pro-app/export):** save a visual snapshot of the current map.
 
 ## Configure a map
 
-Use [Board Configuration](/docs/pro/features/board) to control which Jira board supplies a dynamic map, its sprints, releases, issues, and quick filters. Use [Settings](/docs/pro/features/settings) for the hierarchy, display, and swimlane options available to that map.
+Use [Board Configuration](/docs/pro-app/board) to control which Jira board supplies a dynamic map, its sprints, releases, issues, and quick filters. Use [Settings](/docs/pro-app/pro-settings) for the hierarchy, display, and swimlane options available to that map.
 
-Project administrators can use the [Admin Guide](/docs/pro/admin-guide) to control where the app is available. A user's Jira permissions continue to determine which issues and boards they can see or change.
+Project administrators can use the [Admin Guide](/docs/pro-app/pro-admin-guide) to control where the app is available. A user's Jira permissions continue to determine which issues and boards they can see or change.

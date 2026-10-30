@@ -1,6 +1,7 @@
 ---
 title: "Custom Field Swimlanes"
-description: "How to set up custom field swim-lanes for your user story map"
+description: "Set up custom-field swimlanes in Advanced Story Maps for Jira and use any single-select Jira field to group issues on the map."
+preloadImage: "/docs/customfields1.webp"
 ---
 
 The user story map is a great tool for organizing and visualizing all of your team's user stories.

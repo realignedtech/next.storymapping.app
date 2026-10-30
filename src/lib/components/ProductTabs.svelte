@@ -11,7 +11,7 @@
 			<nav aria-label="Product sections" class="flex space-x-1">
 				{#each tabs as tab}
 					<a href={tab.href} data-umami-event="docs_journey" data-umami-event-destination={tab.href} data-umami-event-source-page={sourcePage} data-umami-event-placement="product_tabs" class="flex items-center gap-2 border-b-2 px-4 py-3 text-sm font-medium transition-colors {active === tab.id ? 'border-[var(--accent-cyan)] text-[var(--accent-cyan)]' : 'border-transparent text-[var(--text-muted)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)]'}">
-						{#if tab.icon}<img src={tab.icon} width="16" height="16" alt="" class="h-4 w-4" />{/if}
+						{#if tab.icon}<img src={tab.icon} width="16" height="16" alt="" decoding="async" class="h-4 w-4" />{/if}
 						{tab.label}
 						{#if tab.badge}<span class="rounded-full border border-[#0369a1]/20 bg-[var(--action-soft)] px-2 py-0.5 text-xs text-[var(--accent-cyan)]">{tab.badge}</span>{/if}
 					</a>

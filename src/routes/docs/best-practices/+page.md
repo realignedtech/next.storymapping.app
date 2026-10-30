@@ -1,6 +1,6 @@
 ---
 title: Best Practices
-description: Practical guidance for creating a story map that supports product and delivery decisions.
+description: "Practical guidance for building a story map that supports product and delivery decisions, with patterns that work inside Jira."
 ---
 
 A useful story map makes the sequence of the user experience visible and helps a team choose a coherent slice of work. Treat it as a shared planning model, not as another place to duplicate every backlog item.

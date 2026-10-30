@@ -1,9 +1,13 @@
 ---
 title: 'Advanced Story Maps Tutorials'
-description: 'Step-by-step tutorials for advanced features and complex workflows'
+description: "Step-by-step Advanced Story Maps tutorials for custom-field swimlanes, multi-project releases, and complex planning workflows."
 ---
 
 These tutorials cover advanced features and complex workflows available in Advanced Story Maps. Each tutorial provides step-by-step instructions with practical examples.
+
+## How to follow a tutorial
+
+Each tutorial lists the settings it changes and the Jira data it reads, then walks through the steps in order. Work in a test project if you want to try a configuration before applying it to a live map. You can undo most changes by reopening the map settings.
 
 ## Available Tutorials
 
@@ -26,7 +30,7 @@ These tutorials assume you have:
 
 If you encounter issues with any tutorial:
 - Check the [troubleshooting guide](/docs/pro/support/troubleshooting)
-- Review the [admin guide](/docs/pro/admin-guide) for setup requirements
+- Review the [admin guide](/docs/pro-app/pro-admin-guide) for setup requirements
 - Contact our support team for assistance
 
 ---

@@ -67,4 +67,10 @@
 			<TrustCard {...resource} />
 		{/each}
 	</ul>
+
+	<section class="mt-12 max-w-3xl">
+		<h2 class="text-xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-2xl">How to use the Trust Center</h2>
+		<p class="mt-3 leading-7 text-[var(--text-secondary)]">Start with the policy that matches your review. Security reviewers usually read the security and technology policies, the scanning practices, and the self-assessment responses together. Privacy and data-handling questions are answered in the data processing statement and the security and privacy FAQ.</p>
+		<p class="mt-3 leading-7 text-[var(--text-secondary)]">The Trust Center covers Story Maps for Jira, Advanced Story Maps for Jira, and the other apps Realigned publishes for the Atlassian ecosystem. We run a private bug bounty program and publish a vulnerability disclosure policy. To report a security concern, email <a class="text-[var(--accent-cyan)] hover:text-[var(--action-hover)]" href="mailto:info@realigned.io">info@realigned.io</a> or open a ticket in our support portal.</p>
+	</section>
 </main>

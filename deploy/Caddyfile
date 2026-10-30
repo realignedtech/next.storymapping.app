@@ -51,6 +51,19 @@
 
 	# Everything under _app/immutable is content-hashed by SvelteKit.
 	header /_app/immutable/* Cache-Control "public, max-age=31536000, immutable"
+
+	# Static media and documents change rarely; cache them for a week.
+	@staticAssets path *.png *.svg *.webp *.jpg *.jpeg *.gif *.avif *.ico *.mp4 *.webm *.woff *.woff2 *.txt *.xml *.json
+	header @staticAssets Cache-Control "public, max-age=604800"
+
+	# Prerendered HTML (extensionless routes) should be revalidated so content
+	# updates are picked up. Everything else is matched by the rules above.
+	@htmlPages {
+		not path /_app/immutable/*
+		not path *.png *.svg *.webp *.jpg *.jpeg *.gif *.avif *.ico *.mp4 *.webm *.woff *.woff2 *.txt *.xml *.json
+	}
+	header @htmlPages Cache-Control "public, max-age=0, must-revalidate"
+
 	header {
 		X-Content-Type-Options nosniff
 		Referrer-Policy strict-origin-when-cross-origin

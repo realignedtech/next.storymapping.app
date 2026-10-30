@@ -1,6 +1,6 @@
 ---
-title: "Privacy"
-description: "Data handling, analytics, and privacy information for Story Maps for Jira."
+title: "Privacy Information"
+description: "How Story Maps for Jira handles data, what analytics are collected, and what the app never collects from your Jira Cloud site."
 ---
 
 Read the [Data Processing Statement](/trust/privacy-policy) for the Realigned Technologies website.

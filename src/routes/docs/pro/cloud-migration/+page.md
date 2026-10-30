@@ -1,6 +1,6 @@
 ---
-title: "Migrate Advanced Story Maps between Cloud sites"
-description: "Export Advanced Story Maps from one Jira Cloud site and import them into another"
+title: "Cloud to Cloud Migration"
+description: "Move Advanced Story Maps between Jira Cloud sites: export a project’s maps and import them into another Cloud site without losing structure."
 ---
 
 Use the Cloud migration assistant to copy Advanced Story Maps from one Jira Cloud site to another. Move the Jira projects and issues first, then install Advanced Story Maps on the target site.

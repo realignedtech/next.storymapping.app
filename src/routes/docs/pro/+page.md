@@ -1,6 +1,6 @@
 ---
 title: 'Advanced Story Maps'
-description: 'Configure multiple maps, flexible hierarchies, custom swimlanes, and cross-project planning in Jira.'
+description: "Advanced Story Maps for Jira adds custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning to Jira."
 ---
 
 Advanced Story Maps extends the core story-mapping workflow for teams with more complex Jira structures. Jira remains the source of truth, while each map provides a focused planning view of the issues, relationships, and fields the team already uses.
@@ -20,9 +20,9 @@ Advanced Story Maps extends the core story-mapping workflow for teams with more 
 
 ## Start here
 
-1. Read the [Overview](/docs/pro/overview) to understand how maps are managed.
-2. Follow [Getting Started](/docs/pro/setup) to create a dynamic or static map.
-3. Review [Map Types](/docs/pro/features/map-types) before choosing how the map receives its work.
-4. Configure the [Jira board connection](/docs/pro/features/board) and [map settings](/docs/pro/features/settings).
+1. Read the [Overview](/docs/pro-app/overview) to understand how maps are managed.
+2. Follow [Getting Started](/docs/pro-app/pro-setup) to create a dynamic or static map.
+3. Review [Map Types](/docs/pro-app/map-types) before choosing how the map receives its work.
+4. Configure the [Jira board connection](/docs/pro-app/board) and [map settings](/docs/pro-app/pro-settings).
 
 For a specific planning pattern, use the [Advanced tutorials](/docs/pro/tutorials).

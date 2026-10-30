@@ -43,8 +43,8 @@
 </script>
 
 <SiteShell
-	headTitle="Story Maps for Jira articles"
-	description="Guides and archived product updates about user story mapping in Jira."
+	headTitle="User story mapping articles | Story Maps for Jira"
+	description="Guides and archived product updates about user story mapping in Jira, from structuring a map to planning across projects."
 >
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
 		<PageHero

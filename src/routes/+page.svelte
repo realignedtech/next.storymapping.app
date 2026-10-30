@@ -2,8 +2,21 @@
 	import SiteShell from '$lib/components/SiteShell.svelte';
 	import DottedClouds from '$lib/components/DottedClouds.svelte';
 	import StoryMapDemo from '$lib/components/StoryMapDemo.svelte';
+	import { page } from '$app/stores';
+	import { canonicalUrlFor } from '$lib/seo/canonical.js';
+	import { softwareApplicationSchema } from '$lib/seo/schema.js';
 
 	const APP_LINK = 'https://marketplace.atlassian.com/apps/1224357';
+
+	let structuredData = $derived([
+		softwareApplicationSchema({
+			name: 'Story Maps for Jira',
+			description:
+				'Turns a Jira backlog into a visual story map for planning sprints and releases inside Jira.',
+			url: canonicalUrlFor('/free-app'),
+			marketplaceUrl: APP_LINK
+		})
+	]);
 
 	const outcomes = [
 		{
@@ -29,8 +42,9 @@
 
 <SiteShell
 	headTitle="Story Maps for Jira | Visual release planning in Jira"
-	description="Story Maps for Jira turns your backlog into a visual story map for planning sprints and releases inside Jira."
+	description="Story Maps for Jira turns your Jira backlog into a visual story map so teams can plan sprints and releases and keep work in Jira."
 	marketplaceLink={APP_LINK}
+	jsonLd={structuredData}
 >
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
 	<section aria-labelledby="hero-title" class="realigned-hero relative isolate overflow-hidden pb-20 pt-20 sm:pb-28 sm:pt-24">
@@ -52,7 +66,7 @@
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m7-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm13 10v-2a4 4 0 0 0-3-3.87m-2-9.96a4 4 0 0 1 0 7.75" />
 						</svg>
 					</span>
-					<span class="text-sm font-medium text-cyan-50/85 sm:text-base">Trusted by <strong class="font-semibold text-white">3,000+ Jira teams</strong></span>
+					<span class="text-sm font-medium text-cyan-50/85 sm:text-base">Over <strong class="font-semibold text-white">3,000 installations</strong> from the Atlassian Marketplace</span>
 				</div>
 
 				<div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -95,7 +109,7 @@
 			<div class="mt-14 grid gap-5 lg:grid-cols-2">
 				<article class="edition-card featured realigned-card relative flex flex-col overflow-hidden rounded-lg p-8 md:p-10">
 					<div class="flex items-center gap-4">
-						<div class="flex h-14 w-14 items-center justify-center"><img src="/smFreeIcon.svg" width="48" height="48" alt="" class="h-12 w-12" /></div>
+						<div class="flex h-14 w-14 items-center justify-center"><img src="/smFreeIcon.svg" width="48" height="48" alt="" decoding="async" class="h-12 w-12" /></div>
 						<div>
 							<p class="text-sm font-semibold text-[var(--accent-cyan)]">For focused product teams</p>
 							<h3 class="text-2xl font-semibold text-[var(--text-primary)]">Story Maps for Jira</h3>
@@ -112,7 +126,7 @@
 
 				<article class="edition-card realigned-card flex flex-col rounded-lg p-8 md:p-10">
 					<div class="flex items-center gap-4">
-						<div class="flex h-14 w-14 items-center justify-center"><img src="/smProIcon.svg" width="48" height="48" alt="" class="h-12 w-12" /></div>
+						<div class="flex h-14 w-14 items-center justify-center"><img src="/smProIcon.svg" width="48" height="48" alt="" decoding="async" class="h-12 w-12" /></div>
 						<div>
 							<p class="text-sm font-semibold text-[var(--accent-cyan)]">For complex planning environments</p>
 							<h3 class="text-2xl font-semibold text-[var(--text-primary)]">Advanced Story Maps</h3>
@@ -160,6 +174,7 @@
 				<a href="/free-app" class="realigned-primary-button">See Story Maps in action</a>
 				<a href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page="/" data-umami-event-placement="homepage_footer" class="realigned-secondary-button">Read the documentation</a>
 			</div>
+			<p class="mt-8 text-sm text-white/70">Built by <a href="/about" class="font-semibold text-white underline underline-offset-4 hover:text-cyan-100">Realigned Technologies</a>, a Swiss software company.</p>
 		</div>
 	</section>
 	</main>

@@ -26,7 +26,7 @@
 			<p class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--accent-cyan)]">{eyebrow}</p>
 			<h2 class="mt-3 text-2xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-3xl">{name}</h2>
 		</div>
-		<img src={iconSrc} width="48" height="48" alt={iconAlt} class="h-12 w-12 flex-none" />
+		<img src={iconSrc} width="48" height="48" alt={iconAlt} decoding="async" class="h-12 w-12 flex-none" />
 	</div>
 
 	<p class="mt-5 min-h-14 leading-7 text-[var(--text-secondary)]">{description}</p>

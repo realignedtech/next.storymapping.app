@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url><loc>https://storymapping.app</loc></url>
+	<url><loc>https://storymapping.app/about</loc></url>
 	<url><loc>https://storymapping.app/articles/creating-a-portfolio-map-with-advanced-storymaps</loc></url>
 	<url><loc>https://storymapping.app/articles/get-started-with-user-story-mapping</loc></url>
 	<url><loc>https://storymapping.app/articles/how-to-do-cross-project-releases-in-jira</loc></url>
@@ -42,6 +43,7 @@
 	<url><loc>https://storymapping.app/docs/tutorials/planning-sprints-and-releases</loc></url>
 	<url><loc>https://storymapping.app/docs/tutorials/working-with-the-map</loc></url>
 	<url><loc>https://storymapping.app/docs/whatsnew</loc></url>
+	<url><loc>https://storymapping.app/contact</loc></url>
 	<url><loc>https://storymapping.app/download</loc></url>
 	<url><loc>https://storymapping.app/showcase/advanced</loc></url>
 	<url><loc>https://storymapping.app/free-app</loc></url>

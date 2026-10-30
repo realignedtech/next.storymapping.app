@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-description: "What Story Maps for Jira does, what you can plan with it, and where to go from here."
+description: "What Story Maps for Jira does, how the map is built from Jira issues, and where to go next to set up your first map in a project."
 ---
 
 Story Maps for Jira is a planning view that lives inside your Jira project. It takes the issues from an agile board and arranges them in two directions: the user journey runs across the map, and the delivery detail sits underneath. This gives you a single picture you can use to discuss sequence and scope, without moving the backlog out of Jira.
@@ -29,7 +29,7 @@ A map is based on one agile board. Sprint and release lanes come from that board
 
 **Story Maps for Jira** works within a single Jira project and uses the project's own issue types and links. It is free.
 
-**Advanced Story Maps for Jira** adds maps that span projects, custom-field swimlanes for cross-project release planning, goal issues above the map, iteration timeframes, configurable cards, statistics, and PNG export. See [Moving to Advanced](/docs/support/story-maps-to-advanced) for the full comparison.
+**Advanced Story Maps for Jira** adds maps that span projects, custom-field swimlanes for cross-project release planning, goal issues above the map, iteration timeframes, configurable cards, statistics, and PNG export. See [Moving to Advanced](/docs/support/freetopro) for the full comparison.
 
 ## Start with a task
 

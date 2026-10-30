@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-description: "Open Story Maps in a Jira Software project and create your first map."
+description: "Install Story Maps for Jira, open it in a Jira Software project, and create your first map from the issues already on your agile board."
 ---
 
 Story Maps for Jira runs inside Jira Software projects. To use it, the app needs to be installed on your Jira site and you need permission to browse and edit issues in the project.
