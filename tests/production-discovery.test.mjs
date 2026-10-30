@@ -147,3 +147,12 @@ test('robots and sitemap identify the production host', () => {
 	assert.match(robots, /Host: https:\/\/storymapping\.app/);
 	assert.match(robots, /Sitemap: https:\/\/storymapping\.app\/sitemap\.xml/);
 });
+
+test('every deployment redirect lands on a built page', () => {
+	const caddyfile = readFileSync('deploy/Caddyfile', 'utf8');
+	const redirects = [...caddyfile.matchAll(/^\tredir (\/\S*) (\/\S*) 301$/gm)];
+	assert.ok(redirects.length > 20);
+	for (const [, from, to] of redirects) {
+		assert.ok(existsSync(builtFile(to)), `${from} redirects to ${to}, which is not in the build`);
+	}
+});
