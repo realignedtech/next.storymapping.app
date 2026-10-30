@@ -1,6 +1,6 @@
 ---
 title: "Plan Sprints and Releases"
-description: "Use sprint and release swimlanes to turn a story map into a delivery plan."
+description: "Use sprint and release swimlanes in Story Maps for Jira to turn a story map into a delivery plan the whole team can commit to."
 ---
 
 Swimlanes cut the map into horizontal delivery slices. The issues stay in their columns — what a lane changes is *when* the work happens. Switch views with the view switcher in the toolbar: **Sprints** for iteration planning, **Releases** for version planning.
@@ -24,7 +24,7 @@ The sprint controls follow the sprint's state. When the team finishes, complete 
 
 Switch the view to **Releases**. Lanes follow the fix versions of the project, newest first by default. Drag issues into the version that should ship them, or create a version with **Add → Add Release**.
 
-Jira versions belong to a project, so an issue can only be assigned to a version of its own project. If you need to plan releases across several projects, that is what [Advanced Story Maps](/docs/support/story-maps-to-advanced) and its custom-field swimlanes are for.
+Jira versions belong to a project, so an issue can only be assigned to a version of its own project. If you need to plan releases across several projects, that is what [Advanced Story Maps](/docs/support/freetopro) and its custom-field swimlanes are for.
 
 ## When a lane is missing
 

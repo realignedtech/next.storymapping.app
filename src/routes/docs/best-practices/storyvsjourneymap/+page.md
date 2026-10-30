@@ -1,6 +1,7 @@
 ---
 title: User story vs journey map
-description: What is a user story map compared to a user journey map
+description: "Compare a user story map with a user journey map, what each one is for, and how they fit together when you plan work in Jira."
+preloadImage: "/img/journey-michael.png"
 ---
 
 We have developed [Journey Mapping for Jira](https://marketplace.atlassian.com/apps/1223654/journey-mapping-for-jira) alongside Story Mapping for Jira

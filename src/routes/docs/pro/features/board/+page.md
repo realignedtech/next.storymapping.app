@@ -1,6 +1,6 @@
 ---
 title: 'Board Configuration'
-description: 'Select the Jira board that supplies issues, filters, sprints, and releases to an Advanced story map.'
+description: "Connect an Advanced story map to a Jira board so its issues, sprints, releases, and quick filters supply the map for dynamic planning."
 ---
 
 The selected Jira board is the basis for a dynamic map. Its filter determines the issues in scope and supplies the quick filters, sprints, and visible releases available in the map.
@@ -35,6 +35,6 @@ See [Common Issues & Questions](/docs/pro/support/troubleshooting) when sprints,
 
 ## Next Steps
 
-- [Settings](/docs/pro/features/settings) - Configure board-specific preferences
-- [Map Types](/docs/pro/features/map-types) - Understand dynamic vs static maps
-- [Admin Guide](/docs/pro/admin-guide) - Set up organizational board policies
+- [Settings](/docs/pro-app/pro-settings) - Configure board-specific preferences
+- [Map Types](/docs/pro-app/map-types) - Understand dynamic vs static maps
+- [Admin Guide](/docs/pro-app/pro-admin-guide) - Set up organizational board policies

@@ -1,6 +1,6 @@
 ---
 title: 'Map Types'
-description: 'Choose between board-driven dynamic maps and manually curated static maps.'
+description: "Choose between a board-driven dynamic map and a manually curated static map in Advanced Story Maps for Jira, and when to use each."
 ---
 
 Advanced Story Maps supports **dynamic maps** and **static maps**. Choose the type when you create a map.
@@ -36,6 +36,6 @@ A static map can use Jira issue links for relationships or the map's internal as
 
 ## Next Steps
 
-- [Getting Started](/docs/pro/setup) — create the selected map type.
-- [Board Configuration](/docs/pro/features/board) — control the board used by a map.
-- [Settings](/docs/pro/features/settings) — configure hierarchy, display, and swimlanes.
+- [Getting Started](/docs/pro-app/pro-setup) — create the selected map type.
+- [Board Configuration](/docs/pro-app/board) — control the board used by a map.
+- [Settings](/docs/pro-app/pro-settings) — configure hierarchy, display, and swimlanes.

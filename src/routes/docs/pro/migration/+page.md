@@ -1,6 +1,6 @@
 ---
-title: "Migrate Advanced Story Maps from Data Center to Cloud"
-description: "Export Advanced Story Maps data from Jira Data Center and import it into Jira Cloud"
+title: "Data Center to Cloud Migration"
+description: "Move Advanced Story Maps from Jira Data Center to Jira Cloud: export the data, import it, and verify the maps after migration."
 ---
 
 Use the Advanced Story Maps migration assistant after you move your Jira projects and issues to Cloud. The assistant copies your story maps; it does not migrate Jira data.

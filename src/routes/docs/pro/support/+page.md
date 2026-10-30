@@ -1,9 +1,13 @@
 ---
 title: "Support"
-description: "Get help with Advanced Story Maps for Jira"
+description: "Get help with Advanced Story Maps for Jira: troubleshooting, privacy information, license terms, and how to contact support."
 ---
 
 Use the troubleshooting guide for common Jira configuration and permission problems. If the problem remains, send support enough context to reproduce it without including confidential issue content.
+
+## What to check first
+
+Many Advanced Story Maps questions are really Jira configuration questions. Confirm that the map is connected to the right board, that your Jira permissions cover every project in that board, and that any custom fields used by the map are visible on the issue edit screen.
 
 ## Quick Links
 

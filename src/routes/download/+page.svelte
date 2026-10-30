@@ -12,7 +12,7 @@
 			eyebrow: 'Focused story mapping',
 			description: 'Turn a Jira backlog into a shared story map and plan the next release with your team.',
 			iconSrc: '/smFreeIcon.svg',
-			iconAlt: 'Story Maps for Jira',
+			iconAlt: '',
 			features: [
 				'Multiple story maps in each Jira project',
 				'Visual planning with epics and issues',
@@ -29,7 +29,7 @@
 			eyebrow: 'For larger planning needs',
 			description: 'For teams that need maps spanning Jira projects, flexible hierarchies, custom swimlanes, and more planning controls.',
 			iconSrc: '/smProIcon.svg',
-			iconAlt: 'Advanced Story Maps for Jira',
+			iconAlt: '',
 			features: [
 				'Story maps spanning multiple Jira projects',
 				'Flexible issue types and map hierarchies',
@@ -52,8 +52,8 @@
 </script>
 
 <SiteShell
-	headTitle="Choose Story Maps for Jira"
-	description="Compare Story Maps for Jira and Advanced Story Maps, then start a trial from Atlassian Marketplace."
+	headTitle="Compare Story Maps for Jira and Advanced Story Maps"
+	description="Compare Story Maps for Jira and Advanced Story Maps for Jira, see which edition fits your team, and start a trial from Atlassian Marketplace."
 	highlight="Download"
 	marketplaceLink={STORY_MAPS_APP_LINK}
 >

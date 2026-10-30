@@ -1,6 +1,6 @@
 ---
 title: "Working With the Map"
-description: "The parts of a story map, the toolbar, and how to add, arrange, and edit work."
+description: "Learn the parts of a story map, the toolbar, and how to add, arrange, and edit Jira issues directly on the map during planning."
 ---
 
 A story map holds two views of the same work: the user journey across the page, and the delivery detail underneath. Once you can read the map, everything else — planning, filtering, dependency checking — follows from it.

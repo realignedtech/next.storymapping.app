@@ -4,17 +4,34 @@
 	import ShowcaseNav from '$lib/components/ShowcaseNav.svelte';
 	import Marketplace from '$lib/components/Marketplace.svelte';
 	import DottedClouds from '$lib/components/DottedClouds.svelte';
+	import { page } from '$app/stores';
+	import { canonicalUrlFor } from '$lib/seo/canonical.js';
+	import { softwareApplicationSchema } from '$lib/seo/schema.js';
 
 	const APP_LINK = "https://marketplace.atlassian.com/1224357";
 	const DEMO_LINK = "";
+	let structuredData = $derived([
+		softwareApplicationSchema({
+			name: 'Story Maps for Jira',
+			description:
+				'Turns a Jira backlog into a visual story map for planning sprints and releases inside Jira.',
+			url: canonicalUrlFor($page.url.pathname),
+			marketplaceUrl: APP_LINK
+		})
+	]);
 </script>
+
+<svelte:head>
+	<link rel="preload" as="image" href="/main/smfree.png" fetchpriority="high" />
+</svelte:head>
 
 <SiteShell
 	headTitle="Story Maps for Jira - Basic User Story Mapping"
-	description="Get started with user story mapping in Jira. Create visual story maps to organize your backlog and plan releases."
+	description="See Story Maps for Jira in action: arrange a Jira backlog into a visual story map and plan sprints and releases without leaving Jira."
 	highlight="Showcase"
 	marketplaceLink={APP_LINK}
 	demoLink={DEMO_LINK}
+	jsonLd={structuredData}
 >
 	{#snippet subnav()}<ShowcaseNav currentPage="basic" />{/snippet}
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
@@ -27,7 +44,7 @@
 		>
 			<div class="flex items-center justify-center">
 				<div class="w-full max-w-6xl">
-					<img src="/main/smfree.png" width="2260" height="1394" alt="Basic Story Maps for Jira Screenshot" class="rounded-xl border border-[var(--border-subtle)] shadow-2xl" />
+					<img src="/main/smfree.png" width="2260" height="1394" alt="Basic Story Maps for Jira Screenshot" fetchpriority="high" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-2xl" />
 				</div>
 			</div>
 			<Marketplace dark />
@@ -49,7 +66,7 @@
 						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]">In a planning session you can spot missing work, discuss trade-offs, and agree on what belongs in the first release.</p>
 					</div>
 					<div class="md:w-1/2">
-						<img src="/main/smfree.png" width="1162" height="713" alt="Basic Story Map" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
+						<img src="/main/smfree.png" width="1162" height="713" alt="Basic Story Map" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
 					</div>
 				</div>
 
@@ -60,7 +77,7 @@
 						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]">Product, design, and delivery can point to the same piece of work while they decide what to do next.</p>
 					</div>
 					<div class="md:w-1/2">
-						<img src="/main/smfree2.png" width="2260" height="1394" alt="Sprint backlog management in Story Maps for Jira" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
+						<img src="/main/smfree2.png" width="2260" height="1394" alt="Sprint backlog management in Story Maps for Jira" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
 					</div>
 				</div>
 
@@ -71,7 +88,7 @@
 						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]">Worth checking: does this slice deliver a useful step for someone, or is it just a collection of tickets?</p>
 					</div>
 					<div class="md:w-1/2">
-						<img src="/main/smfree3.png" width="2260" height="1394" alt="Custom swimlane planning in Story Maps for Jira" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
+						<img src="/main/smfree3.png" width="2260" height="1394" alt="Custom swimlane planning in Story Maps for Jira" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
 					</div>
 				</div>
 			</div>

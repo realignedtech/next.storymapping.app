@@ -1,6 +1,6 @@
 ---
 title: 'PNG Export'
-description: 'Save an Advanced story map as a PNG image.'
+description: "Export an Advanced story map as a PNG image so you can share the current plan with stakeholders or attach it to a report."
 ---
 
 PNG export is available in Advanced Story Maps. It saves a visual snapshot of the map for a presentation, planning record, or page that cannot embed the live Jira view.
@@ -23,6 +23,6 @@ For structured Jira data or reporting, use Jira's own export and reporting tools
 
 ## Next Steps
 
-- [Board Management](/docs/pro/features/board) - Manage your Jira board connections
-- [Settings](/docs/pro/features/settings) - Configure export preferences
-- [Admin Guide](/docs/pro/admin-guide) - Set up organizational export policies
+- [Board Management](/docs/pro-app/board) - Manage your Jira board connections
+- [Settings](/docs/pro-app/pro-settings) - Configure export preferences
+- [Admin Guide](/docs/pro-app/pro-admin-guide) - Set up organizational export policies

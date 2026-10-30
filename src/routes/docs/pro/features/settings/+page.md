@@ -1,6 +1,6 @@
 ---
 title: 'Settings'
-description: 'Configure the board, fields, swimlanes, and display options for an Advanced story map.'
+description: "Configure the board, fields, swimlanes, hierarchy, and display options for an Advanced story map so the map fits your team."
 ---
 
 Settings belong to an individual story map. Open the map menu and select **Settings** to configure its board, visible fields, swimlane statistics, and display.
@@ -9,7 +9,7 @@ Settings belong to an individual story map. Open the map menu and select **Setti
 
 Select the Jira agile board used to supply backlog issues, sprints, releases, and board quick filters. You can also control the sorting and filtering applied to the backlog.
 
-Changing the board can change which issues are available to a dynamic map. Review [Board Configuration](/docs/pro/features/board) before replacing it.
+Changing the board can change which issues are available to a dynamic map. Review [Board Configuration](/docs/pro-app/board) before replacing it.
 
 ## Fields and statistics
 
@@ -34,4 +34,4 @@ Choose which supported Jira fields appear on the cards. The app supports standar
 - **Tool icons:** show the available controls on issue cards.
 - **Completed lanes:** include or hide completed sprints and releases.
 
-Use the [Admin Guide](/docs/pro/admin-guide) for the separate global setting that controls which projects show the app.
+Use the [Admin Guide](/docs/pro-app/pro-admin-guide) for the separate global setting that controls which projects show the app.

@@ -27,5 +27,21 @@
 		</p>
 
 		<p><a href="https://developer.atlassian.com/platform/marketplace/ecoscanner/" target="_blank" rel="noreferrer">Atlassian Ecoscanner</a></p>
+
+		<h2>How findings are handled</h2>
+
+		<p>
+			Scanning only helps if findings are acted on. New high and critical findings are triaged against our
+			<a href="/trust/bug-fix-policy">bug fix policy</a>, and fixes are released through the normal Marketplace
+			update process. We re-scan after each change to confirm the finding is resolved rather than suppressed.
+		</p>
+
+		<h2>Scope</h2>
+
+		<p>
+			These scans cover the apps published by Realigned, the container images we deploy, and the third-party
+			dependencies those apps rely on. They complement, rather than replace, the security testing performed by
+			Atlassian for Marketplace approval.
+		</p>
 	</section>
 </main>

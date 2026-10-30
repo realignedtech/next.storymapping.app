@@ -1,6 +1,6 @@
 ---
 title: Release Notes
-description: New features in the latest Advanced Story Maps releases
+description: "Release notes for Advanced Story Maps for Jira: what changed in each release, including new features, fixes, and improvements."
 ---
 
 This page is an archive of release notes published from September 2021 through June 2023. It does not yet describe the current Forge rebuild. For current release status, use the Atlassian Marketplace listing or contact [support@realigned.io](mailto:support@realigned.io).

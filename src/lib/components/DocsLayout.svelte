@@ -6,7 +6,8 @@
 	import DocsArticle from './DocsArticle.svelte';
 	import DocsToc from './DocsToc.svelte';
 	import { BasicNav, ProNav, StoryMapTitles } from '$lib/docs/nav.js';
-	import { sourceRouteFor } from '$lib/seo/canonical.js';
+	import { canonicalUrlFor, sourceRouteFor, siteOrigin } from '$lib/seo/canonical.js';
+	import { breadcrumbSchema, techArticleSchema } from '$lib/seo/schema.js';
 
 	let {
 		meta = {},
@@ -50,11 +51,34 @@
 	let sectionLabel = $derived(isProDocs ? 'Advanced Story Maps documentation' : 'Story Maps documentation');
 	let documentTitle = $derived(meta.title || currentTitle);
 	let productTitle = $derived(isProDocs ? 'Advanced Story Maps for Jira' : 'Story Maps for Jira');
+	let pageDescription = $derived(meta.description || `${currentTitle} documentation for ${productTitle}.`);
+	let canonicalUrl = $derived(canonicalUrlFor($page.url.pathname));
+	let structuredData = $derived([
+		techArticleSchema({
+			headline: documentTitle,
+			description: pageDescription,
+			url: canonicalUrl,
+			keywords: `${documentTitle}, ${productTitle}`,
+			product: productTitle
+		}),
+		breadcrumbSchema([
+			{ name: 'Home', url: siteOrigin },
+			{ name: 'Documentation', url: `${siteOrigin}/docs` },
+			{ name: documentTitle, url: canonicalUrl }
+		])
+	]);
 </script>
 
+<svelte:head>
+	{#if meta.preloadImage}
+		<link rel="preload" as="image" href={meta.preloadImage} fetchpriority="high" />
+	{/if}
+</svelte:head>
+
 <SiteShell
-	headTitle={`${documentTitle} | ${productTitle} Documentation`}
-	description={meta.description || `${currentTitle} documentation for ${productTitle}.`}
+	headTitle={`${documentTitle} | ${productTitle}`}
+	description={pageDescription}
+	jsonLd={structuredData}
 	navTitle={title}
 	{demoLink}
 	{marketplaceLink}

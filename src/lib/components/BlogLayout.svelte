@@ -1,6 +1,8 @@
 <script>
 	import Header from './Header.svelte';
 	import { page } from '$app/stores';
+	import { canonicalUrlFor, siteOrigin } from '$lib/seo/canonical.js';
+	import { articleSchema, breadcrumbSchema, videoObjectSchema } from '$lib/seo/schema.js';
 
 	let { 
 		meta = {}, 
@@ -22,10 +24,46 @@
 
 	const APP_LINK = "https://marketplace.atlassian.com/apps/1224357";
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
+	let publishedTime = $derived(meta.date ? new Date(`${meta.date}T00:00:00Z`).toISOString() : '');
+	let shareImage = $derived(meta.highlight ? `${siteOrigin}${meta.highlight}` : `${siteOrigin}/realignedOG.png`);
+	let structuredData = $derived.by(() => {
+		if (!meta.title) return [];
+		const schemas = [
+			articleSchema({
+				headline: meta.title,
+				description: meta.description,
+				url: canonicalUrlFor($page.url.pathname),
+				datePublished: publishedTime,
+				image: shareImage
+			}),
+			breadcrumbSchema([
+				{ name: 'Home', url: siteOrigin },
+				{ name: 'Articles', url: `${siteOrigin}/blog` },
+				{ name: meta.title, url: canonicalUrlFor($page.url.pathname) }
+			])
+		];
+		if (meta.video) {
+			schemas.push(videoObjectSchema(meta.video));
+		}
+		return schemas;
+	});
 </script>
 
+<svelte:head>
+	{#if meta.preloadImage}
+		<link rel="preload" as="image" href={meta.preloadImage} fetchpriority="high" />
+	{/if}
+</svelte:head>
+
 <div class="flex flex-col min-h-screen">
-<Header title={meta.title || "Blog"} description={meta.description || "Story Maps Blog"} />
+<Header
+	title={meta.title || "Blog"}
+	description={meta.description || "Story Maps Blog"}
+	ogType={meta.title ? 'article' : 'website'}
+	{publishedTime}
+	image={shareImage}
+	jsonLd={structuredData}
+/>
 
 <!-- Modal for images -->
 {#if showImage}

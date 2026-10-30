@@ -1,6 +1,6 @@
 ---
 title: 'Using Advanced Story Maps'
-description: 'Organize Jira issues on a story map, plan with swimlanes, estimate work, and filter the view.'
+description: "Organize Jira issues on an Advanced story map, plan with swimlanes, update estimates, and filter the view during planning."
 ---
 
 An Advanced story map has up to four layers: an optional goal layer, an optional activity layer, a backbone of steps, and the Jira issues that describe the work beneath each step.
@@ -29,17 +29,17 @@ If sprint or release lanes are unavailable, check the connected board and the re
 
 Free-form custom swimlanes are useful when a sprint or release is too precise. For example, a roadmap can use lanes such as “Near term” and “Later” while the delivery details are still uncertain.
 
-Advanced Story Maps can also use supported single-select Jira custom fields as swimlanes. Configure the field in the map settings, then drag issues between its values. See [Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes) for the complete setup.
+Advanced Story Maps can also use supported single-select Jira custom fields as swimlanes. Configure the field in the map settings, then drag issues between its values. See [Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes) for the complete setup.
 
 ## Update estimates
 
-When the connected Jira board uses story-point estimation, estimates appear on the issue cards. Select an estimate to edit it. If swimlane statistics are enabled in [Settings](/docs/pro/features/settings), the totals update with the changed estimate.
+When the connected Jira board uses story-point estimation, estimates appear on the issue cards. Select an estimate to edit it. If swimlane statistics are enabled in [Settings](/docs/pro-app/pro-settings), the totals update with the changed estimate.
 
 ![Story-point estimate displayed on an issue card](/docs/mockups/estimate-card.svg)
 
 ## Add activities or goals
 
-Advanced Story Maps supports optional layers above the backbone for activities, goals, or another Jira hierarchy level. See [Hierarchy and Top-level Elements](/docs/pro/features/hierarchy) to configure and use it.
+Advanced Story Maps supports optional layers above the backbone for activities, goals, or another Jira hierarchy level. See [Hierarchy and Top-level Elements](/docs/pro-app/top-level-elements) to configure and use it.
 
 ## Filter the map
 

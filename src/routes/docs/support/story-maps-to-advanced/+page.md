@@ -1,6 +1,6 @@
 ---
 title: "Moving to Advanced Story Maps"
-description: "How to move from Story Maps for Jira to Advanced Story Maps for Jira"
+description: "How to move from Story Maps for Jira to Advanced Story Maps for Jira without migrating data, and what changes after you switch."
 ---
 
 ## Compare the editions

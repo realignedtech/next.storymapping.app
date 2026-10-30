@@ -1,6 +1,7 @@
 ---
 title: 'Multi-Project Releases Tutorial'
-description: 'Learn how to coordinate releases across multiple Jira projects using Advanced Story Maps'
+description: "Coordinate releases across several Jira projects with Advanced Story Maps, using one shared map to plan and track a delivery."
+preloadImage: "/docs/multi-release1.png"
 ---
 
 Managing releases that span multiple Jira projects can be challenging, but Advanced Story Maps makes it straightforward by allowing you to visualize and coordinate work across project boundaries in a single story map.
@@ -44,5 +45,5 @@ Do you have questions? We are here to help! Contact our support team for assista
 ## Next Steps
 
 - [Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes) - Learn advanced swimlane configuration
-- [Export Features](/docs/pro/features/export) - Generate reports for stakeholders
-- [Board Management](/docs/pro/features/board) - Optimize multi-project board connections
+- [Export Features](/docs/pro-app/export) - Generate reports for stakeholders
+- [Board Management](/docs/pro-app/board) - Optimize multi-project board connections

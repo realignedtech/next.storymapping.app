@@ -7,6 +7,7 @@ const sitemap = readFileSync('static/sitemap.xml', 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]));
 
 const establishedPaths = [
+	'/about',
 	'/',
 	'/articles/creating-a-portfolio-map-with-advanced-storymaps',
 	'/articles/get-started-with-user-story-mapping',
@@ -15,6 +16,7 @@ const establishedPaths = [
 	'/articles/story-maps-for-jira',
 	'/articles/story-maps-for-jira-is-all-new',
 	'/blog',
+	'/contact',
 	'/docs',
 	'/docs/best-practices',
 	'/docs/best-practices/storyvsjourneymap',
@@ -53,7 +55,7 @@ function builtFile(pathname) {
 }
 
 test('sitemap contains every public route on the production origin', () => {
-	assert.equal(urls.length, 53);
+	assert.equal(urls.length, 55);
 	assert.equal(new Set(urls.map((url) => url.pathname)).size, urls.length);
 	for (const url of urls) {
 		assert.equal(url.origin, 'https://storymapping.app');
@@ -130,8 +132,8 @@ test('Trust Center pages render one document heading and route-specific metadata
 test('documentation metadata comes from each page', () => {
 	const basic = readFileSync('build/docs/getting-started.html', 'utf8');
 	const advanced = readFileSync('build/docs/pro/setup.html', 'utf8');
-	assert.match(basic, /<meta name="description" content="Open Story Maps in a Jira Software project/);
-	assert.match(advanced, /<meta name="description" content="Setting up the app and adding your first story map/);
+	assert.match(basic, /<meta name="description" content="Install Story Maps for Jira, open it in a Jira Software project/);
+	assert.match(advanced, /<meta name="description" content="Set up Advanced Story Maps for Jira/);
 	assert.notEqual(basic.match(/<title>([^<]+)/)?.[1], advanced.match(/<title>([^<]+)/)?.[1]);
 });
 

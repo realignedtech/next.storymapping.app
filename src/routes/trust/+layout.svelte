@@ -3,6 +3,8 @@
 	import SiteShell from '$lib/components/SiteShell.svelte';
 	import TrustSidebar from '$lib/components/TrustSidebar.svelte';
 	import { trustNavigation, trustPageFor } from '$lib/trust/navigation.js';
+	import { canonicalUrlFor, siteOrigin } from '$lib/seo/canonical.js';
+	import { breadcrumbSchema } from '$lib/seo/schema.js';
 
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
@@ -11,6 +13,22 @@
 	let currentRoute = $derived($page.url.pathname.replace(/\/$/, '') || '/trust');
 	let currentPage = $derived(trustPageFor(currentRoute));
 	let isOverview = $derived(currentRoute === '/trust');
+	let canonicalUrl = $derived(canonicalUrlFor($page.url.pathname));
+	let structuredData = $derived([
+		{
+			'@context': 'https://schema.org',
+			'@type': 'WebPage',
+			name: currentPage.title,
+			description: currentPage.description,
+			url: canonicalUrl,
+			isPartOf: { '@id': `${siteOrigin}/#website` }
+		},
+		breadcrumbSchema([
+			{ name: 'Home', url: siteOrigin },
+			{ name: 'Trust Center', url: `${siteOrigin}/trust` },
+			...(isOverview ? [] : [{ name: currentPage.title, url: canonicalUrl }])
+		])
+	]);
 </script>
 
 <SiteShell
@@ -19,6 +37,7 @@
 	highlight="Trust Center"
 	marketplaceLink={APP_LINK}
 	wide
+	jsonLd={structuredData}
 >
 	<section class="trust-hero border-b border-[var(--border-subtle)]">
 		<div class="mx-auto max-w-[90rem] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">

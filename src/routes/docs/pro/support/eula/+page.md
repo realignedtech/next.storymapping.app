@@ -1,6 +1,6 @@
 ---
 title: "End User License Agreement"
-description: "License terms for Advanced Story Maps for Jira and its use through the Atlassian Marketplace."
+description: "License terms for Advanced Story Maps for Jira and its use through the Atlassian Marketplace, including the end user license agreement."
 ---
 
 This End-User License Agreement ("EULA") is a legal agreement between you and Realigned Technologies Ltd

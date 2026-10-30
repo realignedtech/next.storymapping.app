@@ -1,6 +1,6 @@
 ---
 title: "Common Issues & Questions"
-description: "Common issues and questions for Advanced Story Maps"
+description: "Common issues and questions for Advanced Story Maps, including missing controls, permissions, custom fields, and releases."
 ---
 
 ## The Release button is not visible

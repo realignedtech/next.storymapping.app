@@ -14,7 +14,7 @@ In Jira the user steps are then used to structure the individual issues - let me
 The steps that your user takes interacting with your product or service are the
 "Backbone" of your user story map (not to be confused with the "Backlog").
 
-    ![Epic Issue Type](/blog/Epic1.png)
+    ![Adding an epic issue type to the story map backbone in Jira](/blog/Epic1.png)
 When using Story Mapping for Jira for the first time, you are tasked with adding
 an epic to the story map's backbone to get started. You do this by either
 creating and epic directly from the story map or searching for an existing one.
@@ -24,13 +24,13 @@ to this step right away. Simply follow the same method by either
 adding an existing issue to the story map (you can search by either summary or issue key)
 or creating a new one.
 
-    ![First Epic Assignment](/blog/FirstEpic.png)
+    ![Assigning Jira issues to an epic column on the story map](/blog/FirstEpic.png)
 This way you can fill your user story map really quickly while always
 having the context - your customer's actions - right at your disposal.
 But not only that: Once you have a few columns and issues lined up,
 you can rearrange them by simply dragging and dropping them to another column.
 
-    ![Full Map](/blog/FullMap.png)
+    ![A completed story map with activities, epics, and issues arranged in columns](/blog/FullMap.png)
 You can also rank the issues this way - this is much easier than dealing
 with the full backlog and having to drag and drop stories all the
 way from the bottom of the backlog to the top. Inside the user story map

@@ -1,0 +1,28 @@
+# Story Maps for Jira
+
+> Story Maps for Jira is a visual planning app for Jira Cloud. It arranges a Jira backlog along a user journey so teams can plan sprints and releases without leaving Jira. Published by Realigned Technologies.
+
+Two editions ship on the Atlassian Marketplace: Story Maps for Jira and Advanced Story Maps for Jira.
+
+## Product
+
+- [Story Maps for Jira](https://storymapping.app/free-app): visual story mapping for a single Jira project.
+- [Advanced Story Maps for Jira](https://storymapping.app/showcase/advanced): custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning.
+- [Compare editions](https://storymapping.app/download)
+
+## Documentation
+
+- [Documentation home](https://storymapping.app/docs)
+- [Getting started](https://storymapping.app/docs/getting-started)
+- [Working with the map](https://storymapping.app/docs/tutorials/working-with-the-map)
+- [Plan sprints and releases](https://storymapping.app/docs/tutorials/planning-sprints-and-releases)
+- [Advanced Story Maps](https://storymapping.app/docs/pro-app)
+- [Best practices](https://storymapping.app/docs/best-practices)
+
+## Trust and support
+
+- [Trust Center](https://storymapping.app/trust)
+- [Security policy](https://storymapping.app/trust/security-policy)
+- [Privacy policy](https://storymapping.app/docs/support/privacy)
+- [Support](https://storymapping.app/docs/support)
+- [Release notes](https://storymapping.app/docs/whatsnew)

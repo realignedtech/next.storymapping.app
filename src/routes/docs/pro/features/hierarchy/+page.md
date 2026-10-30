@@ -1,6 +1,6 @@
 ---
 title: 'Hierarchy and Top-level Elements'
-description: 'Configure the optional activity or goal row and connect it to the Jira hierarchy used by an Advanced story map.'
+description: "Configure the optional activity or goal row above the backbone and connect it to the Jira hierarchy an Advanced story map uses."
 ---
 
 Advanced Story Maps can add an optional layer above the backbone for activities, goals, or another high-level Jira issue type. Existing goals remain available when this row is enabled.

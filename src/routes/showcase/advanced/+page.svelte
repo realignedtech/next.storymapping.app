@@ -4,17 +4,34 @@
 	import ShowcaseNav from '$lib/components/ShowcaseNav.svelte';
 	import Marketplace from '$lib/components/Marketplace.svelte';
 	import DottedClouds from '$lib/components/DottedClouds.svelte';
+	import { page } from '$app/stores';
+	import { canonicalUrlFor } from '$lib/seo/canonical.js';
+	import { softwareApplicationSchema } from '$lib/seo/schema.js';
 
 	const APP_LINK = "https://marketplace.atlassian.com/1224417";
 	const DEMO_LINK = "https://demo.userstorymap.net/projects/ASFJ/storymaps#/map/1662373150071";
+	let structuredData = $derived([
+		softwareApplicationSchema({
+			name: 'Advanced Story Maps for Jira',
+			description:
+				'Advanced story mapping for Jira with custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning.',
+			url: canonicalUrlFor($page.url.pathname),
+			marketplaceUrl: APP_LINK
+		})
+	]);
 </script>
+
+<svelte:head>
+	<link rel="preload" as="image" href="/main/smhighlight2.png" fetchpriority="high" />
+</svelte:head>
 
 <SiteShell
 	headTitle="Advanced Story Maps for Jira - The User Story Mapping App"
-	description="Plan products, releases, and sprints with a visual story mapping tool inside Jira"
+	description="See Advanced Story Maps for Jira in action: custom hierarchies, custom-field swimlanes, multi-project maps, and release planning."
 	highlight="Showcase"
 	marketplaceLink={APP_LINK}
 	demoLink={DEMO_LINK}
+	jsonLd={structuredData}
 >
 	{#snippet subnav()}<ShowcaseNav currentPage="advanced" />{/snippet}
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
@@ -27,7 +44,7 @@
 		>
 			<div class="flex items-center justify-center">
 				<div class="w-full max-w-6xl">
-					<img src="/main/smhighlight2.png" width="2314" height="1604" alt="Advanced Story Maps for Jira Screenshot" class="rounded-xl border border-[var(--border-subtle)] shadow-2xl" />
+					<img src="/main/smhighlight2.png" width="2314" height="1604" alt="Advanced Story Maps for Jira Screenshot" fetchpriority="high" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-2xl" />
 				</div>
 			</div>
 			<Marketplace dark />
@@ -49,7 +66,7 @@
 						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]"><span class="font-semibold text-[var(--text-primary)]">In the screenshot:</span> the map brings related levels of work together so you can see where a decision sits and what it affects.</p>
 					</div>
 					<div class="md:w-1/2">
-						<img src="/main/smhighlight2.png" width="2314" height="1604" alt="Advanced Story Map Overview" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
+						<img src="/main/smhighlight2.png" width="2314" height="1604" alt="Advanced Story Map Overview" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
 					</div>
 				</div>
 
@@ -60,7 +77,7 @@
 						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]">Useful when a discovery session changes the shape of an initiative, or a delivery team needs a closer view of the next few sprints.</p>
 					</div>
 					<div class="md:w-1/2">
-						<img src="/main/smhighlight3.png" width="2314" height="1604" alt="Advanced Story Maps custom layout" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
+						<img src="/main/smhighlight3.png" width="2314" height="1604" alt="Advanced Story Maps custom layout" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
 					</div>
 				</div>
 
@@ -71,7 +88,7 @@
 						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]">Before you commit, compare the planned slice with the people, dependencies, and other work already in the map.</p>
 					</div>
 					<div class="md:w-1/2">
-						<img src="/main/smhighlight4.png" width="2314" height="1604" alt="Advanced Story Maps release planning" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
+						<img src="/main/smhighlight4.png" width="2314" height="1604" alt="Advanced Story Maps release planning" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
 					</div>
 				</div>
 			</div>

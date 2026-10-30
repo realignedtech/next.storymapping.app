@@ -1,11 +1,11 @@
 ---
-title: "Getting started with Advanced Story Maps for Jira"
-description: "Setting up the app and adding your first story map"
+title: "Getting Started"
+description: "Set up Advanced Story Maps for Jira: install the app, enable it for a project, and add your first dynamic or static map."
 ---
 
 After installation, the app is available in all projects.
-See the [Administrators Guide](/docs/pro/admin-guide) on how to enable the app on specific projects.
-When you open the app in a project, it shows the [overview screen](/docs/pro/overview), where you can add and manage story maps. 
+See the [Administrators Guide](/docs/pro-app/pro-admin-guide) on how to enable the app on specific projects.
+When you open the app in a project, it shows the [overview screen](/docs/pro-app/overview), where you can add and manage story maps. 
 
 Story maps "live" in projects - however, this does not mean that they are
 limited in this way. You can add issues from any project and configure boards with
@@ -17,7 +17,7 @@ You can create a new story map from the overview screen or the map switcher at t
 
 ![Creating a story map](/docs/mockups/create-map.svg)
 
-You can select between a dynamic and a static map. Read more about the [differences between these two map types here](/docs/pro/features/map-types). In most cases, we now recommend going with dynamic maps.
+You can select between a dynamic and a static map. Read more about the [differences between these two map types here](/docs/pro-app/map-types). In most cases, we now recommend going with dynamic maps.
 
 After choosing the dynamic map type, you select your Jira agile board and confirm the issue type for the backbone. The app suggests the project's epic type. You can change the hierarchy later under **Settings → Hierarchy**.
 
