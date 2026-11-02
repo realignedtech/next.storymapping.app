@@ -39,8 +39,9 @@
 		<h2>Scope</h2>
 
 		<p>
-			These scans cover the apps published by Realigned, the container images we deploy, and the third-party
-			dependencies those apps rely on. They complement, rather than replace, the security testing performed by
+			These scans cover the apps published by Realigned, the third-party
+			dependencies those apps rely on, and — for the legacy Connect editions — the container images we deploy.
+			They complement, rather than replace, the security testing performed by
 			Atlassian for Marketplace approval.
 		</p>
 	</section>

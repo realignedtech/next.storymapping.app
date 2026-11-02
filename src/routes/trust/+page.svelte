@@ -44,9 +44,9 @@
 			external: true
 		},
 		{
-			title: 'Service Provider ISO 27001',
-			description: 'Review the ISO 27001 certification published by our infrastructure provider.',
-			href: 'https://www.hetzner.com/assets/downloads/FOX-Certificate.pdf',
+			title: 'Atlassian Cloud Compliance',
+			description: 'Security, privacy, and compliance certifications for the Atlassian Cloud platform our Forge apps run on.',
+			href: 'https://www.atlassian.com/trust/compliance',
 			external: true
 		}
 	];

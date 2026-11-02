@@ -98,7 +98,7 @@
 					<td class="border border-gray-300 p-4">BCR-11.1</td>
 					<td class="border border-gray-300 p-4">Do you have technical capabilities to enforce tenant data retention policies?</td>
 					<td class="border border-gray-300 p-4">Yes</td>
-					<td class="border border-gray-300 p-4">We retain installation data provided to us. However, as we do not host customer data, most of the obligation lies with Atlassian.</td>
+					<td class="border border-gray-300 p-4">For the Forge apps, Atlassian manages installation and licensing data; we do not retain it. For the legacy Connect editions, we retain installation data provided to us. As we do not host customer data, most of the obligation lies with Atlassian.</td>
 				</tr>
 				<tr>
 					<td class="border border-gray-300 p-4"></td>
@@ -106,7 +106,7 @@
 					<td class="border border-gray-300 p-4">BCR-11.3</td>
 					<td class="border border-gray-300 p-4">Have you implemented backup or recovery mechanisms to ensure compliance with regulatory, statutory, contractual or business requirements?</td>
 					<td class="border border-gray-300 p-4">Yes</td>
-					<td class="border border-gray-300 p-4">We regularly backup installation data in order to ensure continuous operation for our customers</td>
+					<td class="border border-gray-300 p-4">For the legacy Connect editions, we regularly back up installation data in order to ensure continuous operation for our customers. The Forge apps rely on Atlassian's backup and recovery mechanisms.</td>
 				</tr>
 				<tr>
 					<td class="border border-gray-300 p-4"></td>
@@ -122,7 +122,7 @@
 					<td class="border border-gray-300 p-4">CCC-04.1</td>
 					<td class="border border-gray-300 p-4">Do you have controls in place to restrict and monitor the installation of unauthorized software onto your systems?</td>
 					<td class="border border-gray-300 p-4">Yes</td>
-					<td class="border border-gray-300 p-4">We automate the provisioning of infrastructure we use to deliver our services and manual installation of software on these instances does not happen. We use container technologies to ensure that the application stack is consistent.</td>
+					<td class="border border-gray-300 p-4">For the legacy Connect editions, we automate the provisioning of the infrastructure we use to deliver those services and manual installation of software on these instances does not happen; we use container technologies to ensure that the application stack is consistent. The Forge apps run on Atlassian's platform and rely on Atlassian's change and configuration controls.</td>
 				</tr>
 				<tr>
 					<td class="border border-gray-300 p-4 font-bold">Datacenter Security</td>
@@ -330,7 +330,7 @@
 					<td class="border border-gray-300 p-4">TVM-02.5</td>
 					<td class="border border-gray-300 p-4">Do you have a capability to patch vulnerabilities across all of your computing devices, applications, and systems?</td>
 					<td class="border border-gray-300 p-4">Yes</td>
-					<td class="border border-gray-300 p-4">Our infrastructure is configured to run automatic security updates on all machines. Our deployed containers are monitored for vulnerabilities and patched according to our bug fix policy.</td>
+					<td class="border border-gray-300 p-4">For the legacy Connect editions, our infrastructure is configured to run automatic security updates on all machines and our deployed containers are monitored for vulnerabilities and patched according to our bug fix policy. The Forge apps are patched through app releases and run on Atlassian's platform.</td>
 				</tr>
 			</tbody>
 		</table>

@@ -1,23 +1,16 @@
 ---
 title: "Privacy Information"
-description: "How Story Maps for Jira handles data, what analytics are collected, and what the app never collects from your Jira Cloud site."
+description: "How Story Maps for Jira handles data, what is stored where, and what the app never collects from your Jira Cloud site."
 ---
 
 Read the [Data Processing Statement](/trust/privacy-policy) for the Realigned Technologies website.
 
 ## Definition of Data
 
-Story Mapping App collects and processes three types of data:
+Story Maps for Jira and Advanced Story Maps for Jira process the following data:
 
 - User generated content (Jira content like issues, releases, sprints, settings, etc)
-- Error reports
 - Install information (Cloud only)
-
-Both Story Maps for Jira and Advanced Story Maps for Jira contain analytics software from PostHog.
-
-Analytics is used to measure feature usage across our apps. We do not collect personal information at any time.
-
-Analytics components can be disabled in Advanced Story Maps for Jira.
 
 ## Data residency information
 
@@ -39,27 +32,15 @@ This data includes:
 - JWT secrets
 
 For the Forge versions of Story Maps for Jira and Advanced Story Maps for Jira, this information is
-stored in Atlassian's Forge infrastructure and never in our own databases. Our own databases in
-Helsinki, Finland, are only used by the legacy Connect versions of our apps.
+stored in Atlassian's Forge infrastructure and never in our own databases.
 
-### Personal Data processed by our analytics products
+## Analytics and error reports
 
-Due to the nature of analytics software, the following artefacts are collected by them that are considered
-personal data under the GDPR:
+The Forge versions of Story Maps for Jira and Advanced Story Maps for Jira run entirely on
+Atlassian's Forge platform. They do not contain third-party analytics software and do not send
+usage data, personal data, or error reports to us or to any third party.
 
-- IP address
-- Atlassian Account ID
-
-This data is stored and processed by both Sentry and PostHog.
-
-We use this data to measure product usage on a per instance basis. We do not profile individual users
-for this purpose.
-
-If you object to this personal data being collected, you can disable analytics products in the admin
-section of our apps.
-
-### Error Reports
-
-We use Sentry.io for error reporting on all products.
+The Data Center and Server editions of our apps can optionally send anonymized error reports via
+[Sentry.io](https://sentry.io) when analytics is enabled in the app settings.
 
 Review [Sentry's Data Processing Addendum](https://sentry.io/legal/dpa/2.0.0/).

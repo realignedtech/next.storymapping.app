@@ -104,7 +104,7 @@
 		<p>The basic principles include:</p>
 		<ul>
 			<li>Manage security vulnerabilities in our products and services, including issuing updates, patches or advisories</li>
-			<li>Manage security threats and vulnerabilities throughout our environment, both internal and hosted environments</li>
+			<li>Manage security threats and vulnerabilities throughout our environment, including the infrastructure used to operate the legacy Connect editions</li>
 			<li>Manage the threat of malware in the environment</li>
 		</ul>
 	</section>

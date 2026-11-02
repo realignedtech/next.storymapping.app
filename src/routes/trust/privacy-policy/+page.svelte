@@ -99,31 +99,21 @@
 
 		<p>For regular operations, logs contain some anonymized metadata about operations. In case of program errors, logs are more
 			detailed and may contain personal information. These logs are only used to debug the apps and can only be accessed by the cloud admins
-			(i.e. specific people within Realigned Technologies GmbH). These logs are retained for a maximum of one Year.
-			Logs are stored in our service providers infrastructure in Helsinki, Finland. This applies to the
-			legacy Connect versions of our apps only. The Forge versions of Story Maps for Jira and Advanced
-			Story Maps for Jira run on Atlassian's Forge platform, and their logs are stored on Atlassian's
-			infrastructure, not ours.</p>
+			(i.e. specific people within Realigned Technologies GmbH). These logs are retained for a maximum of one year.
+			The Forge versions of Story Maps for Jira and Advanced Story Maps for Jira run on Atlassian's Forge
+			platform, and their logs are stored on Atlassian's infrastructure, not ours.</p>
 
 		<p>Some of our apps request access to user data (name, email). Such data is never used outside of the context of the apps and is also never stored in any database.
 			It is always requested from Atlassian services ad-hoc.</p>
 
 		<p>
-			As app developers, we constantly look for ways to improve our products. Anonymous data on how some of our key features are configured, is one of the most valuable tools to help us do this.
-			We collect a small amount of anonymized configuration data from our Story & Portfolio Mapping Applications we offer on the Atlassian Marketplace.
+			The Forge versions of Story Maps for Jira and Advanced Story Maps for Jira do not collect analytics or
+			configuration data. The legacy Connect and Data Center/Server editions can optionally send anonymized
+			configuration and error data to us when analytics is enabled; this can be turned off in the app settings.
+			This data is designed so that it does not contain information regarding users, logins, passwords,
+			email addresses, company-related content, or any other type of personal data, and its sole purpose is to
+			provide a statistical analysis of feature usage and configuration.
 		</p>
-
-		<p>This data helps us understand which features are important to you and allow us to focus our
-			development on adding to or improving those features.
-			Analytics features can be turned off in the paid offerings of our apps.</p>
-
-		<p>Within the App you can preview what would be sent to us if you are interested.
-			It's also designed so that it does not contain information regarding users, logins, passwords,
-			email addresses, company-related content,
-			or any other type of personal data.</p>
-
-		<p>Its sole purpose is to provide a statistical analysis of the feature configuration in our app.
-			The collection of such data is thus not governed by the GDPR.</p>
 
 		<h2>Consent</h2>
 
