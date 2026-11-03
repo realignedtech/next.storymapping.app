@@ -15,9 +15,9 @@
 			iconAlt: '',
 			features: [
 				'Multiple story maps in each Jira project',
-				'Visual planning with epics and issues',
+				'Maps from any board, including multi-project boards',
 				'Sprint and release swimlanes',
-				'No separate account or service to manage'
+				'Dependency lines and configurable hierarchy'
 			],
 			marketplaceLink: STORY_MAPS_APP_LINK,
 			marketplaceLabel: 'View on Marketplace',
@@ -27,14 +27,14 @@
 		{
 			name: 'Advanced Story Maps for Jira',
 			eyebrow: 'For larger planning needs',
-			description: 'For teams that need maps spanning Jira projects, flexible hierarchies, custom swimlanes, and more planning controls.',
+			description: 'For teams that need custom-field swimlanes, iteration planning, goal issues, and more planning controls.',
 			iconSrc: '/smProIcon.svg',
 			iconAlt: '',
 			features: [
-				'Story maps spanning multiple Jira projects',
-				'Flexible issue types and map hierarchies',
-				'Custom swimlanes and multi-project planning',
-				'Export features and administrator controls'
+				'Custom-field swimlanes, including multi-select fields',
+				'Iteration timeframes and goal issues',
+				'Configurable card layouts and statistics',
+				'PNG export and administrator controls'
 			],
 			marketplaceLink: ADVANCED_APP_LINK,
 			marketplaceLabel: 'Try Advanced Story Maps',

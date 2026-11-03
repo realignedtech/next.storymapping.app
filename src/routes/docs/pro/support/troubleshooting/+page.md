@@ -40,8 +40,8 @@ the release versions of all projects. But you can only assign the
 issues from one project to fixVersions of the same project. There is
 unfortunately nothing we can do about this.
 
-If you want to plan cross-project releases, we recommend you use
-the custom swim lane or custom field mapping feature, available in Advanced Story Maps for Jira.
+If you want one release that spans projects rather than per-project versions, use
+custom-field swimlanes in Advanced Story Maps for Jira, or a cross-space release in a Jira plan.
 
 ## Could not update estimate
 

@@ -14,7 +14,7 @@
 		softwareApplicationSchema({
 			name: 'Advanced Story Maps for Jira',
 			description:
-				'Advanced story mapping for Jira with custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning.',
+				'Advanced story mapping for Jira with custom-field swimlanes, iteration planning, goal issues, and PNG export.',
 			url: canonicalUrlFor($page.url.pathname)
 		})
 	]);
@@ -26,7 +26,7 @@
 
 <SiteShell
 	headTitle="Advanced Story Maps for Jira - The User Story Mapping App"
-	description="See Advanced Story Maps for Jira in action: custom hierarchies, custom-field swimlanes, multi-project maps, and release planning."
+	description="See Advanced Story Maps for Jira in action: custom-field swimlanes, iteration planning, goal issues, and PNG export."
 	highlight="Showcase"
 	marketplaceLink={APP_LINK}
 	demoLink={DEMO_LINK}
@@ -54,7 +54,7 @@
 		<div class="max-w-6xl mx-auto px-4 relative z-10">
 			<div class="text-center mb-16">
 				<h2 class="text-4xl font-bold mb-4">Features</h2>
-				<p class="mx-auto max-w-2xl text-xl leading-relaxed text-[var(--text-secondary)]">Advanced Story Maps covers custom fields, flexible hierarchies, and releases that span more than one Jira project.</p>
+				<p class="mx-auto max-w-2xl text-xl leading-relaxed text-[var(--text-secondary)]">Advanced Story Maps covers custom-field swimlanes, iteration planning, goal issues, and PNG export.</p>
 			</div>
 
 			<div class="space-y-20">

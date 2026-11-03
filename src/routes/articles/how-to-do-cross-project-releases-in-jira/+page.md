@@ -53,9 +53,9 @@ There is an important limit: a cross-space release is a planning object inside t
 
 ## Working with cross-project releases in a story map
 
-[Advanced Story Maps for Jira](/showcase/advanced) works with all four options.
+Story Maps for Jira works with all four options. Release swimlanes are part of the base edition, so a map built from a board that spans projects shows each project's versions.
 
-For a custom field, open the map and choose **More options**, then **Settings**, then **Swimlanes**. Add the custom field as a swimlane. Single- and multi-select fields are supported.
+For a release that lives in a custom field, [Advanced Story Maps for Jira](/showcase/advanced) adds custom-field swimlanes. Open the map and choose **More options**, then **Settings**, then **Swimlanes**. Add the custom field as a swimlane. Single- and multi-select fields are supported.
 
 ![Adding the cross-project field to the story map](/blog/cross-project/crossproject5.png)
 
@@ -63,14 +63,14 @@ Back on the map, pick the field in the **Swimlanes** menu. Dragging an issue bet
 
 ![Story mapping view](/blog/cross-project/crossproject6.png)
 
-If you use matching release names across projects, Advanced Story Maps unifies them into one swimlane with no extra setup. Drag an issue to the lane and the app assigns the correct project release automatically. The [multi-project releases tutorial](/docs/tutorials/multi-project-releases) walks through that setup.
+Release lanes come from the board, so a map built from a board that spans projects shows the versions of each project. A Jira issue can only carry a fix version from its own project, so a single release object across projects needs custom-field swimlanes in [Advanced Story Maps for Jira](/showcase/advanced) or a cross-space release in a Jira plan. The [multi-project releases tutorial](/docs/tutorials/multi-project-releases) covers the board setup.
 
 ## A worked example
 
 A release ships a checkout change from a **Web** project and an API change from a **Platform** project.
 
 1. Create a version named `2026.4` in both projects, or let a sync app do it.
-2. In Advanced Story Maps, create a dynamic map whose board filter includes both projects, for example `project in (Web, Platform)`.
+2. In Story Maps for Jira, create a dynamic map whose board filter includes both projects, for example `project in (Web, Platform)`.
 3. Switch the swimlanes to **Releases**. The two `2026.4` versions appear as one lane.
 4. Drag the checkout stories and the API stories into the lane. Their fix versions are set in Jira.
 5. Use the map to check the slice is coherent before the team commits, then plan the sprint work in the sprint lanes.

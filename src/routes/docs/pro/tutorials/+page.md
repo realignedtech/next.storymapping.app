@@ -1,6 +1,6 @@
 ---
 title: 'Advanced Story Maps Tutorials'
-description: "Step-by-step Advanced Story Maps tutorials for custom-field swimlanes, multi-project releases, and complex planning workflows."
+description: "Step-by-step tutorials for custom-field swimlanes, multi-project releases, and complex planning workflows."
 ---
 
 These tutorials cover advanced features and complex workflows available in Advanced Story Maps. Each tutorial provides step-by-step instructions with practical examples.
@@ -17,7 +17,7 @@ Each tutorial lists the settings it changes and the Jira data it reads, then wal
 
 ### Project Management
 
-- **[Multi-Project Releases](/docs/tutorials/multi-project-releases)** - Coordinate releases across multiple Jira projects using Advanced Story Maps
+- **[Multi-Project Releases](/docs/tutorials/multi-project-releases)** - Coordinate releases across multiple Jira projects with a map built from a multi-project board
 
 ## Prerequisites
 

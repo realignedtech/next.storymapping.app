@@ -27,7 +27,7 @@
 		},
 		{
 			title: 'Depth for complex teams',
-			text: 'Advanced Story Maps adds custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning for larger organizations.'
+			text: 'Advanced Story Maps adds custom-field swimlanes, iteration planning, goal issues, and PNG export for larger organizations.'
 		},
 		{
 			title: 'Independent and responsive',

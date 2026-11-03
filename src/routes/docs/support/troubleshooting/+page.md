@@ -33,7 +33,7 @@ You need to manually reopen the old sprint and clear the field. [See here for mo
 
 If your map is based on a board that covers several projects, you will see the release versions of all these projects. But an issue can only be assigned to the fix versions of its own project. There is nothing we can do about this Jira rule.
 
-If you want to plan cross-project releases, use the custom swimlane feature of [Advanced Story Maps for Jira](/docs/support/freetopro).
+If you want one release that spans projects rather than per-project versions, use the custom-field swimlane feature of [Advanced Story Maps for Jira](/docs/support/freetopro), or a cross-space release in a Jira plan.
 
 ## Could not update estimate
 

@@ -74,7 +74,7 @@ For the mechanics on the map itself, see [Working With the Map](/docs/tutorials/
 
 ## Doing this in Jira
 
-Story Maps for Jira puts the story map directly on your Jira project: epics across the top, issues underneath, sprints and releases as the slices. Nothing is copied into a separate tool; the map is a view over the issues your team already has, so planning on the map and working the board stay in step. Advanced Story Maps for Jira adds multi-project maps, custom hierarchies and custom-field swimlanes for larger planning environments. To try it, start with [Getting Started](/docs/getting-started).
+Story Maps for Jira puts the story map directly on your Jira project: epics across the top, issues underneath, sprints and releases as the slices. Nothing is copied into a separate tool; the map is a view over the issues your team already has, so planning on the map and working the board stay in step. Advanced Story Maps for Jira adds custom-field swimlanes, iteration planning, goal issues and PNG export for larger planning environments. To try it, start with [Getting Started](/docs/getting-started).
 
 For the persona side of the work, [Personas for Jira](https://betterpersonas.app/) lets you manage personas alongside your Jira issues, so a story can carry "this is for Michael" without a separate document.
 

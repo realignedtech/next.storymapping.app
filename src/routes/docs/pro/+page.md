@@ -1,11 +1,11 @@
 ---
 title: 'Advanced Story Maps'
-description: "Advanced Story Maps for Jira adds custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning to Jira."
+description: "Advanced Story Maps for Jira adds custom-field swimlanes, iteration planning, goal issues, and PNG export to Jira."
 ---
 
 Advanced Story Maps extends the core story-mapping workflow for teams with more complex Jira structures. Jira remains the source of truth, while each map provides a focused planning view of the issues, relationships, and fields the team already uses.
 
-## What Advanced adds
+## What you can do with Advanced Story Maps
 
 - Create and manage multiple story maps in a Jira project.
 - Build maps from configurable issue types and link relationships.

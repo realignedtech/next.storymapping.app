@@ -5,11 +5,10 @@ description: "How to move from Story Maps for Jira to Advanced Story Maps for Ji
 
 ## Compare the editions
 
-Story Maps for Jira already includes multiple maps per project, activities above the epic backbone, configurable hierarchy types and links, sprint and release swimlanes, and dependency lines.
+Story Maps for Jira already includes multiple maps per project, maps built from any agile board (including boards that span several Jira projects), activities above the epic backbone, configurable hierarchy types and links, sprint and release swimlanes, and dependency lines.
 
 Advanced Story Maps for Jira adds:
 
-* Story maps that span multiple Jira projects
 * Swimlanes based on any custom field, including multi-select fields
 * Iteration timeframes that group sprints into larger phases
 * Goal issues above the map, linked to the work they fund

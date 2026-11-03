@@ -1,6 +1,6 @@
 ---
 title: 'Advanced Features'
-description: "Verified capabilities in Advanced Story Maps for Jira, from custom hierarchies and swimlanes to PNG export and admin controls."
+description: "Verified capabilities in Advanced Story Maps for Jira, from custom-field swimlanes to goals, roadmap, and PNG export."
 ---
 
 Advanced Story Maps adds flexible structure and planning controls to the core Story Maps experience. The app works with Jira issues, boards, links, and fields; it does not create a separate project record.
@@ -14,7 +14,7 @@ Advanced Story Maps adds flexible structure and planning controls to the core St
 - **[Hierarchy and Top-level Elements](/docs/pro-app/top-level-elements):** configure an optional activity or goal row above the backbone.
 - **Multiple maps:** maintain several planning views in one Jira project.
 - **Flexible hierarchy:** configure the issue types and links used for the backbone and optional top-level activities.
-- **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it.
+- **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it. This is available in both editions; Advanced adds custom-field swimlanes when a release spans projects.
 
 ### Planning views
 

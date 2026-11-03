@@ -30,7 +30,7 @@ Success is a customer who finds the answer they came for and keeps planning, and
 
 Three claims a neighboring Jira story-mapping app could not truthfully copy:
 
-1. **Depth for complex organizations.** The Advanced edition goes beyond a single map: custom issue hierarchies and link types, custom-field swimlanes, a goals/activities level above epics, multi-project maps, iteration planning, and admin configuration.
+1. **Depth for complex organizations.** The Advanced edition goes beyond the core map: custom-field swimlanes, a goals/activities level above epics, iteration planning, a roadmap view, and PNG export.
 2. **Native to Jira, not parallel to it.** No separate service, account, or synced copy. Issues, links, sprints, and releases stay in Jira; the story map is a view over them, and changes reflect back into the board.
 3. **Independent and responsive.** A small independent vendor: direct support, fast fixes, and a published security posture — versus a large vendor's roadmap and ticket queue.
 
@@ -46,8 +46,8 @@ Three claims a neighboring Jira story-mapping app could not truthfully copy:
 
 **Confirmed capabilities** (see `src/routes/docs/` for the authoritative detail):
 
-- Story Maps for Jira: multiple maps per Jira project, visual planning with epics and issues, sprint and release swimlanes.
-- Advanced Story Maps for Jira: everything above plus maps spanning multiple Jira projects, any Jira issue and link type for hierarchy levels, top-level goals and activities, custom-field swimlanes, configurable card layout, epic and swimlane statistics (including time tracking and third-party apps such as Foxly), per-project enable/disable, dynamic maps loaded from any agile board, PNG export, and Advanced Roadmaps parent/child relationships on Jira Premium.
+- Story Maps for Jira: multiple maps per Jira project, visual planning with epics and issues, maps built from any agile board (including boards that span multiple Jira projects), sprint and release swimlanes, dependency lines, and configurable hierarchy types and links.
+- Advanced Story Maps for Jira: everything above plus custom-field swimlanes (including multi-select fields), a top-level goals/activities level, iteration timeframes, a roadmap view, configurable card layout, epic and swimlane statistics (including time tracking and third-party apps such as Foxly), per-project enable/disable, static maps, PNG export, and Advanced Roadmaps parent/child relationships on Jira Premium.
 - Moving from Story Maps to Advanced requires no migration: Advanced reads the Story Maps data structures and adds to them. Customers uninstall Story Maps after verifying the Advanced installation to avoid duplicate menu entries.
 
 **Technical constraints:**
