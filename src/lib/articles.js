@@ -10,7 +10,7 @@ export const articles = [
 	{
 		href: '/articles/how-to-do-cross-project-releases-in-jira',
 		title: 'How to do cross-project releases in Jira',
-		description: 'Compare ways to plan releases across several Jira projects and pick the one that fits.'
+		description: 'Compare four ways to plan releases across several Jira projects and pick the one that fits.'
 	},
 	{
 		href: '/articles/how-to-use-custom-fields-on-cards-effectively',

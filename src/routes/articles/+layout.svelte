@@ -20,8 +20,9 @@
 		},
 		'/articles/how-to-do-cross-project-releases-in-jira': {
 			title: 'How to do Cross Project Releases in Jira',
-			description: 'Compare practical ways to plan cross-project releases in Jira and keep fix versions useful across projects, with and without an app.',
+			description: 'Compare four practical ways to plan releases across several Jira projects, including cross-space releases in Jira plans, and keep fix versions useful.',
 			date: '2022-10-12',
+			updated: '2026-11-03',
 			author: 'Stefan Ernst',
 			preloadImage: '/blog/cross-project/crossproject3.png'
 		},
