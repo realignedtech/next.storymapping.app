@@ -4,8 +4,8 @@
 export const articles = [
 	{
 		href: '/articles/get-started-with-user-story-mapping',
-		title: 'Getting started with user story mapping in Jira',
-		description: 'Build your first user story map in Jira and arrange a backlog by the user journey.'
+		title: 'User story mapping in Jira: a worked example',
+		description: 'A step-by-step worked example: agree the backbone, place the stories, and slice a release.'
 	},
 	{
 		href: '/articles/how-to-do-cross-project-releases-in-jira',

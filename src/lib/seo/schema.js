@@ -80,7 +80,7 @@ export function techArticleSchema({ headline, description, url, keywords, produc
 	};
 }
 
-export function articleSchema({ headline, description, url, datePublished, dateModified, image }) {
+export function articleSchema({ headline, description, url, datePublished, dateModified, image, author }) {
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'Article',
@@ -92,7 +92,7 @@ export function articleSchema({ headline, description, url, datePublished, dateM
 		dateModified: dateModified || datePublished,
 		...(image ? { image: [image] } : {}),
 		inLanguage: 'en',
-		author: { '@id': `${siteOrigin}/#organization` },
+		author: author ? { '@type': 'Person', name: author } : { '@id': `${siteOrigin}/#organization` },
 		publisher: { '@id': `${siteOrigin}/#organization` }
 	};
 }

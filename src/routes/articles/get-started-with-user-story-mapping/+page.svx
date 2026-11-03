@@ -1,0 +1,70 @@
+<script>
+	import StoryMapDemo from '$lib/components/StoryMapDemo.svelte';
+</script>
+
+A user story map puts the user journey above the backlog. The steps a person takes run across the top, and the Jira issues that support each step sit underneath. That single view lets a team talk about scope and sequence while every card stays a real Jira issue.
+
+This is a worked example. It uses a checkout flow for an online shop, but the same steps apply to any product. You need Story Maps for Jira installed in a Jira Cloud project and a board with some issues on it.
+
+## 1. Start with the backlog you have
+
+You do not need a tidy backlog to begin. The app reads the epics, issues, links, sprints, and releases that already exist in your project, and builds the map from one of its agile boards.
+
+Open **Story Maps** from the project navigation and pick the board the map should follow. That board supplies the sprints and releases that later become lanes on the map.
+
+## 2. Agree the backbone
+
+The top row is the backbone: the activities a user completes, in order. For the shop example:
+
+- Search for a product
+- View the product page
+- Add the product to the cart
+- View the cart
+- Check out
+
+Keep the backbone short and in the user's language. If something on the row is really a feature rather than a step a person takes, it belongs lower down as an epic or a story.
+
+<figure class="article-mockup">
+	<StoryMapDemo />
+	<figcaption>The map from the example, with the backbone on top and the backlog underneath. Switch the swimlanes to <strong>Releases</strong> to slice a release.</figcaption>
+</figure>
+
+## 3. Add the epics
+
+Under each activity, add the epics that describe what the product must do for that step. You can create an epic from the map or search for one that already exists in Jira. Adding an existing epic keeps the map aligned with the work the team has already agreed.
+
+## 4. Place the stories
+
+Now move the stories, tasks, and bugs under the epic they belong to. Dragging a card on the map updates the issue in Jira, so the board and the map never drift apart. Ranking works the same way: drop a story above or below another one and its position in the Jira backlog updates too.
+
+Two things are worth doing during this pass:
+
+- Move anything that does not belong in this release below the line rather than deleting it.
+- Leave a gap where you are not sure yet. An empty column is a better signal than a card that is only there to fill space.
+
+## 5. Slice a release
+
+Switch the swimlanes to **Releases** to see the work against the versions on the board. Drag stories into a release to set their fix version, or leave them in the unscheduled lane. Release swimlanes are part of Story Maps for Jira, so this works in the base edition as well as Advanced.
+
+The map now answers a question a release plan usually cannot: what does this slice actually let a user do, end to end?
+
+## 6. Plan the sprints
+
+Switch the lanes to **Sprints** for the next iteration. The lanes come from the board, so moving an issue into a sprint lane moves it into that sprint in Jira. Planning a sprint on the map keeps the story in context instead of pulling it out of the backlog on its own.
+
+## 7. Keep Jira as the source of truth
+
+A story map is a view over Jira, not a second copy of it. Every card is a Jira issue, edits write back through Jira, and your Jira permissions decide what you can see or change. There is no separate account to manage and no data to sync.
+
+## What changes with Advanced
+
+Story Maps for Jira already includes multiple maps per project, sprint and release swimlanes, and dependency lines. [Advanced Story Maps for Jira](/showcase/advanced) adds maps that span several projects, custom-field swimlanes, iteration timeframes, goal issues, configurable card layouts, statistics, and PNG export. [Compare the two editions](/download) if you are not sure which one fits.
+
+## Where to go next
+
+- [Create and open your first map](/docs/getting-started)
+- [Plan work into sprints and releases](/docs/tutorials/planning-sprints-and-releases)
+- [Understand and arrange work on the map](/docs/tutorials/working-with-the-map)
+- [Read the best practices](/docs/best-practices)
+
+Story Maps for Jira is available on the [Atlassian Marketplace](https://marketplace.atlassian.com/1224357).

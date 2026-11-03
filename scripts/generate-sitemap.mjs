@@ -61,7 +61,7 @@ function lastmodFor(file) {
 }
 
 const lastmodByPath = new Map();
-for (const file of walk(routesDir).filter((path) => /\+page\.(svelte|md)$/.test(path))) {
+for (const file of walk(routesDir).filter((path) => /\+page\.(svelte|md|svx)$/.test(path))) {
 	const canonicalPath = canonicalPathFor(routeFor(file));
 	const lastmod = lastmodFor(file);
 	const current = lastmodByPath.get(canonicalPath);

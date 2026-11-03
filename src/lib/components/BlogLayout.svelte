@@ -26,7 +26,9 @@
 	const APP_LINK = "https://marketplace.atlassian.com/apps/1224357";
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let relatedArticles = $derived(articles.filter((article) => article.href !== sourcePage));
+	let author = $derived(meta.author || '');
 	let publishedTime = $derived(meta.date ? new Date(`${meta.date}T00:00:00Z`).toISOString() : '');
+	let modifiedTime = $derived(meta.updated ? new Date(`${meta.updated}T00:00:00Z`).toISOString() : publishedTime);
 	let shareImage = $derived(meta.highlight ? `${siteOrigin}${meta.highlight}` : `${siteOrigin}/realignedOG.png`);
 	let structuredData = $derived.by(() => {
 		if (!meta.title) return [];
@@ -36,6 +38,8 @@
 				description: meta.description,
 				url: canonicalUrlFor($page.url.pathname),
 				datePublished: publishedTime,
+				dateModified: modifiedTime,
+				author,
 				image: shareImage
 			}),
 			breadcrumbSchema([
@@ -63,6 +67,7 @@
 	description={meta.description || "Story Maps Blog"}
 	ogType={meta.title ? 'article' : 'website'}
 	{publishedTime}
+	{modifiedTime}
 	image={shareImage}
 	jsonLd={structuredData}
 />
@@ -83,7 +88,7 @@
 		<div class="pt-6 pb-16">
 			<a href="/blog" class="text-[var(--accent-cyan)] font-semibold no-underline hover:text-[var(--action-hover)]">Blog</a>
 			<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 mt-4">{meta.title}</h1>
-			<span class="text-lg text-gray-400">{new Date(meta.date)?.toDateString()}</span>
+			<span class="text-lg text-gray-400">{author ? `${author} · ` : ''}{new Date(meta.date)?.toDateString()}{meta.updated ? ` · updated ${new Date(meta.updated)?.toDateString()}` : ''}</span>
 		</div>
 
 		<div class="text-left">
@@ -203,5 +208,17 @@
 		height: auto;
 		margin: 3rem auto;
 		border-radius: 0.75rem;
+	}
+
+	:global(.article-mockup) {
+		margin: 3rem 0;
+	}
+
+	:global(.article-mockup figcaption) {
+		margin-top: 1rem;
+		color: #6b7280;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		text-align: center;
 	}
 </style>
