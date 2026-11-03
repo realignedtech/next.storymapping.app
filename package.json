@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite dev",
 		"build": "vite build",
+		"prebuild": "node scripts/generate-sitemap.mjs",
 		"deploy": "./scripts/deploy.sh",
 		"test": "npm run build && node --test tests/*.test.mjs",
     "preview": "vite preview",

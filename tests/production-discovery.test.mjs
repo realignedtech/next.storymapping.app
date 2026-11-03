@@ -64,6 +64,15 @@ test('sitemap contains every public route on the production origin', () => {
 	}
 });
 
+test('every sitemap URL carries a real lastmod date', () => {
+	const entries = [...sitemap.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod><\/url>/g)];
+	assert.equal(entries.length, urls.length, 'every <loc> needs a matching <lastmod>');
+	for (const [, loc, lastmod] of entries) {
+		const parsed = new Date(lastmod);
+		assert.ok(!Number.isNaN(parsed.valueOf()), `${loc} has an invalid lastmod: ${lastmod}`);
+	}
+});
+
 test('the migration preserves every established production URL as canonical', () => {
 	const sitemapPaths = new Set(urls.map((url) => url.pathname));
 	for (const pathname of establishedPaths) {

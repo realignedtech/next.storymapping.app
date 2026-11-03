@@ -10,6 +10,7 @@
 
 	const APP_LINK = "https://marketplace.atlassian.com/1224357";
 	const DEMO_LINK = "";
+	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let structuredData = $derived([
 		softwareApplicationSchema({
 			name: 'Story Maps for Jira',
@@ -46,7 +47,7 @@
 					<img src="/main/smfree.png" width="2260" height="1394" alt="Basic Story Maps for Jira Screenshot" fetchpriority="high" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-2xl" />
 				</div>
 			</div>
-			<Marketplace dark />
+			<Marketplace dark marketplaceLink={APP_LINK} />
 		</PageHero>
 
 	<section aria-label="Features" class="realigned-band relative w-full overflow-hidden py-20 text-[var(--text-primary)]">
@@ -95,7 +96,7 @@
 			<div class="mt-16 rounded-2xl border border-[var(--border-subtle)] bg-[var(--bg-surface-hover)] p-8 text-center">
 				<h3 class="text-2xl font-bold mb-4 text-[var(--text-primary)]">The new Story Maps experience is live</h3>
 				<p class="mb-6 text-lg text-[var(--text-secondary)]">Story Maps for Jira now supports multiple maps per project, sprint and release swimlanes, and dependencies between issues.</p>
-				<a href={APP_LINK} target="_blank" rel="noreferrer" class="realigned-primary-button">
+				<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-source-page={sourcePage} data-umami-event-placement="showcase_bottom" class="realigned-primary-button">
 					View Story Maps on Atlassian Marketplace
 					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

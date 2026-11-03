@@ -1,9 +1,12 @@
 <script>
 	import { page } from '$app/stores';
 	import { realignedApps } from '$lib/apps.js';
+	import { marketplaceListingId, marketplaceProduct } from '$lib/seo/marketplace.js';
 
 	let { title = "Story Maps", marketplaceLink = "", demoLink = "", h1 = false, disableDemo = false, highlight = "", wide = false } = $props();
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
+	let listingId = $derived(marketplaceLink ? marketplaceListingId(marketplaceLink) : '');
+	let product = $derived(marketplaceLink ? marketplaceProduct(marketplaceLink) : '');
 	let open = $state(false);
 	let showAppsPopover = $state(false);
 	let buttonElement = $state(null);
@@ -98,7 +101,7 @@
 					</button>
 				</li>
 				<li>
-					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'trial' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop" class="realigned-primary-button !rounded-md !px-5 !py-2.5 text-base">
+					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? product : undefined} data-umami-event-listing-id={marketplaceLink ? listingId : undefined} data-umami-event-intent={marketplaceLink ? 'trial' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_desktop" class="realigned-primary-button !rounded-md !px-5 !py-2.5 text-base">
 						View on Marketplace
 					</a>
 				</li>
@@ -112,7 +115,7 @@
 					<a class="rounded-md px-2 py-2 text-base font-medium {highlight === 'Documentation' ? 'text-[var(--accent-cyan)] font-semibold' : 'text-[var(--text-secondary)]'}" href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Documentation</a>
 					<a class="rounded-md px-2 py-2 text-base font-medium {highlight === 'Download' ? 'text-[var(--accent-cyan)] font-semibold' : 'text-[var(--text-secondary)]'}" href="/download" data-umami-event="download_click" data-umami-event-destination="/download" data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" onclick={() => (open = false)}>Compare editions</a>
 					<a class="rounded-md px-2 py-2 text-base font-medium text-[var(--text-secondary)]" href="https://realigned.io?utm_source=storymapping_site" rel="noreferrer">All Realigned apps</a>
-					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? 'story_maps' : undefined} data-umami-event-listing-id={marketplaceLink ? '1224357' : undefined} data-umami-event-intent={marketplaceLink ? 'trial' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" class="realigned-primary-button mt-3 self-start !rounded-md !px-5 !py-2.5 text-base">
+					<a href={marketplaceLink || '/download'} target={marketplaceLink ? '_blank' : undefined} rel={marketplaceLink ? 'noreferrer' : undefined} data-umami-event={marketplaceLink ? 'marketplace_click' : 'download_click'} data-umami-event-product={marketplaceLink ? product : undefined} data-umami-event-listing-id={marketplaceLink ? listingId : undefined} data-umami-event-intent={marketplaceLink ? 'trial' : undefined} data-umami-event-destination={marketplaceLink ? undefined : '/download'} data-umami-event-source-page={sourcePage} data-umami-event-placement="nav_mobile" class="realigned-primary-button mt-3 self-start !rounded-md !px-5 !py-2.5 text-base">
 						View on Marketplace
 					</a>
 				</div>

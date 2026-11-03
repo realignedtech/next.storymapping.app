@@ -46,7 +46,7 @@
 					<img src="/main/smhighlight2.png" width="2314" height="1604" alt="Advanced Story Maps for Jira Screenshot" fetchpriority="high" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-2xl" />
 				</div>
 			</div>
-			<Marketplace dark />
+			<Marketplace dark marketplaceLink={APP_LINK} />
 		</PageHero>
 
 	<section aria-label="Features" class="realigned-band relative w-full overflow-hidden py-20 text-[var(--text-primary)]">

@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { marketplaceListingId, marketplaceProduct } from '$lib/seo/marketplace.js';
 
 	let {
 		name,
@@ -15,8 +16,8 @@
 		featured = false
 	} = $props();
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
-	let listingId = $derived(marketplaceLink?.match(/\/(\d+)(?:[/?]|$)/)?.[1] || '');
-	let product = $derived(listingId === '1224417' ? 'advanced_story_maps' : 'story_maps');
+	let listingId = $derived(marketplaceListingId(marketplaceLink));
+	let product = $derived(marketplaceProduct(marketplaceLink));
 	let intent = $derived('trial');
 </script>
 

@@ -28,3 +28,19 @@ test('Marketplace events classify both editions', () => {
 	assert.match(html, /data-umami-event-product="story_maps"[^>]*data-umami-event-listing-id="1224357"[^>]*data-umami-event-intent="trial"/);
 	assert.match(html, /data-umami-event-product="advanced_story_maps"[^>]*data-umami-event-listing-id="1224417"[^>]*data-umami-event-intent="trial"/);
 });
+
+test('product-page Marketplace links are edition-aware and tracked', () => {
+	for (const [path, listingId, product] of [
+		['build/showcase/advanced.html', '1224417', 'advanced_story_maps'],
+		['build/free-app.html', '1224357', 'story_maps']
+	]) {
+		const html = readFileSync(path, 'utf8');
+		const links = html.match(/<a\b[^>]*href="[^"]*marketplace\.atlassian\.com\/(?:apps\/)?(?:1224357|1224417)[^"]*"[^>]*>/g) || [];
+		assert.ok(links.length > 0, `${path} has no Marketplace links`);
+		for (const tag of links) {
+			assert.match(tag, /data-umami-event="marketplace_click"/, tag);
+			assert.match(tag, new RegExp(`data-umami-event-listing-id="${listingId}"`), tag);
+			assert.match(tag, new RegExp(`data-umami-event-product="${product}"`), tag);
+		}
+	}
+});
