@@ -58,7 +58,6 @@
 		>{marketplaceLabel}</a>
 		<a href={detailsHref} class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-[var(--accent-cyan)] transition hover:text-[var(--action-hover)]">
 			{detailsLabel}
-			<svg class="ml-1.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" /></svg>
 		</a>
 	</div>
 </article>

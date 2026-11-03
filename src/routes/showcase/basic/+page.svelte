@@ -98,9 +98,6 @@
 				<p class="mb-6 text-lg text-[var(--text-secondary)]">Story Maps for Jira now supports multiple maps per project, sprint and release swimlanes, and dependencies between issues.</p>
 				<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-source-page={sourcePage} data-umami-event-placement="showcase_bottom" class="realigned-primary-button">
 					View Story Maps on Atlassian Marketplace
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-					</svg>
 				</a>
 				<p class="mt-6 text-base text-[var(--text-secondary)]">New to the app? <a href="/docs/getting-started" class="font-semibold text-[var(--accent-cyan)] no-underline">Set up your first map</a> or read the <a href="/docs/tutorials" class="font-semibold text-[var(--accent-cyan)] no-underline">tutorials</a>.</p>
 			</div>

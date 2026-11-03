@@ -142,25 +142,13 @@
 			<!-- Footer Contact -->
 			<div class="mt-16 pt-8 border-t border-gray-200">
 				<div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-					<div class="flex items-start gap-4">
-						<div class="w-12 h-12 bg-[var(--action-soft)] rounded-full flex items-center justify-center flex-shrink-0">
-							<svg class="w-6 h-6 text-[var(--accent-cyan)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-							</svg>
-						</div>
-						<div>
-							<h2 class="text-lg font-bold text-gray-800 mb-2">Install Story Maps for Jira</h2>
-							<p class="text-gray-600 mb-4">
-								Story Maps for Jira is available from the Atlassian Marketplace. Install it on your Jira site and open it from any Jira Software project.
-							</p>
-																								<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-intent="trial" data-umami-event-source-page={sourcePage} data-umami-event-placement="article_footer" class="inline-flex items-center gap-2 bg-gradient-to-br from-[#f97316] to-[#f59e0b] text-white px-4 py-2 rounded-lg font-semibold hover:from-[#ea580c] hover:to-[#f97316] transition-colors duration-200">
-								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-								</svg>
-								Install the app
-							</a>
-						</div>
-					</div>
+					<h2 class="text-lg font-bold text-gray-800 mb-2">Install Story Maps for Jira</h2>
+					<p class="text-gray-600 mb-4">
+						Story Maps for Jira is available from the Atlassian Marketplace. Install it on your Jira site and open it from any Jira Software project.
+					</p>
+					<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-intent="trial" data-umami-event-source-page={sourcePage} data-umami-event-placement="article_footer" class="inline-flex items-center bg-gradient-to-br from-[#f97316] to-[#f59e0b] text-white px-4 py-2 rounded-lg font-semibold hover:from-[#ea580c] hover:to-[#f97316] transition-colors duration-200">
+						Install the app
+					</a>
 				</div>
 			</div>
 		</div>

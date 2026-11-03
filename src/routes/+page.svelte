@@ -71,9 +71,6 @@
 				<div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
 					<a href="/free-app" class="realigned-primary-button text-base">
 						See Story Maps in action
-						<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12h14m-6-6 6 6-6 6" />
-						</svg>
 					</a>
 					<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-intent="trial" data-umami-event-source-page="/" data-umami-event-placement="homepage_hero" class="realigned-secondary-button text-base">
 						View on Atlassian Marketplace
