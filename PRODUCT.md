@@ -46,7 +46,7 @@ Three claims a neighboring Jira story-mapping app could not truthfully copy:
 
 **Confirmed capabilities** (see `src/routes/docs/` for the authoritative detail):
 
-- Story Maps for Jira: multiple maps per Jira project, visual planning with epics and issues, maps built from any agile board (including boards that span multiple Jira projects), sprint and release swimlanes, dependency lines, and configurable hierarchy types and links.
+- Story Maps for Jira: multiple maps per Jira project, visual planning with epics and issues, maps built from any agile board (including boards that span multiple Jira projects), sprint and release swimlanes (releases that share a name across projects are unified into one lane), dependency lines, and configurable hierarchy types and links.
 - Advanced Story Maps for Jira: everything above plus custom-field swimlanes (including multi-select fields), a top-level goals/activities level, iteration timeframes, a roadmap view, configurable card layout, epic and swimlane statistics (including time tracking and third-party apps such as Foxly), per-project enable/disable, static maps, PNG export, and Advanced Roadmaps parent/child relationships on Jira Premium.
 - Moving from Story Maps to Advanced requires no migration: Advanced reads the Story Maps data structures and adds to them. Customers uninstall Story Maps after verifying the Advanced installation to avoid duplicate menu entries.
 

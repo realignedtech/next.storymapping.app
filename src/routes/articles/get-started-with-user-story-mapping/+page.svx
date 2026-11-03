@@ -58,7 +58,7 @@ A story map is a view over Jira, not a second copy of it. Every card is a Jira i
 
 ## What changes with Advanced
 
-Story Maps for Jira already includes multiple maps per project, sprint and release swimlanes, dependency lines, and maps from any board you can access, including boards that span several projects. [Advanced Story Maps for Jira](/showcase/advanced) adds custom-field swimlanes, iteration timeframes, goal issues, configurable card layouts, statistics, and PNG export. [Compare the two editions](/download) if you are not sure which one fits.
+Story Maps for Jira already includes multiple maps per project, sprint and release swimlanes, dependency lines, and maps from any board you can access, including boards that span several projects. Releases that share a name across projects are unified into one lane. [Advanced Story Maps for Jira](/showcase/advanced) adds custom-field swimlanes, iteration timeframes, goal issues, configurable card layouts, statistics, and PNG export. [Compare the two editions](/download) if you are not sure which one fits.
 
 ## Where to go next
 

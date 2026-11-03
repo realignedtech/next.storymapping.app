@@ -63,7 +63,7 @@ Back on the map, pick the field in the **Swimlanes** menu. Dragging an issue bet
 
 ![Story mapping view](/blog/cross-project/crossproject6.png)
 
-Release lanes come from the board, so a map built from a board that spans projects shows the versions of each project. A Jira issue can only carry a fix version from its own project, so a single release object across projects needs custom-field swimlanes in [Advanced Story Maps for Jira](/showcase/advanced) or a cross-space release in a Jira plan. The [multi-project releases tutorial](/docs/tutorials/multi-project-releases) covers the board setup.
+Release lanes come from the board, so a map built from a board that spans projects shows the versions of each project. Releases that share a name are unified into one swimlane, and dragging an issue into that lane assigns the matching version in its own project. Both editions do this; [Advanced Story Maps for Jira](/showcase/advanced) adds custom-field swimlanes when your releases live in a custom field. The [multi-project releases tutorial](/docs/tutorials/multi-project-releases) walks through the setup.
 
 ## A worked example
 

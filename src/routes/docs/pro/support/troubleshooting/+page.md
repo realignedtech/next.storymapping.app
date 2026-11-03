@@ -36,12 +36,12 @@ You need to manually reopen the old sprint and clear the field. [See here for mo
 ## Can not add issue to release
 
 If you have more than 1 project in your story map, you will see
-the release versions of all projects. But you can only assign the
-issues from one project to fixVersions of the same project. There is
-unfortunately nothing we can do about this.
+the release versions of all projects. Releases that share a name are unified into one
+swimlane, so a cross-project release appears once. An issue is still assigned to the
+version of its own project, which Jira requires.
 
-If you want one release that spans projects rather than per-project versions, use
-custom-field swimlanes in Advanced Story Maps for Jira, or a cross-space release in a Jira plan.
+If your releases live in a custom field rather than fix versions, use custom-field
+swimlanes in Advanced Story Maps for Jira, or a cross-space release in a Jira plan.
 
 ## Could not update estimate
 

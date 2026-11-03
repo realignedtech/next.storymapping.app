@@ -14,7 +14,7 @@ Advanced Story Maps adds flexible structure and planning controls to the core St
 - **[Hierarchy and Top-level Elements](/docs/pro-app/top-level-elements):** configure an optional activity or goal row above the backbone.
 - **Multiple maps:** maintain several planning views in one Jira project.
 - **Flexible hierarchy:** configure the issue types and links used for the backbone and optional top-level activities.
-- **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it. This is available in both editions; Advanced adds custom-field swimlanes when a release spans projects.
+- **Cross-project work:** include issues from more than one Jira project when the selected board or map configuration permits it. This is available in both editions; releases that share a name are unified into one swimlane, and Advanced adds custom-field swimlanes when a release lives in a custom field.
 
 ### Planning views
 

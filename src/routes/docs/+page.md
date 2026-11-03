@@ -27,7 +27,7 @@ A map is based on one agile board. Sprint and release lanes come from that board
 
 ## Choose your edition
 
-**Story Maps for Jira** builds maps from any agile board you can access, including boards that span several Jira projects. It includes multiple maps per project, sprint and release swimlanes, dependency lines, and configurable hierarchy types and links. It is available on the Atlassian Marketplace.
+**Story Maps for Jira** builds maps from any agile board you can access, including boards that span several Jira projects. It includes multiple maps per project, sprint and release swimlanes, unified release swimlanes when projects share a version name, dependency lines, and configurable hierarchy types and links. It is available on the Atlassian Marketplace.
 
 **Advanced Story Maps for Jira** adds custom-field swimlanes for cross-project release planning, goal issues above the map, iteration timeframes, configurable cards, statistics, and PNG export. See [Moving to Advanced](/docs/support/freetopro) for the full comparison.
 

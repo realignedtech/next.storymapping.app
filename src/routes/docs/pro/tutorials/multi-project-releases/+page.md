@@ -1,6 +1,6 @@
 ---
 title: 'Multi-Project Releases Tutorial'
-description: "Coordinate releases across several Jira projects with Advanced Story Maps, using one shared map to plan and track a delivery."
+description: "Coordinate releases across several Jira projects with Story Maps for Jira, using one shared map to plan and track a delivery."
 preloadImage: "/docs/multi-release1.png"
 ---
 
