@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { join, relative } from 'node:path';
 import test from 'node:test';
-import { canonicalPathByRoute } from '../src/lib/seo/canonical.js';
+import { canonicalPathByRoute, canonicalPathFor } from '../src/lib/seo/canonical.js';
 
 const sitemap = readFileSync('static/sitemap.xml', 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]));
@@ -70,6 +71,41 @@ test('every sitemap URL carries a real lastmod date', () => {
 	for (const [, loc, lastmod] of entries) {
 		const parsed = new Date(lastmod);
 		assert.ok(!Number.isNaN(parsed.valueOf()), `${loc} has an invalid lastmod: ${lastmod}`);
+	}
+});
+
+test('every canonical page has at least three internal inbound links', () => {
+	function walk(directory) {
+		return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+			const path = join(directory, entry.name);
+			return entry.isDirectory() ? walk(path) : [path];
+		});
+	}
+	const pages = new Map();
+	for (const file of walk('build').filter((path) => path.endsWith('.html'))) {
+		const rel = relative('build', file).replace(/\.html$/, '');
+		pages.set(canonicalPathFor(rel === 'index' ? '/' : `/${rel}`), file);
+	}
+	const inbound = new Map();
+	for (const [page, file] of pages) {
+		const html = readFileSync(file, 'utf8');
+		const targets = new Set();
+		for (const match of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
+			let href = match[1];
+			if (!href.startsWith('/') || href.startsWith('//')) continue;
+			href = href.split('#')[0].split('?')[0].replace(/\/+$/, '') || '/';
+			if (/\.[a-z0-9]+$/i.test(href)) continue;
+			const target = canonicalPathFor(href);
+			if (target !== page) targets.add(target);
+		}
+		for (const target of targets) {
+			if (!inbound.has(target)) inbound.set(target, new Set());
+			inbound.get(target).add(page);
+		}
+	}
+	for (const page of pages.keys()) {
+		const count = inbound.get(page)?.size || 0;
+		assert.ok(count >= 3, `${page} has only ${count} internal inbound links`);
 	}
 });
 

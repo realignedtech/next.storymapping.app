@@ -36,6 +36,9 @@ A map is based on one agile board. Sprint and release lanes come from that board
 - [Create and open your first map](/docs/getting-started)
 - [Understand and arrange work on the map](/docs/tutorials/working-with-the-map)
 - [Plan work into sprints and releases](/docs/tutorials/planning-sprints-and-releases)
+- [Read the best practices for story maps and journey maps](/docs/best-practices)
+- [Compare a story map with a journey map](/docs/best-practices/storyvsjourneymap)
+- [See what changed in recent releases](/docs/whatsnew)
 - [Resolve a permission or configuration problem](/docs/support/troubleshooting)
 
 ## Jira remains the source of truth

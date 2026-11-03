@@ -102,6 +102,7 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
 					</svg>
 				</a>
+				<p class="mt-6 text-base text-[var(--text-secondary)]">New to the app? <a href="/docs/getting-started" class="font-semibold text-[var(--accent-cyan)] no-underline">Set up your first map</a> or read the <a href="/docs/tutorials" class="font-semibold text-[var(--accent-cyan)] no-underline">tutorials</a>.</p>
 			</div>
 		</div>
 	</section>

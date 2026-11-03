@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { canonicalUrlFor, siteOrigin } from '$lib/seo/canonical.js';
 	import { articleSchema, breadcrumbSchema, videoObjectSchema } from '$lib/seo/schema.js';
+	import { articles } from '$lib/articles.js';
 
 	let { 
 		meta = {}, 
@@ -24,6 +25,7 @@
 
 	const APP_LINK = "https://marketplace.atlassian.com/apps/1224357";
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
+	let relatedArticles = $derived(articles.filter((article) => article.href !== sourcePage));
 	let publishedTime = $derived(meta.date ? new Date(`${meta.date}T00:00:00Z`).toISOString() : '');
 	let shareImage = $derived(meta.highlight ? `${siteOrigin}${meta.highlight}` : `${siteOrigin}/realignedOG.png`);
 	let structuredData = $derived.by(() => {
@@ -111,6 +113,26 @@
 				prose-figure:shadow-lg">
 				{@render children()}
 			</div>
+
+			<!-- Related reading -->
+			{#if relatedArticles.length > 0}
+				<section aria-labelledby="related-title" class="mt-16 border-t border-gray-200 pt-8">
+					<h2 id="related-title" class="text-2xl font-bold text-gray-800">Related reading</h2>
+					<ul class="mt-6 grid list-none gap-4 p-0 sm:grid-cols-2">
+						{#each relatedArticles as article}
+							<li>
+								<a href={article.href} class="block h-full rounded-xl border border-gray-200 p-4 no-underline transition-colors hover:border-[var(--accent-cyan)]">
+									<span class="font-semibold text-[var(--accent-cyan)]">{article.title}</span>
+									<span class="mt-1 block text-sm leading-6 text-gray-600">{article.description}</span>
+								</a>
+							</li>
+						{/each}
+					</ul>
+					<p class="mt-6 text-lg text-gray-600">
+						New to the map? Start with <a href="/docs/getting-started" class="font-semibold text-[var(--accent-cyan)] no-underline">the setup guide</a>, then compare <a href="/free-app" class="font-semibold text-[var(--accent-cyan)] no-underline">Story Maps for Jira</a> and <a href="/showcase/advanced" class="font-semibold text-[var(--accent-cyan)] no-underline">Advanced Story Maps</a>.
+					</p>
+				</section>
+			{/if}
 
 			<!-- Footer Contact -->
 			<div class="mt-16 pt-8 border-t border-gray-200">

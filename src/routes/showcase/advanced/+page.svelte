@@ -91,6 +91,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="mt-16 text-center">
+				<p class="text-lg text-[var(--text-secondary)]">Planning releases across projects? Read the <a href="/docs/tutorials/multi-project-releases" class="font-semibold text-[var(--accent-cyan)] no-underline">multi-project releases tutorial</a> or browse the <a href="/docs/pro-app/overview" class="font-semibold text-[var(--accent-cyan)] no-underline">Advanced documentation</a>.</p>
+			</div>
 		</div>
 	</section>
 	</main>

@@ -164,6 +164,20 @@
 		</div>
 	</section>
 
+	<section aria-labelledby="learn-title" class="bg-[var(--bg-base)] py-20">
+		<div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+			<h2 id="learn-title" class="text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">Learn more about story mapping in Jira</h2>
+			<p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[var(--text-secondary)]">Set up your first map, plan sprints and releases, or read the best practices before you install.</p>
+			<ul class="mt-8 flex list-none flex-wrap justify-center gap-x-8 gap-y-3 p-0 text-base font-semibold">
+				<li><a href="/docs/getting-started" class="text-[var(--accent-cyan)] no-underline">Set up your first map</a></li>
+				<li><a href="/docs/tutorials/working-with-the-map" class="text-[var(--accent-cyan)] no-underline">Work with the map</a></li>
+				<li><a href="/docs/tutorials/planning-sprints-and-releases" class="text-[var(--accent-cyan)] no-underline">Plan sprints and releases</a></li>
+				<li><a href="/docs/best-practices/storyvsjourneymap" class="text-[var(--accent-cyan)] no-underline">Story map vs journey map</a></li>
+				<li><a href="/docs/whatsnew" class="text-[var(--accent-cyan)] no-underline">What&#39;s new</a></li>
+			</ul>
+		</div>
+	</section>
+
 	<section aria-labelledby="final-cta-title" class="realigned-hero relative overflow-hidden py-20">
 		<DottedClouds opacity={0.12} />
 		<div class="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
