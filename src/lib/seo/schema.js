@@ -46,7 +46,6 @@ export function softwareApplicationSchema({
 	name,
 	description,
 	url,
-	marketplaceUrl,
 	applicationCategory = 'BusinessApplication',
 	operatingSystem = 'Atlassian Jira Cloud'
 }) {
@@ -58,14 +57,7 @@ export function softwareApplicationSchema({
 		url,
 		applicationCategory,
 		operatingSystem,
-		publisher: { '@id': `${siteOrigin}/#organization` },
-		offers: {
-			'@type': 'Offer',
-			price: '0',
-			priceCurrency: 'USD',
-			description: 'Free trial through the Atlassian Marketplace',
-			url: marketplaceUrl
-		}
+		publisher: { '@id': `${siteOrigin}/#organization` }
 	};
 }
 

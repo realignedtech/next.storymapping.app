@@ -27,7 +27,7 @@ A map is based on one agile board. Sprint and release lanes come from that board
 
 ## Choose your edition
 
-**Story Maps for Jira** works within a single Jira project and uses the project's own issue types and links. It is free.
+**Story Maps for Jira** works within a single Jira project and uses the project's own issue types and links. It is available on the Atlassian Marketplace.
 
 **Advanced Story Maps for Jira** adds maps that span projects, custom-field swimlanes for cross-project release planning, goal issues above the map, iteration timeframes, configurable cards, statistics, and PNG export. See [Moving to Advanced](/docs/support/freetopro) for the full comparison.
 

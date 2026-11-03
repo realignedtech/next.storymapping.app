@@ -12,9 +12,8 @@
 		softwareApplicationSchema({
 			name: 'Story Maps for Jira',
 			description:
-				'Turns a Jira backlog into a visual story map for planning sprints and releases inside Jira.',
-			url: canonicalUrlFor('/free-app'),
-			marketplaceUrl: APP_LINK
+				'Turns a Jira backlog into a visual user story map for planning sprints and releases inside Jira.',
+			url: canonicalUrlFor('/free-app')
 		})
 	]);
 
@@ -41,8 +40,8 @@
 </script>
 
 <SiteShell
-	headTitle="Story Maps for Jira | Visual release planning in Jira"
-	description="Story Maps for Jira turns your Jira backlog into a visual story map so teams can plan sprints and releases and keep work in Jira."
+	headTitle="User story mapping in Jira | Story Maps for Jira"
+	description="Story Maps for Jira turns your Jira backlog into a visual user story map so teams can plan sprints and releases and keep work in Jira."
 	marketplaceLink={APP_LINK}
 	jsonLd={structuredData}
 >
@@ -54,10 +53,10 @@
 		<div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-4xl text-center">
 				<h1 id="hero-title" class="text-[clamp(40px,6vw,68px)] font-bold leading-[1.04] tracking-tight text-white">
-					See your Jira backlog as a story map.
+					See your Jira backlog as a user story map.
 				</h1>
 				<p class="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-white/85 sm:text-2xl">
-			Arrange issues along the user journey and plan sprints and releases without leaving Jira.
+			User story mapping in Jira: arrange issues along the user journey and plan sprints and releases without leaving Jira.
 				</p>
 
 				<div class="mt-7 inline-flex items-center gap-2.5 border-y border-cyan-100/25 px-3 py-2.5 text-left">

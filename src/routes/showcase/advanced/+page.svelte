@@ -15,8 +15,7 @@
 			name: 'Advanced Story Maps for Jira',
 			description:
 				'Advanced story mapping for Jira with custom hierarchies, custom-field swimlanes, multi-project maps, and portfolio planning.',
-			url: canonicalUrlFor($page.url.pathname),
-			marketplaceUrl: APP_LINK
+			url: canonicalUrlFor($page.url.pathname)
 		})
 	]);
 </script>

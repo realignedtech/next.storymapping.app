@@ -77,6 +77,7 @@
 					<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Choose your edition</p>
 					<h2 id="editions-title" class="mt-4 text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">Story Maps for Jira or Advanced Story Maps?</h2>
 					<p class="mt-4 text-lg leading-8 text-[var(--text-secondary)]">Both editions keep planning connected to Jira issues. Advanced Story Maps adds more ways to structure and coordinate the work.</p>
+					<p class="mt-4 text-sm leading-6 text-[var(--text-muted)]">Both editions are paid apps. Each Atlassian Marketplace listing shows the current price and trial terms.</p>
 				</div>
 
 				<div class="mt-12 grid gap-6 lg:grid-cols-2">

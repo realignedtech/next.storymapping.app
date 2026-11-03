@@ -14,9 +14,8 @@
 		softwareApplicationSchema({
 			name: 'Story Maps for Jira',
 			description:
-				'Turns a Jira backlog into a visual story map for planning sprints and releases inside Jira.',
-			url: canonicalUrlFor($page.url.pathname),
-			marketplaceUrl: APP_LINK
+				'Turns a Jira backlog into a visual user story map for planning sprints and releases inside Jira.',
+			url: canonicalUrlFor($page.url.pathname)
 		})
 	]);
 </script>
@@ -26,8 +25,8 @@
 </svelte:head>
 
 <SiteShell
-	headTitle="Story Maps for Jira - Basic User Story Mapping"
-	description="See Story Maps for Jira in action: arrange a Jira backlog into a visual story map and plan sprints and releases without leaving Jira."
+	headTitle="Story mapping tool for Jira | Story Maps for Jira"
+	description="Story Maps for Jira is a user story mapping tool for Jira: arrange a backlog into a visual story map and plan sprints and releases without leaving Jira."
 	highlight="Showcase"
 	marketplaceLink={APP_LINK}
 	demoLink={DEMO_LINK}
@@ -37,8 +36,8 @@
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
 		<PageHero
 			id="showcase-title"
-			title="Story Maps for Jira"
-			description="Get started with user story mapping in Jira. Create visual story maps to organize your backlog and plan releases."
+			title="User story mapping in Jira"
+			description="Story Maps for Jira arranges your Jira backlog into a visual map so you can plan sprints and releases without leaving Jira."
 			iconSrc="/smFreeIcon.svg"
 			iconAlt="Story Maps for Jira Icon"
 		>
