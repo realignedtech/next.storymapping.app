@@ -9,7 +9,6 @@
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
 
-	const APP_LINK = 'https://marketplace.atlassian.com/1224357';
 	let currentRoute = $derived($page.url.pathname.replace(/\/$/, '') || '/trust');
 	let currentPage = $derived(trustPageFor(currentRoute));
 	let isOverview = $derived(currentRoute === '/trust');
@@ -34,9 +33,6 @@
 <SiteShell
 	headTitle={`Story Maps for Jira - ${currentPage.title}`}
 	description={currentPage.description}
-	highlight="Trust Center"
-	marketplaceLink={APP_LINK}
-	wide
 	jsonLd={structuredData}
 >
 	<section class="trust-hero border-b border-[var(--border-subtle)]">

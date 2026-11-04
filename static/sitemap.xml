@@ -14,24 +14,26 @@
 	<url><loc>https://storymapping.app/docs/best-practices</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/best-practices/storyvsjourneymap</loc><lastmod>2026-11-03T12:24:31.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/getting-started</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app</loc><lastmod>2026-11-03T12:24:31.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/board</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/export</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/map-types</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/overview</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/pro-admin-guide</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/pro-settings</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/pro-setup</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/pro-story-mapping</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/pro-app/top-level-elements</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro</loc><lastmod>2026-11-03T12:24:31.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/admin-guide</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/cloud-migration</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/features</loc><lastmod>2026-11-03T13:05:00.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/features/board</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/features/export</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/features/hierarchy</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/features/map-types</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/features/settings</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/features/using-the-app</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/migration</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/overview</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/setup</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/support</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/support/eula</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/support/privacy</loc><lastmod>2026-11-02T20:35:10.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/support/troubleshooting</loc><lastmod>2026-11-03T13:05:00.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/tutorials</loc><lastmod>2026-11-03T12:24:31.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/tutorials/custom-field-swimlanes</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
+	<url><loc>https://storymapping.app/docs/pro/tutorials/multi-project-releases</loc><lastmod>2026-11-03T13:05:00.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/pro/whatsnew</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/support</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/support/eula</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
@@ -39,8 +41,6 @@
 	<url><loc>https://storymapping.app/docs/support/privacy</loc><lastmod>2026-11-02T20:35:10.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/support/troubleshooting</loc><lastmod>2026-11-03T13:05:00.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/tutorials</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/tutorials/custom-field-swimlanes</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
-	<url><loc>https://storymapping.app/docs/tutorials/multi-project-releases</loc><lastmod>2026-11-03T13:05:00.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/tutorials/planning-sprints-and-releases</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/tutorials/working-with-the-map</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>
 	<url><loc>https://storymapping.app/docs/whatsnew</loc><lastmod>2026-10-30T16:02:48.000Z</lastmod></url>

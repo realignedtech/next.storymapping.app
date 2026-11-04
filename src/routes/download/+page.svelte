@@ -54,8 +54,6 @@
 <SiteShell
 	headTitle="Compare Story Maps for Jira and Advanced Story Maps"
 	description="Compare Story Maps for Jira and Advanced Story Maps for Jira, see which edition fits your team, and start a trial from Atlassian Marketplace."
-	highlight="Download"
-	marketplaceLink={STORY_MAPS_APP_LINK}
 >
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">
 		<PageHero
@@ -66,7 +64,7 @@
 			compact
 		>
 			<div class="flex flex-col justify-center gap-3 sm:flex-row">
-				<a href="#editions" class="realigned-primary-button">Choose your edition</a>
+				<a href="#editions" class="realigned-primary-button">Compare editions</a>
 				<a href="/docs" data-umami-event="docs_journey" data-umami-event-destination="/docs" data-umami-event-source-page="/download" data-umami-event-placement="download_hero" class="realigned-secondary-button">Read the documentation</a>
 			</div>
 		</PageHero>
@@ -74,7 +72,7 @@
 		<section id="editions" aria-labelledby="editions-title" class="realigned-band scroll-mt-24 py-16 sm:py-20">
 			<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 				<div class="mx-auto max-w-3xl text-center">
-					<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Choose your edition</p>
+					<p class="text-sm font-bold uppercase tracking-[0.18em] text-[var(--text-muted)]">Compare editions</p>
 					<h2 id="editions-title" class="mt-4 text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">Story Maps for Jira or Advanced Story Maps?</h2>
 					<p class="mt-4 text-lg leading-8 text-[var(--text-secondary)]">Both editions keep planning connected to Jira issues. Advanced Story Maps adds more ways to structure and coordinate the work.</p>
 					<p class="mt-4 text-sm leading-6 text-[var(--text-muted)]">Both editions are paid apps. Each Atlassian Marketplace listing shows the current price and trial terms.</p>

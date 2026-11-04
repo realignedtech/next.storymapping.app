@@ -60,7 +60,6 @@
 <SiteShell
 	headTitle="About Realigned Technologies | Story Maps for Jira"
 	description="Realigned Technologies is a Swiss software company that builds Story Maps for Jira and Advanced Story Maps for Jira for product and delivery teams."
-	highlight="About"
 	jsonLd={structuredData}
 >
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">

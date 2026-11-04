@@ -3,7 +3,7 @@
 	import { realignedApps } from '$lib/apps.js';
 	import { marketplaceListingId, marketplaceProduct } from '$lib/seo/marketplace.js';
 
-	let { title = "Story Maps", marketplaceLink = "", demoLink = "", h1 = false, disableDemo = false, highlight = "", wide = false } = $props();
+	let { title = "Story Maps", marketplaceLink = "", h1 = false, highlight = "", wide = false } = $props();
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let listingId = $derived(marketplaceLink ? marketplaceListingId(marketplaceLink) : '');
 	let product = $derived(marketplaceLink ? marketplaceProduct(marketplaceLink) : '');

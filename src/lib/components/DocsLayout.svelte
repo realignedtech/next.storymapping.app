@@ -11,9 +11,6 @@
 
 	let {
 		meta = {},
-		title = 'Story Maps',
-		marketplaceLink = 'https://marketplace.atlassian.com/apps/1224357',
-		demoLink = '',
 		children
 	} = $props();
 
@@ -79,11 +76,6 @@
 	headTitle={`${documentTitle} | ${productTitle}`}
 	description={pageDescription}
 	jsonLd={structuredData}
-	navTitle={title}
-	{demoLink}
-	{marketplaceLink}
-	highlight="Documentation"
-	wide
 >
 	{#snippet subnav()}<DocsNav />{/snippet}
 

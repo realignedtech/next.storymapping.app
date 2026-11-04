@@ -44,6 +44,6 @@ Do you have questions? We are here to help! Contact our support team for assista
 
 ## Next Steps
 
-- [Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes) - Learn advanced swimlane configuration
-- [Export Features](/docs/pro-app/export) - Generate reports for stakeholders
-- [Board Management](/docs/pro-app/board) - Optimize multi-project board connections
+- [Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes) - Learn advanced swimlane configuration
+- [Export Features](/docs/pro/features/export) - Generate reports for stakeholders
+- [Board Management](/docs/pro/features/board) - Optimize multi-project board connections

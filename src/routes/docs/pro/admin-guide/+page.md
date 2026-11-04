@@ -23,4 +23,4 @@ Use the global toggle when every team should be able to create a map. Use the pr
 
 Advanced Story Maps respects Jira access to projects, boards, filters, issues, and editable fields. Review those Jira permissions when a person can open the app but cannot see or change expected work.
 
-For per-map configuration, see [Settings](/docs/pro-app/pro-settings). For installation and licensing, use the Advanced Story Maps listing in Atlassian Marketplace.
+For per-map configuration, see [Settings](/docs/pro/features/settings). For installation and licensing, use the Advanced Story Maps listing in Atlassian Marketplace.

@@ -93,45 +93,4 @@ const ProNav = [
   },
 ]
 
-// Legacy combined nav for backward compatibility
-const Nav = [
-  { link: "/", title: titles["intro"] },
-  {
-    link: "/pro", title: titles["pro"], children: [
-      { link: "/pro/overview", title: titles["overview"] },
-      { link: "/pro/setup", title: titles["pro-setup"] },
-      { link: "/pro/features/map-types", title: titles["map-types"] },
-      { link: "/pro/features/using-the-app", title: titles["using-the-app"] },
-      { link: "/pro/features/hierarchy", title: titles["hierarchy"] },
-      { link: "/pro/admin-guide", title: titles["admin-guide"] },
-      { link: "/pro/migration", title: titles["migration"] },
-      { link: "/pro/cloud-migration", title: titles["cloud-migration"] },
-      { link: "/pro/features/export", title: titles["export"] },
-      { link: "/pro/features/board", title: titles["board"] },
-      { link: "/pro/features/settings", title: titles["settings"] },
-    ]
-  },
-  {
-    link: "/tutorials", title: titles["tutorials"], children: [
-      { link: "/tutorials/custom-field-swimlanes", title: titles["custom-field-swimlanes"] },
-      { link: "/tutorials/multi-project-releases", title: titles["multi-project-releases"] },
-    ]
-  },
-  {
-    link: "/best-practices", title: titles["best-practices"], children: [
-      { link: "/storyvsjourneymap", title: titles["storyvsjourneymap"] },
-    ]
-  },
-  { link: "/whatsnew", title: titles["whatsnew"] },
-  {
-    link: "/support", title: titles["support"], children: [
-      { link: "/story-maps-to-advanced", title: titles["story-maps-to-advanced"] },
-      { link: "/troubleshooting", title: titles["troubleshooting"] },
-      { link: "/privacy", title: titles["privacy"] },
-      { link: "/eula", title: titles["eula"] },
-    ]
-  },
-]
-
 export { BasicNav, ProNav };
-export default Nav;

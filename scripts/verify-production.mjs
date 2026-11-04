@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { canonicalPathByRoute } from '../src/lib/seo/canonical.js';
+import { canonicalPathByRoute, legacyRedirects } from '../src/lib/seo/canonical.js';
 
 const origin = (process.argv[2] || 'https://storymapping.app').replace(/\/$/, '');
 const sitemap = readFileSync('static/sitemap.xml', 'utf8');
@@ -30,7 +30,7 @@ for (const probe of ['/%5Cevil.com/', '///%5Cevil.com/']) {
 	assert.notEqual(response.status, 200, `${probe}: must not be served as a page`);
 }
 
-const migrationAliases = new Map([...canonicalPathByRoute, ['/upgrade', '/free-app']]);
+const migrationAliases = new Map([...canonicalPathByRoute, ...legacyRedirects, ['/upgrade', '/free-app']]);
 for (const [route, destination] of migrationAliases) {
 	const response = await fetch(`${origin}${route}`, { redirect: 'manual' });
 	assert.equal(response.status, 301, `${route}: ${response.status}`);

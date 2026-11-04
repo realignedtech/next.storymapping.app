@@ -28,5 +28,5 @@ If you have not created a map yet, begin with [Getting Started](/docs/getting-st
 
 Advanced Story Maps adds planning patterns for more complex Jira configurations:
 
-- [Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes)
-- [Multi-Project Releases](/docs/tutorials/multi-project-releases)
+- [Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes)
+- [Multi-Project Releases](/docs/pro/tutorials/multi-project-releases)

@@ -8,4 +8,4 @@
 	];
 </script>
 
-<ProductTabs {tabs} active={currentPage} backHref="/" backLabel="Compare versions" />
+<ProductTabs {tabs} active={currentPage} backHref="/" backLabel="Compare editions" />

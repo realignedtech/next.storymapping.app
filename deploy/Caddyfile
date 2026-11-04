@@ -31,22 +31,26 @@
 	}
 	redir @trailingSlash {re.trailingSlash.1} 308
 
-	# The established production URLs stay canonical. Redirect only the route
-	# names introduced during the SvelteKit migration back to those URLs.
+	# /showcase/basic and /docs/support/story-maps-to-advanced are the only
+	# routes that still publish under a different production URL.
 	redir /showcase/basic /free-app 301
-	redir /docs/pro /docs/pro-app 301
-	redir /docs/pro/features/board /docs/pro-app/board 301
-	redir /docs/pro/features/export /docs/pro-app/export 301
-	redir /docs/pro/features/map-types /docs/pro-app/map-types 301
-	redir /docs/pro/overview /docs/pro-app/overview 301
-	redir /docs/pro/admin-guide /docs/pro-app/pro-admin-guide 301
-	redir /docs/pro/features/settings /docs/pro-app/pro-settings 301
-	redir /docs/pro/setup /docs/pro-app/pro-setup 301
-	redir /docs/pro/features/using-the-app /docs/pro-app/pro-story-mapping 301
-	redir /docs/pro/features/hierarchy /docs/pro-app/top-level-elements 301
-	redir /docs/pro/tutorials/custom-field-swimlanes /docs/tutorials/custom-field-swimlanes 301
-	redir /docs/pro/tutorials/multi-project-releases /docs/tutorials/multi-project-releases 301
 	redir /docs/support/story-maps-to-advanced /docs/support/freetopro 301
+
+	# The Advanced documentation used to live under /docs/pro-app and the
+	# Advanced tutorials under /docs/tutorials. Both now sit in the single
+	# Advanced tree at /docs/pro; keep the indexed URLs alive.
+	redir /docs/pro-app /docs/pro 301
+	redir /docs/pro-app/overview /docs/pro/overview 301
+	redir /docs/pro-app/pro-setup /docs/pro/setup 301
+	redir /docs/pro-app/pro-admin-guide /docs/pro/admin-guide 301
+	redir /docs/pro-app/board /docs/pro/features/board 301
+	redir /docs/pro-app/export /docs/pro/features/export 301
+	redir /docs/pro-app/map-types /docs/pro/features/map-types 301
+	redir /docs/pro-app/pro-settings /docs/pro/features/settings 301
+	redir /docs/pro-app/pro-story-mapping /docs/pro/features/using-the-app 301
+	redir /docs/pro-app/top-level-elements /docs/pro/features/hierarchy 301
+	redir /docs/tutorials/custom-field-swimlanes /docs/pro/tutorials/custom-field-swimlanes 301
+	redir /docs/tutorials/multi-project-releases /docs/pro/tutorials/multi-project-releases 301
 	redir /upgrade /free-app 301
 
 	# URLs from the earlier Docusaurus site that Google still crawls (two were
@@ -66,13 +70,13 @@
 	redir /docs/troubleshooting /docs/support/troubleshooting 301
 	redir /docs/freetopro /docs/support/freetopro 301
 	redir /docs/pro-features /docs/pro/features 301
-	redir /docs/export /docs/pro-app/export 301
-	redir /docs/map-types /docs/pro-app/map-types 301
-	redir /docs/pro-admin-guide /docs/pro-app/pro-admin-guide 301
-	redir /docs/pro-settings /docs/pro-app/pro-settings 301
-	redir /docs/pro-setup /docs/pro-app/pro-setup 301
-	redir /docs/pro-story-mapping /docs/pro-app/pro-story-mapping 301
-	redir /docs/top-level-elements /docs/pro-app/top-level-elements 301
+	redir /docs/export /docs/pro/features/export 301
+	redir /docs/map-types /docs/pro/features/map-types 301
+	redir /docs/pro-admin-guide /docs/pro/admin-guide 301
+	redir /docs/pro-settings /docs/pro/features/settings 301
+	redir /docs/pro-setup /docs/pro/setup 301
+	redir /docs/pro-story-mapping /docs/pro/features/using-the-app 301
+	redir /docs/top-level-elements /docs/pro/features/hierarchy 301
 	redir /blog/creating-a-portfolio-map-with-storymapping-for-jira-pro /articles/creating-a-portfolio-map-with-advanced-storymaps 301
 	redir /blog/how-to-get-started-with-user-story-mapping /articles/get-started-with-user-story-mapping 301
 	redir /blog/storymapping-for-jira-what-can-it-do /articles/story-maps-for-jira 301

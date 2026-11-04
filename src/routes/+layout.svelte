@@ -13,13 +13,11 @@
 	let highlight = $derived(
 		currentPath.startsWith('/docs')
 			? 'Documentation'
-			: currentPath.startsWith('/trust')
-				? 'Trust Center'
-				: currentPath.startsWith('/showcase')
+			: currentPath.startsWith('/download')
+				? 'Download'
+				: currentPath === '/free-app' || currentPath.startsWith('/showcase')
 					? 'Showcase'
-					: currentPath.startsWith('/download')
-						? 'Download'
-						: ''
+					: ''
 	);
 	let marketplaceLink = $derived(
 		currentPath.startsWith('/showcase/advanced')

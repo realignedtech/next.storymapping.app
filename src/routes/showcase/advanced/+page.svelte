@@ -9,7 +9,6 @@
 	import { softwareApplicationSchema } from '$lib/seo/schema.js';
 
 	const APP_LINK = "https://marketplace.atlassian.com/1224417";
-	const DEMO_LINK = "https://demo.userstorymap.net/projects/ASFJ/storymaps#/map/1662373150071";
 	let structuredData = $derived([
 		softwareApplicationSchema({
 			name: 'Advanced Story Maps for Jira',
@@ -27,9 +26,6 @@
 <SiteShell
 	headTitle="Advanced Story Maps for Jira - The User Story Mapping App"
 	description="See Advanced Story Maps for Jira in action: custom-field swimlanes, iteration planning, goal issues, and PNG export."
-	highlight="Showcase"
-	marketplaceLink={APP_LINK}
-	demoLink={DEMO_LINK}
 	jsonLd={structuredData}
 >
 	{#snippet subnav()}<ShowcaseNav currentPage="advanced" />{/snippet}
@@ -62,7 +58,6 @@
 					<div class="md:w-1/2">
 						<h3 class="text-3xl font-bold mb-6">Show the structure your team actually uses</h3>
 						<p class="text-lg leading-relaxed text-[var(--text-secondary)]">Build the map around your Jira hierarchy, then add the fields and links that matter to the conversation. The result is a view of the product as your team understands it, not a fixed template.</p>
-						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]"><span class="font-semibold text-[var(--text-primary)]">In the screenshot:</span> the map brings related levels of work together so you can see where a decision sits and what it affects.</p>
 					</div>
 					<div class="md:w-1/2">
 						<img src="/main/smhighlight2.png" width="2314" height="1604" alt="Advanced Story Map Overview" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>
@@ -92,7 +87,7 @@
 				</div>
 			</div>
 			<div class="mt-16 text-center">
-				<p class="text-lg text-[var(--text-secondary)]">Planning releases across projects? Read the <a href="/docs/tutorials/multi-project-releases" class="font-semibold text-[var(--accent-cyan)] no-underline">multi-project releases tutorial</a> or browse the <a href="/docs/pro-app/overview" class="font-semibold text-[var(--accent-cyan)] no-underline">Advanced documentation</a>.</p>
+				<p class="text-lg text-[var(--text-secondary)]">Planning releases across projects? Read the <a href="/docs/pro/tutorials/multi-project-releases" class="font-semibold text-[var(--accent-cyan)] no-underline">multi-project releases tutorial</a> or browse the <a href="/docs/pro/overview" class="font-semibold text-[var(--accent-cyan)] no-underline">Advanced documentation</a>.</p>
 			</div>
 		</div>
 	</section>

@@ -45,11 +45,11 @@ test('Story Maps documentation includes multiple maps per project', () => {
 test('documentation edition links preserve equivalent pages with explicit routes', () => {
 	assert.deepEqual(docsEditionLinks('/docs/getting-started'), {
 		core: '/docs/getting-started',
-		pro: '/docs/pro-app/pro-setup'
+		pro: '/docs/pro/setup'
 	});
-	assert.deepEqual(docsEditionLinks('/docs/pro-app/pro-setup'), {
+	assert.deepEqual(docsEditionLinks('/docs/pro/setup'), {
 		core: '/docs/getting-started',
-		pro: '/docs/pro-app/pro-setup'
+		pro: '/docs/pro/setup'
 	});
 	assert.deepEqual(docsEditionLinks('/docs/pro/tutorials'), {
 		core: '/docs/tutorials',

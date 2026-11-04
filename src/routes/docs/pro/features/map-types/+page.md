@@ -36,6 +36,6 @@ A static map can use Jira issue links for relationships or the map's internal as
 
 ## Next Steps
 
-- [Getting Started](/docs/pro-app/pro-setup) — create the selected map type.
-- [Board Configuration](/docs/pro-app/board) — control the board used by a map.
-- [Settings](/docs/pro-app/pro-settings) — configure hierarchy, display, and swimlanes.
+- [Getting Started](/docs/pro/setup) — create the selected map type.
+- [Board Configuration](/docs/pro/features/board) — control the board used by a map.
+- [Settings](/docs/pro/features/settings) — configure hierarchy, display, and swimlanes.

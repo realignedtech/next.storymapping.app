@@ -13,7 +13,7 @@
 			name: 'Story Maps for Jira',
 			description:
 				'Turns a Jira backlog into a visual user story map for planning sprints and releases inside Jira.',
-			url: canonicalUrlFor('/free-app')
+			url: canonicalUrlFor('/')
 		})
 	]);
 
@@ -42,7 +42,6 @@
 <SiteShell
 	headTitle="User story mapping in Jira | Story Maps for Jira"
 	description="Story Maps for Jira turns your Jira backlog into a visual user story map so teams can plan sprints and releases and keep work in Jira."
-	marketplaceLink={APP_LINK}
 	jsonLd={structuredData}
 >
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">

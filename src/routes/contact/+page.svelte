@@ -52,7 +52,6 @@
 <SiteShell
 	headTitle="Contact Realigned Technologies | Story Maps for Jira"
 	description="Contact Realigned Technologies for Story Maps for Jira support, licensing, vendor information, and general enquiries. Email, support portal, and LinkedIn."
-	highlight="Contact"
 	jsonLd={structuredData}
 >
 	<main class="bg-[var(--bg-base)] text-[var(--text-primary)]">

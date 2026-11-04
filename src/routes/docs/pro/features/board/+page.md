@@ -35,6 +35,6 @@ See [Common Issues & Questions](/docs/pro/support/troubleshooting) when sprints,
 
 ## Next Steps
 
-- [Settings](/docs/pro-app/pro-settings) - Configure board-specific preferences
-- [Map Types](/docs/pro-app/map-types) - Understand dynamic vs static maps
-- [Admin Guide](/docs/pro-app/pro-admin-guide) - Set up organizational board policies
+- [Settings](/docs/pro/features/settings) - Configure board-specific preferences
+- [Map Types](/docs/pro/features/map-types) - Understand dynamic vs static maps
+- [Admin Guide](/docs/pro/admin-guide) - Set up organizational board policies

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import test from 'node:test';
-import { canonicalPathByRoute, canonicalPathFor } from '../src/lib/seo/canonical.js';
+import { canonicalPathByRoute, canonicalPathFor, legacyRedirects } from '../src/lib/seo/canonical.js';
 
 const sitemap = readFileSync('static/sitemap.xml', 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => new URL(match[1]));
@@ -21,24 +21,35 @@ const establishedPaths = [
 	'/docs',
 	'/docs/best-practices',
 	'/docs/best-practices/storyvsjourneymap',
-	'/docs/pro-app',
-	'/docs/pro-app/board',
-	'/docs/pro-app/export',
-	'/docs/pro-app/map-types',
-	'/docs/pro-app/overview',
-	'/docs/pro-app/pro-admin-guide',
-	'/docs/pro-app/pro-settings',
-	'/docs/pro-app/pro-setup',
-	'/docs/pro-app/pro-story-mapping',
-	'/docs/pro-app/top-level-elements',
+	'/docs/pro',
+	'/docs/pro/overview',
+	'/docs/pro/setup',
+	'/docs/pro/admin-guide',
+	'/docs/pro/features',
+	'/docs/pro/features/board',
+	'/docs/pro/features/export',
+	'/docs/pro/features/map-types',
+	'/docs/pro/features/settings',
+	'/docs/pro/features/using-the-app',
+	'/docs/pro/features/hierarchy',
+	'/docs/pro/migration',
+	'/docs/pro/cloud-migration',
+	'/docs/pro/whatsnew',
+	'/docs/pro/tutorials',
+	'/docs/pro/tutorials/custom-field-swimlanes',
+	'/docs/pro/tutorials/multi-project-releases',
+	'/docs/pro/support',
+	'/docs/pro/support/troubleshooting',
+	'/docs/pro/support/privacy',
+	'/docs/pro/support/eula',
 	'/docs/support',
 	'/docs/support/eula',
 	'/docs/support/freetopro',
 	'/docs/support/privacy',
 	'/docs/support/troubleshooting',
 	'/docs/tutorials',
-	'/docs/tutorials/custom-field-swimlanes',
-	'/docs/tutorials/multi-project-releases',
+	'/docs/tutorials/working-with-the-map',
+	'/docs/tutorials/planning-sprints-and-releases',
 	'/docs/whatsnew',
 	'/free-app',
 	'/trust',
@@ -124,6 +135,14 @@ test('renamed migration routes point back to the established canonical URLs', ()
 	for (const [route, canonicalPath] of canonicalPathByRoute) {
 		const html = readFileSync(builtFile(route), 'utf8');
 		assert.match(html, new RegExp(`<link rel="canonical" href="https://storymapping\\.app${canonicalPath}"`));
+	}
+});
+
+test('retired documentation URLs redirect to the page that now carries the content', () => {
+	const caddyfile = readFileSync('deploy/Caddyfile', 'utf8');
+	for (const [route, canonicalPath] of legacyRedirects) {
+		assert.match(caddyfile, new RegExp(`\\bredir ${route} ${canonicalPath} 301`), `${route} needs an edge redirect`);
+		assert.ok(existsSync(builtFile(canonicalPath)), `${canonicalPath} is not in the build`);
 	}
 });
 

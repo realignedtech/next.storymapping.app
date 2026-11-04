@@ -16,7 +16,7 @@ Two editions ship on the Atlassian Marketplace: Story Maps for Jira and Advanced
 - [Getting started](https://storymapping.app/docs/getting-started)
 - [Working with the map](https://storymapping.app/docs/tutorials/working-with-the-map)
 - [Plan sprints and releases](https://storymapping.app/docs/tutorials/planning-sprints-and-releases)
-- [Advanced Story Maps](https://storymapping.app/docs/pro-app)
+- [Advanced Story Maps](https://storymapping.app/docs/pro)
 - [Best practices](https://storymapping.app/docs/best-practices)
 
 ## Trust and support

@@ -9,7 +9,6 @@
 	import { softwareApplicationSchema } from '$lib/seo/schema.js';
 
 	const APP_LINK = "https://marketplace.atlassian.com/1224357";
-	const DEMO_LINK = "";
 	let sourcePage = $derived($page.url.pathname === '/' ? '/' : $page.url.pathname.replace(/\/+$/, ''));
 	let structuredData = $derived([
 		softwareApplicationSchema({
@@ -28,9 +27,6 @@
 <SiteShell
 	headTitle="Story mapping tool for Jira | Story Maps for Jira"
 	description="Story Maps for Jira is a user story mapping tool for Jira: arrange a backlog into a visual story map and plan sprints and releases without leaving Jira."
-	highlight="Showcase"
-	marketplaceLink={APP_LINK}
-	demoLink={DEMO_LINK}
 	jsonLd={structuredData}
 >
 	{#snippet subnav()}<ShowcaseNav currentPage="basic" />{/snippet}
@@ -55,7 +51,6 @@
 		<div class="max-w-6xl mx-auto px-4 relative z-10">
 			<div class="text-center mb-16">
 				<h2 class="text-4xl font-bold mb-4 text-[var(--text-primary)]">What you can do with the map</h2>
-				<p class="mx-auto max-w-2xl text-xl leading-relaxed text-[var(--text-secondary)]">Screenshots from the running app, with notes on what each view is for.</p>
 			</div>
 
 			<div class="space-y-20">
@@ -85,7 +80,6 @@
 					<div class="md:w-1/2">
 						<h3 class="text-3xl font-bold mb-6">Give each release a visible boundary</h3>
 						<p class="text-lg leading-relaxed text-[var(--text-secondary)]">Use swimlanes to place stories in the release or sprint where they are expected to land. The map shows how the pieces fit together before the team commits to the work.</p>
-						<p class="mt-5 leading-relaxed text-[var(--text-secondary)]">Worth checking: does this slice deliver a useful step for someone, or is it just a collection of tickets?</p>
 					</div>
 					<div class="md:w-1/2">
 						<img src="/main/smfree3.png" width="2260" height="1394" alt="Custom swimlane planning in Story Maps for Jira" loading="lazy" decoding="async" class="rounded-xl border border-[var(--border-subtle)] shadow-xl"/>

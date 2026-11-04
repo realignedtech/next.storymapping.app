@@ -18,12 +18,6 @@ export const realignedApps = [
 		description: 'Interactive Jira customer portals'
 	},
 	{
-		name: 'Journey Mapping for Jira',
-		icon: 'https://marketplace.atlassian.com/product-listing/files/55e2ab86-3b59-46f2-837a-49a3f46ed79a?width=144&height=144',
-		url: 'https://marketplace.atlassian.com/apps/1223654/journey-mapping-for-jira',
-		description: 'Customer journeys connected to Jira'
-	},
-	{
 		name: 'Personas for Jira',
 		icon: 'https://marketplace.atlassian.com/product-listing/files/762c2ddb-f15e-43d0-8d81-05754dadc7c5?width=144&height=144',
 		url: 'https://betterpersonas.app',

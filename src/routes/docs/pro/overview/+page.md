@@ -29,7 +29,7 @@ Will remove the story map alongside all the configurations. The issues inside th
 
 ## Adding a new story map 
 
-Read the [Advanced Story Maps setup guide](/docs/pro-app/pro-setup).
+Read the [Advanced Story Maps setup guide](/docs/pro/setup).
 
 ## The story map screen
 

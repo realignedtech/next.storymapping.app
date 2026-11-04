@@ -3,14 +3,13 @@ import test from 'node:test';
 
 import { realignedApps } from '../src/lib/apps.js';
 
-test('the app switcher contains the complete Realigned Marketplace catalog', () => {
+test('the app switcher lists only the apps Realigned still ships', () => {
 	assert.deepEqual(
 		realignedApps.map((app) => app.name),
 		[
 			'Advanced Story Maps for Jira',
 			'Story Maps for Jira',
 			'Customer Actions for Jira',
-			'Journey Mapping for Jira',
 			'Personas for Jira',
 			'Denkplan Portfolio Maps for Jira'
 		]

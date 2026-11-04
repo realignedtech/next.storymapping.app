@@ -13,11 +13,11 @@ Each tutorial lists the settings it changes and the Jira data it reads, then wal
 
 ### Advanced Configuration
 
-- **[Custom Field Swimlanes](/docs/tutorials/custom-field-swimlanes)** - Set up custom field swimlanes for advanced story map organization
+- **[Custom Field Swimlanes](/docs/pro/tutorials/custom-field-swimlanes)** - Set up custom field swimlanes for advanced story map organization
 
 ### Project Management
 
-- **[Multi-Project Releases](/docs/tutorials/multi-project-releases)** - Coordinate releases across multiple Jira projects with a map built from a multi-project board
+- **[Multi-Project Releases](/docs/pro/tutorials/multi-project-releases)** - Coordinate releases across multiple Jira projects with a map built from a multi-project board
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ These tutorials assume you have:
 
 If you encounter issues with any tutorial:
 - Check the [troubleshooting guide](/docs/pro/support/troubleshooting)
-- Review the [admin guide](/docs/pro-app/pro-admin-guide) for setup requirements
+- Review the [admin guide](/docs/pro/admin-guide) for setup requirements
 - Contact our support team for assistance
 
 ---
