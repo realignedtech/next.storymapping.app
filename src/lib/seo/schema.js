@@ -19,7 +19,9 @@ export const organizationSchema = {
 	},
 	sameAs: [
 		'https://twitter.com/RealignedT',
-		'https://www.linkedin.com/company/realigned-technologies-ltd/'
+		'https://www.linkedin.com/company/realigned-technologies-ltd/',
+		// Atlassian Marketplace vendor profile both apps publish under (MA-98).
+		'https://marketplace.atlassian.com/vendors/1213963'
 	],
 	contactPoint: [
 		{
@@ -61,7 +63,20 @@ export function softwareApplicationSchema({
 	};
 }
 
-export function techArticleSchema({ headline, description, url, keywords, product, datePublished = '2026-08-24T00:00:00.000Z' }) {
+// Docs were republished on this site at the 2026-08 migration. dateModified is
+// the page's real last change (src/lib/seo/lastmod.json, from the sitemap
+// generator), never earlier than datePublished.
+export function techArticleSchema({
+	headline,
+	description,
+	url,
+	keywords,
+	product,
+	datePublished = '2026-08-24T00:00:00.000Z',
+	dateModified
+}) {
+	const modified =
+		dateModified && new Date(dateModified) > new Date(datePublished) ? dateModified : datePublished;
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'TechArticle',
@@ -70,7 +85,7 @@ export function techArticleSchema({ headline, description, url, keywords, produc
 		description,
 		url,
 		datePublished,
-		dateModified: datePublished,
+		dateModified: modified,
 		image: [`${siteOrigin}/realignedOG.png`],
 		inLanguage: 'en',
 		...(keywords ? { keywords } : {}),

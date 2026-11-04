@@ -18,6 +18,7 @@ import { canonicalPathFor } from '../src/lib/seo/canonical.js';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const routesDir = join(root, 'src/routes');
 const sitemapPath = join(root, 'static/sitemap.xml');
+const lastmodPath = join(root, 'src/lib/seo/lastmod.json');
 const origin = 'https://storymapping.app';
 
 function walk(directory) {
@@ -60,6 +61,30 @@ function lastmodFor(file) {
 	return statSync(file).mtime.toISOString();
 }
 
+// A shallow clone (actions/checkout's default) has a single commit that
+// "touches" every file, so every route would get the same, wrong date. Fail
+// instead of publishing that; CI checks out with fetch-depth: 0.
+function isShallowClone() {
+	try {
+		return (
+			execFileSync('git', ['rev-parse', '--is-shallow-repository'], {
+				cwd: root,
+				encoding: 'utf8',
+				stdio: ['ignore', 'pipe', 'ignore']
+			}).trim() === 'true'
+		);
+	} catch {
+		return false;
+	}
+}
+
+if (isShallowClone()) {
+	console.error(
+		'sitemap: refusing to run in a shallow git clone; route dates would all be the HEAD commit. Fetch full history (fetch-depth: 0).'
+	);
+	process.exit(1);
+}
+
 const lastmodByPath = new Map();
 for (const file of walk(routesDir).filter((path) => /\+page\.(svelte|md|svx)$/.test(path))) {
 	const canonicalPath = canonicalPathFor(routeFor(file));
@@ -79,3 +104,11 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.s
 
 writeFileSync(sitemapPath, xml);
 console.log(`sitemap: wrote ${lastmodByPath.size} URLs to static/sitemap.xml`);
+
+// The same dates feed TechArticle dateModified on docs pages
+// (DocsLayout.svelte), so the schema and the sitemap agree.
+const sortedLastmod = Object.fromEntries(
+	[...lastmodByPath.entries()].sort(([a], [b]) => a.localeCompare(b))
+);
+writeFileSync(lastmodPath, `${JSON.stringify(sortedLastmod, null, '\t')}\n`);
+console.log(`sitemap: wrote ${lastmodByPath.size} dates to src/lib/seo/lastmod.json`);

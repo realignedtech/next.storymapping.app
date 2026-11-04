@@ -6,8 +6,9 @@
 	import DocsArticle from './DocsArticle.svelte';
 	import DocsToc from './DocsToc.svelte';
 	import { BasicNav, ProNav, StoryMapTitles } from '$lib/docs/nav.js';
-	import { canonicalUrlFor, sourceRouteFor, siteOrigin } from '$lib/seo/canonical.js';
+	import { canonicalPathFor, canonicalUrlFor, sourceRouteFor, siteOrigin } from '$lib/seo/canonical.js';
 	import { breadcrumbSchema, techArticleSchema } from '$lib/seo/schema.js';
+	import lastmodByPath from '$lib/seo/lastmod.json';
 
 	let {
 		meta = {},
@@ -56,7 +57,8 @@
 			description: pageDescription,
 			url: canonicalUrl,
 			keywords: `${documentTitle}, ${productTitle}`,
-			product: productTitle
+			product: productTitle,
+			dateModified: lastmodByPath[canonicalPathFor($page.url.pathname)]
 		}),
 		breadcrumbSchema([
 			{ name: 'Home', url: siteOrigin },

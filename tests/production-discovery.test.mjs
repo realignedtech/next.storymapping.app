@@ -85,6 +85,40 @@ test('every sitemap URL carries a real lastmod date', () => {
 	}
 });
 
+// A shallow CI checkout dated every URL with the deploy commit (live on
+// 2026-11-04: all 55 at 09:02:37). Real content dates differ between pages.
+test('sitemap lastmod dates come from page history, not one build-wide date', () => {
+	const dates = new Set([...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]));
+	assert.ok(dates.size > 5, `only ${dates.size} distinct lastmod value(s) across ${urls.length} URLs`);
+});
+
+test('docs TechArticle dateModified matches the sitemap date for that page', () => {
+	const lastmod = new Map(
+		[...sitemap.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod><\/url>/g)].map(
+			([, loc, date]) => [canonicalPathFor(new URL(loc).pathname), date]
+		)
+	);
+	let checked = 0;
+	for (const file of readdirSync('build/docs', { recursive: true }).filter((path) => String(path).endsWith('.html'))) {
+		const path = canonicalPathFor(`/docs/${String(file).replace(/\\/g, '/').replace(/\.html$/, '')}`);
+		const html = readFileSync(join('build/docs', String(file)), 'utf8');
+		const article = [...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)]
+			.flatMap((match) => [JSON.parse(match[1])].flat())
+			.find((item) => item['@type'] === 'TechArticle');
+		if (!article || !lastmod.has(path)) continue;
+		const expected = new Date(lastmod.get(path)) > new Date(article.datePublished) ? lastmod.get(path) : article.datePublished;
+		assert.equal(article.dateModified, expected, `${path} dateModified`);
+		checked += 1;
+	}
+	assert.ok(checked > 20, `only ${checked} docs pages checked`);
+});
+
+test('Organization sameAs names the Marketplace vendor profile (MA-98)', () => {
+	const html = readFileSync('build/index.html', 'utf8');
+	assert.match(html, /"sameAs":\[[^\]]*"https:\/\/marketplace\.atlassian\.com\/vendors\/1213963"/);
+	assert.doesNotMatch(html, /1211748/);
+});
+
 test('every canonical page has at least three internal inbound links', () => {
 	function walk(directory) {
 		return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
