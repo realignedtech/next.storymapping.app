@@ -193,6 +193,23 @@ test('the retired journeymapping.app host redirects to the storymapping.app home
 	assert.match(caddyfile, /redir @journeymapping https:\/\/storymapping\.app\/ 301/);
 });
 
+test('the retired story map vs journey map page keeps its one-to-one redirect', () => {
+	const caddyfile = readFileSync('deploy/Caddyfile', 'utf8');
+	const specific = caddyfile.indexOf('redir @journeymappingStoryVsJourney https://storymapping.app/docs/best-practices/storyvsjourneymap 301');
+	const catchAll = caddyfile.indexOf('redir @journeymapping https://storymapping.app/ 301');
+	assert.ok(specific > -1, 'missing the storyvsjourneymap redirect');
+	assert.ok(specific < catchAll, 'the specific journeymapping redirect must come before the catch-all');
+	assert.match(caddyfile, /path \/docs\/storyvsjourneymap \/docs\/storyvsjourneymap\//);
+	assert.ok(existsSync(builtFile('/docs/best-practices/storyvsjourneymap')), 'redirect target is not in the build');
+});
+
+test('CI validates the Caddyfile before the image is pushed', () => {
+	const workflow = readFileSync('.github/workflows/deploy.yml', 'utf8');
+	const validate = workflow.indexOf('caddy validate --config /etc/caddy/Caddyfile');
+	assert.ok(validate > -1, 'deploy.yml no longer validates the Caddyfile');
+	assert.ok(validate < workflow.indexOf('docker/build-push-action'), 'validation must run before the image is pushed');
+});
+
 test('indexed blog and article routes remain available', () => {
 	const required = [
 		'/blog',

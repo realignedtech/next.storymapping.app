@@ -9,10 +9,17 @@
 
 	# The Journey Mapping app is retired; it was folded into Story Mapping.
 	# DNS for journeymapping.app now points at this host, and Traefik forwards
-	# the original Host header, so send every request to the Story Mapping
-	# home page with a permanent (301) redirect. Match the apex and www in one
-	# rule; the path is intentionally dropped because the retired app's routes
-	# do not map onto Story Mapping's.
+	# the original Host header. One old page has a direct equivalent: the story
+	# map vs journey map guide (7,591 Search Console impressions Jul 2025 to
+	# Nov 2026, more than the home page), so it goes to the same guide here.
+	# Every other path goes to the Story Mapping home page; the retired app's
+	# other routes do not map onto Story Mapping's. Named matchers keep their
+	# order, so the specific rule must stay above the catch-all.
+	@journeymappingStoryVsJourney {
+		host journeymapping.app www.journeymapping.app
+		path /docs/storyvsjourneymap /docs/storyvsjourneymap/
+	}
+	redir @journeymappingStoryVsJourney https://storymapping.app/docs/best-practices/storyvsjourneymap 301
 	@journeymapping host journeymapping.app www.journeymapping.app
 	redir @journeymapping https://storymapping.app/ 301
 

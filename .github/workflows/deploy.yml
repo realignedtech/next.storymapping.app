@@ -61,6 +61,14 @@ jobs:
           cp deploy/Caddyfile .ci-context/Caddyfile
           cp -r build .ci-context/build
 
+      # A Caddyfile error would otherwise ship and stop the site at restart.
+      # Validate with the exact Caddy image the Containerfile pins (the same
+      # check scripts/deploy.sh runs), so a bad config fails here instead.
+      - name: Validate the Caddyfile
+        run: |
+          image="$(sed -n 's/^FROM //p' deploy/Containerfile)"
+          docker run --rm -v "$PWD/.ci-context/Caddyfile:/etc/caddy/Caddyfile:ro" "$image" caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile
+
       - uses: docker/build-push-action@v6
         with:
           context: .ci-context
