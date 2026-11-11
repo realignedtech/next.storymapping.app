@@ -67,7 +67,7 @@ function builtFile(pathname) {
 }
 
 test('sitemap contains every public route on the production origin', () => {
-	assert.equal(urls.length, 55);
+	assert.equal(urls.length, 56);
 	assert.equal(new Set(urls.map((url) => url.pathname)).size, urls.length);
 	for (const url of urls) {
 		assert.equal(url.origin, 'https://storymapping.app');
@@ -217,6 +217,7 @@ test('indexed blog and article routes remain available', () => {
 		'/articles/get-started-with-user-story-mapping',
 		'/articles/how-to-do-cross-project-releases-in-jira',
 		'/articles/how-to-use-custom-fields-on-cards-effectively',
+		'/articles/jira-hierarchy',
 		'/articles/story-maps-for-jira',
 		'/articles/story-maps-for-jira-is-all-new'
 	];

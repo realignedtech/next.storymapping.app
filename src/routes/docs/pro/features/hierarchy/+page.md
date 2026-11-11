@@ -5,6 +5,8 @@ description: "Configure the optional activity or goal row above the backbone and
 
 Advanced Story Maps can add an optional layer above the backbone for activities, goals, or another high-level Jira issue type. Existing goals remain available when this row is enabled.
 
+For how this compares with Jira's own options, see [Jira hierarchy: levels and what sits above an epic](/articles/jira-hierarchy).
+
 ## Configure the top-level row
 
 1. Open **Settings** and switch to the **Hierarchy** tab.

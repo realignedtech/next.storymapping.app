@@ -18,6 +18,15 @@
 			updated: '2026-11-03',
 			author: 'Stefan Ernst'
 		},
+		'/articles/jira-hierarchy': {
+			title: 'Jira Hierarchy: Levels and What Sits Above an Epic',
+			description: "Jira's default hierarchy has three levels. Here is what sits above an epic on Premium, what works on Free and Standard, and how to add a goal row on a story map.",
+			date: '2026-11-11',
+			author: 'Stefan Ernst',
+			preloadImage: '/main/overview.png',
+			highlight: '/main/overview.png',
+			highlightAlt: 'An Advanced Story Maps board in Jira: a top row of goals (Exploration, Decision) above a backbone of epics, with the stories for each epic underneath'
+		},
 		'/articles/how-to-do-cross-project-releases-in-jira': {
 			title: 'How to do Cross Project Releases in Jira',
 			description: 'Compare four practical ways to plan releases across several Jira projects, including cross-space releases in Jira plans, and keep fix versions useful.',

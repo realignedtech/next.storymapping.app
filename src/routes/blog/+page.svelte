@@ -4,6 +4,12 @@
 
 	const articles = [
 		{
+			title: 'Jira Hierarchy: Levels and What Sits Above an Epic',
+			description: 'What sits above an epic on Premium, what works on Free and Standard, and a goal row on a story map.',
+			date: '2026-11-11',
+			href: '/articles/jira-hierarchy'
+		},
+		{
 			title: 'How to do Cross Project Releases in Jira',
 			description: 'Compare practical ways to plan releases across several Jira projects.',
 			date: '2022-10-12',

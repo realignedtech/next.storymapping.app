@@ -3,6 +3,11 @@
 // render a "Related reading" block without duplicating page content.
 export const articles = [
 	{
+		href: '/articles/jira-hierarchy',
+		title: 'Jira hierarchy: levels and what sits above an epic',
+		description: 'The three default levels, adding levels above Epic on Premium, and grouping epics on Free and Standard.'
+	},
+	{
 		href: '/articles/get-started-with-user-story-mapping',
 		title: 'User story mapping in Jira: a worked example',
 		description: 'A step-by-step worked example: agree the backbone, place the stories, and slice a release.'
