@@ -63,10 +63,6 @@ test('documentation edition links preserve equivalent pages with explicit routes
 		core: '/docs/support/privacy',
 		pro: '/docs/pro/support/privacy'
 	});
-	assert.deepEqual(docsEditionLinks('/docs/pro/whatsnew'), {
-		core: '/docs/whatsnew',
-		pro: '/docs/pro/whatsnew'
-	});
 	assert.deepEqual(docsEditionLinks('/docs/pro/migration'), {
 		core: '/docs',
 		pro: '/docs/pro/migration'

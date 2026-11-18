@@ -169,7 +169,6 @@
 				<li><a href="/docs/tutorials/working-with-the-map" class="text-[var(--accent-cyan)] no-underline">Work with the map</a></li>
 				<li><a href="/docs/tutorials/planning-sprints-and-releases" class="text-[var(--accent-cyan)] no-underline">Plan sprints and releases</a></li>
 				<li><a href="/docs/best-practices/storyvsjourneymap" class="text-[var(--accent-cyan)] no-underline">Story map vs journey map</a></li>
-				<li><a href="/docs/whatsnew" class="text-[var(--accent-cyan)] no-underline">What&#39;s new</a></li>
 			</ul>
 		</div>
 	</section>

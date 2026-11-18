@@ -70,8 +70,11 @@
 	redir /docs/usage /docs/tutorials/working-with-the-map 301
 	redir /docs/usage2 /docs/tutorials/planning-sprints-and-releases 301
 	redir /docs/storyvsjourneymap /docs/best-practices/storyvsjourneymap 301
-	redir /docs/release-notes /docs/whatsnew 301
-	redir /whatsnew /docs/whatsnew 301
+	redir /docs/release-notes /blog 301
+	redir /whatsnew /blog 301
+	# The release-notes pages were retired; the blog carries product updates.
+	redir /docs/whatsnew /blog 301
+	redir /docs/pro/whatsnew /blog 301
 	redir /docs/eula /docs/support/eula 301
 	redir /docs/privacy /docs/support/privacy 301
 	redir /docs/troubleshooting /docs/support/troubleshooting 301

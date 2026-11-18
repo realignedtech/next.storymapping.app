@@ -25,7 +25,11 @@ export const legacyRedirects = new Map([
 	['/docs/pro-app/pro-story-mapping', '/docs/pro/features/using-the-app'],
 	['/docs/pro-app/top-level-elements', '/docs/pro/features/hierarchy'],
 	['/docs/tutorials/custom-field-swimlanes', '/docs/pro/tutorials/custom-field-swimlanes'],
-	['/docs/tutorials/multi-project-releases', '/docs/pro/tutorials/multi-project-releases']
+	['/docs/tutorials/multi-project-releases', '/docs/pro/tutorials/multi-project-releases'],
+	['/docs/whatsnew', '/blog'],
+	['/docs/pro/whatsnew', '/blog'],
+	['/docs/release-notes', '/blog'],
+	['/whatsnew', '/blog']
 ]);
 
 const routeByCanonicalPath = new Map(

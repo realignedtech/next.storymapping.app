@@ -79,7 +79,7 @@
 						Realigned Technologies is a Swiss software company serving teams worldwide. We build tools for teams that want clarity in planning, ownership of their systems, and fewer surprises in the software they depend on.
 					</p>
 					<p class="mt-4 leading-7 text-[var(--text-secondary)]">
-						Our products are used by product managers, delivery leads, and Jira administrators in teams of every size. The work on this site, from the documentation to the release notes, is written by the people who build and support the app.
+						Our products are used by product managers, delivery leads, and Jira administrators in teams of every size. The work on this site, from the documentation to the articles, is written by the people who build and support the app.
 					</p>
 				</div>
 
@@ -151,7 +151,7 @@
 						<h2 id="author-title" class="mt-3 text-2xl font-semibold tracking-tight text-[var(--text-primary)]">Stefan Ernst</h2>
 						<p class="mt-1 text-sm font-semibold text-[var(--accent-cyan)]">Author, Story Maps documentation</p>
 						<p class="mt-4 leading-7 text-[var(--text-secondary)]">
-							Stefan Ernst works on Story Maps for Jira at Realigned Technologies. The documentation, tutorials, and release notes on this site are written and maintained by the team that builds the app, so answers come from close to the product.
+							Stefan Ernst works on Story Maps for Jira at Realigned Technologies. The documentation, tutorials, and articles on this site are written and maintained by the team that builds the app, so answers come from close to the product.
 						</p>
 						<p class="mt-4 leading-7 text-[var(--text-secondary)]">
 							Found a mistake or an unclear answer? <a class="font-semibold text-[var(--accent-cyan)] no-underline hover:text-[var(--action-hover)]" href="/contact">Contact us</a> and it will be reviewed.

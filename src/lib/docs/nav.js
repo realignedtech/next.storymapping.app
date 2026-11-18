@@ -28,8 +28,6 @@ export const titles = {
   // Best practices
   "best-practices": "Best Practices",
   "storyvsjourneymap": "User Story Map vs Journey Map",
-  // What's new
-  "whatsnew": "What's New",
 }
 
 export const StoryMapTitles = titles;
@@ -83,7 +81,6 @@ const ProNav = [
   { link: "/pro/admin-guide", title: titles["admin-guide"] },
   { link: "/pro/migration", title: titles["migration"] },
   { link: "/pro/cloud-migration", title: titles["cloud-migration"] },
-  { link: "/pro/whatsnew", title: titles["whatsnew"] },
   {
     link: "/pro/support", title: titles["support"], children: [
       { link: "/troubleshooting", title: titles["troubleshooting"] },

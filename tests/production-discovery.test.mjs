@@ -34,7 +34,6 @@ const establishedPaths = [
 	'/docs/pro/features/hierarchy',
 	'/docs/pro/migration',
 	'/docs/pro/cloud-migration',
-	'/docs/pro/whatsnew',
 	'/docs/pro/tutorials',
 	'/docs/pro/tutorials/custom-field-swimlanes',
 	'/docs/pro/tutorials/multi-project-releases',
@@ -50,7 +49,6 @@ const establishedPaths = [
 	'/docs/tutorials',
 	'/docs/tutorials/working-with-the-map',
 	'/docs/tutorials/planning-sprints-and-releases',
-	'/docs/whatsnew',
 	'/free-app',
 	'/trust',
 	'/trust/bug-bounty-program',
@@ -67,7 +65,7 @@ function builtFile(pathname) {
 }
 
 test('sitemap contains every public route on the production origin', () => {
-	assert.equal(urls.length, 57);
+	assert.equal(urls.length, 55);
 	assert.equal(new Set(urls.map((url) => url.pathname)).size, urls.length);
 	for (const url of urls) {
 		assert.equal(url.origin, 'https://storymapping.app');

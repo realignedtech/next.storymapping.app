@@ -8,7 +8,6 @@ const coreToPro = new Map([
   ["/docs/support/troubleshooting", "/docs/pro/support/troubleshooting"],
   ["/docs/support/privacy", "/docs/pro/support/privacy"],
   ["/docs/support/eula", "/docs/pro/support/eula"],
-  ["/docs/whatsnew", "/docs/pro/whatsnew"],
 ]);
 
 const proToCore = new Map(

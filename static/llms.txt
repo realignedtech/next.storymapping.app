@@ -25,4 +25,3 @@ Two editions ship on the Atlassian Marketplace: Story Maps for Jira and Advanced
 - [Security policy](https://storymapping.app/trust/security-policy)
 - [Privacy policy](https://storymapping.app/docs/support/privacy)
 - [Support](https://storymapping.app/docs/support)
-- [Release notes](https://storymapping.app/docs/whatsnew)
