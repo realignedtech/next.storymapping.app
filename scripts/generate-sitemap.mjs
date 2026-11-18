@@ -86,7 +86,10 @@ if (isShallowClone()) {
 }
 
 const lastmodByPath = new Map();
-for (const file of walk(routesDir).filter((path) => /\+page\.(svelte|md|svx)$/.test(path))) {
+const pageFiles = walk(routesDir)
+	.filter((path) => /\+page\.(svelte|md|svx)$/.test(path))
+	.filter((path) => routeFor(path) !== '/404'); // error page: noindex and excluded from the sitemap
+for (const file of pageFiles) {
 	const canonicalPath = canonicalPathFor(routeFor(file));
 	const lastmod = lastmodFor(file);
 	const current = lastmodByPath.get(canonicalPath);

@@ -149,6 +149,7 @@ test('every canonical page has at least three internal inbound links', () => {
 		}
 	}
 	for (const page of pages.keys()) {
+		if (page === '/404') continue; // the noindex error page is not a public destination
 		const count = inbound.get(page)?.size || 0;
 		assert.ok(count >= 3, `${page} has only ${count} internal inbound links`);
 	}
@@ -208,6 +209,12 @@ test('CI validates the Caddyfile before the image is pushed', () => {
 	const validate = workflow.indexOf('caddy validate --config /etc/caddy/Caddyfile');
 	assert.ok(validate > -1, 'deploy.yml no longer validates the Caddyfile');
 	assert.ok(validate < workflow.indexOf('docker/build-push-action'), 'validation must run before the image is pushed');
+});
+
+test('the 404 page is prerendered, noindex, and kept out of the sitemap', () => {
+	const html = readFileSync('build/404.html', 'utf8');
+	assert.match(html, /<meta name="robots" content="noindex"/);
+	assert.ok(!urls.some((url) => url.pathname === '/404'), '/404 must not be in the sitemap');
 });
 
 test('indexed blog and article routes remain available', () => {
