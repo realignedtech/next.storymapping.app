@@ -81,17 +81,19 @@
 	</div>
 {/if}
 
-<main class="flex-1 max-w-6xl mx-auto flex flex-col md:flex-row py-8 px-4">
-	<article class="w-full bg-white p-8 md:p-24 pt-14 mb-[150px] rounded-3xl shadow-1">
-		
-		<!-- Blog Header -->
-		<div class="pt-6 pb-16">
-			<a href="/blog" class="text-[var(--accent-cyan)] font-semibold no-underline hover:text-[var(--action-hover)]">Blog</a>
-			<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 mt-4">{meta.title}</h1>
-			<span class="text-lg text-gray-400">{author ? `${author} · ` : ''}{new Date(meta.date)?.toDateString()}{meta.updated ? ` · updated ${new Date(meta.updated)?.toDateString()}` : ''}</span>
-		</div>
+<main class="realigned-band min-h-[60vh] flex-1 px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+	<article class="realigned-card mx-auto max-w-4xl overflow-hidden rounded-xl">
 
-		<div class="text-left">
+		<!-- Blog Header -->
+		<header class="border-b border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-6 py-10 sm:px-10 sm:py-14">
+			<a href="/blog" class="text-sm font-semibold text-[var(--accent-cyan)] no-underline hover:text-[var(--action-hover)]">Blog</a>
+			<h1 class="mt-4 text-3xl font-semibold leading-tight tracking-tight text-[var(--text-primary)] sm:text-5xl">{meta.title}</h1>
+			<p class="mt-5 text-sm text-[var(--text-muted)]">
+				{author ? `${author} · ` : ''}<time datetime={publishedTime}>{new Date(meta.date)?.toDateString()}</time>{meta.updated ? ` · updated ${new Date(meta.updated)?.toDateString()}` : ''}
+			</p>
+		</header>
+
+		<div class="article-body px-6 py-9 text-left sm:px-10 sm:py-12">
 			{#if meta.highlight}
 				<div>
 					<button type="button" onclick={() => handleImageClick(meta.highlight)} class="block mx-auto border-none bg-transparent p-0">
@@ -100,10 +102,10 @@
 				</div>
 			{/if}
 
-			<div class="prose prose-lg max-w-none
+			<div class="prose prose-lg max-w-none [&>:first-child]:!mt-0
 				prose-headings:text-gray-800
 				prose-h1:text-3xl prose-h1:mb-3 prose-h1:font-bold
-				prose-h2:text-3xl prose-h2:mb-3 prose-h2:mt-16 prose-h2:font-bold
+				prose-h2:text-3xl prose-h2:mb-3 prose-h2:mt-12 prose-h2:font-bold
 				prose-h3:text-xl prose-h3:mb-3 prose-h3:font-bold
 				prose-h4:text-lg prose-h4:mb-1 prose-h4:font-semibold
 				prose-p:my-5 prose-p:text-lg
@@ -111,7 +113,7 @@
 				prose-ul:list-disc prose-ul:pl-4 prose-ul:text-lg
 				prose-ol:list-decimal prose-ol:pl-5 prose-ol:text-lg
 				prose-a:font-semibold prose-a:no-underline prose-a:text-[var(--accent-cyan)] hover:prose-a:text-[var(--action-hover)]
-				prose-img:lg:max-w-3xl prose-img:cursor-pointer prose-img:mx-auto prose-img:py-12
+				prose-img:lg:max-w-3xl prose-img:cursor-pointer prose-img:mx-auto prose-img:py-8
 				prose-table:my-8
 				prose-th:text-lg prose-th:font-bold prose-th:text-left
 				prose-td:text-lg
@@ -195,7 +197,7 @@
 		max-width: 48rem;
 		height: auto;
 		margin: 3rem auto;
-		border-radius: 0.75rem;
+		border-radius: 0.375rem;
 	}
 
 	:global(.article-mockup) {

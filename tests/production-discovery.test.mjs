@@ -67,7 +67,7 @@ function builtFile(pathname) {
 }
 
 test('sitemap contains every public route on the production origin', () => {
-	assert.equal(urls.length, 56);
+	assert.equal(urls.length, 57);
 	assert.equal(new Set(urls.map((url) => url.pathname)).size, urls.length);
 	for (const url of urls) {
 		assert.equal(url.origin, 'https://storymapping.app');

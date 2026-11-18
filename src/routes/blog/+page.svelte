@@ -4,6 +4,12 @@
 
 	const articles = [
 		{
+			title: 'Story Maps for Jira is now on Forge',
+			description: 'The Forge rebuild brings multiple maps, configurable hierarchy and a tree view into Story Maps for Jira, with nothing to migrate.',
+			date: '2026-11-18',
+			href: '/articles/story-maps-for-jira-is-now-on-forge'
+		},
+		{
 			title: 'Jira Hierarchy: Levels and What Sits Above an Epic',
 			description: 'What sits above an epic on Premium, what works on Free and Standard, and a goal row on a story map.',
 			date: '2026-11-11',

@@ -3,6 +3,11 @@
 // render a "Related reading" block without duplicating page content.
 export const articles = [
 	{
+		href: '/articles/story-maps-for-jira-is-now-on-forge',
+		title: 'Story Maps for Jira is now on Forge',
+		description: 'The Forge rebuild brings multiple maps, configurable hierarchy and a tree view into Story Maps for Jira, with nothing to migrate.'
+	},
+	{
 		href: '/articles/jira-hierarchy',
 		title: 'Jira hierarchy: levels and what sits above an epic',
 		description: 'The three default levels, adding levels above Epic on Premium, and grouping epics on Free and Standard.'

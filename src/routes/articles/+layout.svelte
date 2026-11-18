@@ -63,6 +63,13 @@
 			date: '2022-10-06',
 			author: 'Stefan Ernst',
 			preloadImage: '/blog/story-maps-for-jira/step1.png'
+		},
+		'/articles/story-maps-for-jira-is-now-on-forge': {
+			title: 'Story Maps for Jira is now on Forge',
+			description: 'Story Maps for Jira is now on Atlassian Forge, with multiple maps, configurable hierarchy and a tree view — and nothing to migrate.',
+			date: '2026-11-18',
+			author: 'Stefan Ernst',
+			preloadImage: '/main/overview.png'
 		}
 	};
 	let meta = $derived(articleMeta[$page.url.pathname] || {});
