@@ -16,7 +16,7 @@ Moving to Forge was also the moment to close much of the gap between our two edi
 - **Configurable hierarchy.** Choose the issue types and issue-link types that make up the backbone and the activities, so the map matches how your Jira is already set up rather than the other way around.
 - **Tree view.** Switch from the visual map to a table of Issue, Summary, and Status, indented from activities down to issues. It is easier to read on large maps and works better with screen readers.
 
-The familiar parts are all still there — sprint and release swimlanes, dependency lines, maps from any agile board (including boards that span several projects), and unified release swimlanes when projects share a version name.
+The familiar parts are all still there — sprint and release swimlanes, maps from any agile board (including boards that span several projects), and unified release swimlanes when projects share a version name.
 
 ![The user story map in Story Maps for Jira](/main/overview.png)
 
