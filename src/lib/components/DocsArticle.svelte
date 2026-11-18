@@ -68,7 +68,7 @@
 		min-width: 0;
 		overflow: hidden;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.75rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		box-shadow: 0 22px 50px -38px rgba(3, 105, 161, 0.45);
 	}
@@ -130,15 +130,15 @@
 	:global(.docs-content li) { margin: 0.35rem 0; padding-left: 0.2rem; }
 	:global(.docs-content li::marker) { color: var(--accent-cyan); font-weight: 600; }
 	:global(.docs-content hr) { margin: 2.25rem 0; border: 0; border-top: 1px solid var(--border-subtle); }
-	:global(.docs-content blockquote) { margin: 1.4rem 0; border-left: 3px solid var(--accent-sky-soft); border-radius: 0 0.5rem 0.5rem 0; background: var(--action-soft); padding: 0.75rem 1rem; color: var(--text-secondary); }
-	:global(.docs-content code) { border: 1px solid var(--border-subtle); border-radius: 0.3rem; background: var(--bg-elevated); padding: 0.13rem 0.35rem; color: var(--accent-cyan); font-size: 0.86em; }
-	:global(.docs-content pre) { overflow-x: auto; margin: 1.4rem 0; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 0.6rem; background: #061d3d; padding: 1.1rem 1.2rem; }
+	:global(.docs-content blockquote) { margin: 1.4rem 0; border-left: 3px solid var(--accent-sky-soft); border-radius: 0 0.375rem 0.375rem 0; background: var(--action-soft); padding: 0.75rem 1rem; color: var(--text-secondary); }
+	:global(.docs-content code) { border: 1px solid var(--border-subtle); border-radius: 0.25rem; background: var(--bg-elevated); padding: 0.13rem 0.35rem; color: var(--accent-cyan); font-size: 0.86em; }
+	:global(.docs-content pre) { overflow-x: auto; margin: 1.4rem 0; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 0.375rem; background: #061d3d; padding: 1.1rem 1.2rem; }
 	:global(.docs-content pre code) { border: 0; background: transparent; padding: 0; color: #dbeafe; }
 	:global(.docs-content table) { display: block; overflow-x: auto; width: 100%; margin: 1.5rem 0; border-collapse: collapse; }
 	:global(.docs-content th),
 	:global(.docs-content td) { border: 1px solid var(--border-subtle); padding: 0.65rem 0.8rem; text-align: left; }
 	:global(.docs-content th) { background: var(--bg-surface-hover); color: var(--text-primary); font-weight: 600; }
-	:global(.docs-content img) { max-width: 100%; height: auto; margin: 1.6rem auto; border: 1px solid var(--border-subtle); border-radius: 0.6rem; box-shadow: 0 16px 36px -26px rgba(3, 105, 161, 0.5); cursor: zoom-in; }
+	:global(.docs-content img) { max-width: 100%; height: auto; margin: 1.6rem auto; border: 1px solid var(--border-subtle); border-radius: 0.375rem; box-shadow: 0 16px 36px -26px rgba(3, 105, 161, 0.5); cursor: zoom-in; }
 
 	.blanket {
 		position: fixed;

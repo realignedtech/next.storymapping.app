@@ -34,7 +34,7 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 0.75rem;
-		border-radius: 0.5rem;
+		border-radius: 0.375rem;
 		padding: 0.6rem 0.7rem;
 		color: var(--text-secondary);
 		font-size: 0.82rem;

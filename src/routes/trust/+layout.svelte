@@ -109,7 +109,7 @@
 		align-items: center;
 		justify-content: space-between;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.6rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 0.8rem 0.9rem;
 		color: var(--text-primary);
@@ -120,7 +120,7 @@
 	.mobile-trust-panel {
 		margin: 0.65rem 0 1rem;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.65rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 1rem;
 	}
@@ -135,7 +135,7 @@
 	.trust-detail .trust-page :global(main) {
 		overflow: hidden;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.75rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 2.25rem;
 		box-shadow: 0 22px 50px -38px rgba(3, 105, 161, 0.45);
@@ -160,7 +160,7 @@
 
 	.trust-page :global(.overflow-x-auto) {
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.6rem;
+		border-radius: 0.375rem;
 	}
 
 	.trust-page :global(table) { color: var(--text-secondary); }

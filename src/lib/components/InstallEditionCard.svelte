@@ -68,7 +68,7 @@
 		height: 100%;
 		flex-direction: column;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.9rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 2rem;
 		box-shadow: 0 20px 46px -34px rgba(3, 105, 161, 0.45);

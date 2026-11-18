@@ -144,7 +144,7 @@
 		align-items: center;
 		justify-content: space-between;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.6rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 0.8rem 0.9rem;
 		color: var(--text-primary);
@@ -155,7 +155,7 @@
 	.mobile-menu-panel {
 		margin: 0.65rem 0 1rem;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.65rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 1rem;
 	}

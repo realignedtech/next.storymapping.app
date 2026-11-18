@@ -35,7 +35,7 @@
 		align-items: flex-start;
 		gap: 1rem;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.75rem;
+		border-radius: 0.375rem;
 		background: var(--bg-surface);
 		padding: 1.4rem;
 		box-shadow: 0 18px 40px -32px rgba(3, 105, 161, 0.4);
@@ -57,7 +57,7 @@
 		align-items: center;
 		justify-content: center;
 		border: 1px solid rgba(3, 105, 161, 0.2);
-		border-radius: 0.6rem;
+		border-radius: 0.375rem;
 		background: var(--action-soft);
 		color: var(--accent-cyan);
 	}

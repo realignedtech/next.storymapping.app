@@ -9,6 +9,20 @@ export default {
       letterSpacing: {
         tight: '-0.011em',
       },
+      // Shared radius scale with windshift-website: a 4px control corner and a
+      // 6px card corner. This is the Tailwind v3 equivalent of windshift's
+      // `@theme` --radius-* tokens, so both sites use the same geometry.
+      borderRadius: {
+        none: '0',
+        sm: '0.25rem',
+        DEFAULT: '0.25rem',
+        md: '0.25rem',
+        lg: '0.25rem',
+        xl: '0.375rem',
+        '2xl': '0.375rem',
+        '3xl': '0.375rem',
+        full: '9999px',
+      },
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out',
       },

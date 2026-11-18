@@ -95,7 +95,7 @@
 		align-items: center;
 		gap: 0.65rem;
 		border: 1px solid var(--border-subtle);
-		border-radius: 0.55rem;
+		border-radius: 0.375rem;
 		background: var(--bg-elevated);
 		padding: 0.65rem 0.75rem;
 		color: var(--text-muted);
