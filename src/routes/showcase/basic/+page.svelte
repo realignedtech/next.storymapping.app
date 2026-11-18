@@ -89,7 +89,7 @@
 
 			<div class="mt-16 rounded-2xl border border-[var(--border-subtle)] bg-[var(--bg-surface-hover)] p-8 text-center">
 				<h3 class="text-2xl font-bold mb-4 text-[var(--text-primary)]">The new Story Maps experience is live</h3>
-				<p class="mb-6 text-lg text-[var(--text-secondary)]">Story Maps for Jira now supports multiple maps per project, sprint and release swimlanes, and dependencies between issues.</p>
+				<p class="mb-6 text-lg text-[var(--text-secondary)]">Story Maps for Jira now supports multiple maps per project, sprint and release swimlanes, and configurable hierarchy.</p>
 				<a href={APP_LINK} target="_blank" rel="noreferrer" data-umami-event="marketplace_click" data-umami-event-product="story_maps" data-umami-event-listing-id="1224357" data-umami-event-source-page={sourcePage} data-umami-event-placement="showcase_bottom" class="realigned-primary-button">
 					View Story Maps on Atlassian Marketplace
 				</a>

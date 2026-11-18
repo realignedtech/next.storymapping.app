@@ -19,7 +19,7 @@ If the map is new to you, work through Working With the Map first. It explains t
 
 ## Core workflows
 
-- [Working With the Map](/docs/tutorials/working-with-the-map) explains the three map levels, the toolbar, view modes, and dependency lines.
+- [Working With the Map](/docs/tutorials/working-with-the-map) explains the three map levels, the toolbar, and view modes.
 - [Plan Sprints and Releases](/docs/tutorials/planning-sprints-and-releases) shows how swimlane views update Jira planning fields.
 
 If you have not created a map yet, begin with [Getting Started](/docs/getting-started).

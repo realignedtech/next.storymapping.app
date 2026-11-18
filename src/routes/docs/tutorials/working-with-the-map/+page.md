@@ -3,7 +3,7 @@ title: "Working With the Map"
 description: "Learn the parts of a story map, the toolbar, and how to add, arrange, and edit Jira issues directly on the map during planning."
 ---
 
-A story map holds two views of the same work: the user journey across the page, and the delivery detail underneath. Once you can read the map, everything else — planning, filtering, dependency checking — follows from it.
+A story map holds two views of the same work: the user journey across the page, and the delivery detail underneath. Once you can read the map, everything else — planning and filtering — follows from it.
 
 ## The three levels
 
@@ -17,12 +17,11 @@ All three levels are rendered as cards. A card shows the summary on top; the bot
 
 ## The toolbar
 
-The toolbar at the top right of the map has five controls:
+The toolbar at the top right of the map has four controls:
 
 - **Reload** re-reads activities, epics, and issues from Jira. Use it if someone changed the backlog while you were working.
 - **Add** creates or finds issues. The menu offers **Add Activity**, **Add Epic**, and **Add Story**; when a swimlane view is active it also offers **Add Sprint** or **Add Release**.
 - **The view switcher** (labelled with the current view) changes how the map is organized. See below.
-- **Dependencies** draws lines between issues that are linked to each other.
 - **Settings** opens the map configuration: general, view, hierarchy, fields, and advanced.
 
 ![The Add dropdown](/docs/mockups/add-dropdown.svg)
@@ -46,14 +45,6 @@ The view switcher offers four ways to look at the same issues:
 - **Move an epic or activity** by dragging it within its row. Epics can also be moved under a different activity.
 
 If an issue seems to be missing, reload the map first. The map only shows what the selected board contains, so an issue on a different board will not appear.
-
-## Dependencies
-
-Select **Dependencies** in the toolbar to overlay lines between issues. The lines follow a Jira issue link type — "blocks" by default, and you can choose any link type your site defines in the dependencies configuration. Each line starts at the source card and ends with a dot on the card it points to; linked cards get an amber border, and issues that have no dependency in the current configuration are dimmed.
-
-![Dependency lines and their configuration](/docs/mockups/dependencies.svg)
-
-Dependency lines are useful in sprint view, when you want to check that a blocked issue is not scheduled before its blocker.
 
 ## View settings
 

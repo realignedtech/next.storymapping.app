@@ -17,7 +17,7 @@
 				'Multiple story maps in each Jira project',
 				'Maps from any board, including multi-project boards',
 				'Sprint and release swimlanes',
-				'Dependency lines and configurable hierarchy'
+				'Configurable hierarchy and tree view'
 			],
 			marketplaceLink: STORY_MAPS_APP_LINK,
 			marketplaceLabel: 'View on Marketplace',
